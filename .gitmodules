@@ -10,3 +10,6 @@
 [submodule "layers/meta-bsp-imx8mp"]
 	path = layers/meta-bsp-imx8mp
 	url = https://github.com/compulab-yokneam/meta-bsp-imx8mp.git
+[submodule "layers/poky"]
+	path = layers/poky
+	url = https://github.com/balena-os/poky
