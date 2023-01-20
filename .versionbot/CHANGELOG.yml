@@ -1,4 +1,205 @@
 - commits:
+    - subject: Update layers/meta-balena to b1bc70d3819c8c27041f843bccd82405a7832134
+      hash: af10859be79d518f6adbd8f310028c6a37d81fe8
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to b1bc70d3819c8c27041f843bccd82405a7832134
+        changelog-entry: Update layers/meta-balena to b1bc70d3819c8c27041f843bccd82405a7832134
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "tests: os: add basic SB/FDE tests"
+              hash: f8ada0481cc159fd03ac1291c981e4dc0d03342d
+              body: |
+                Check for secureboot and full-disk encryption when supported by
+                firmware.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: meta-balena-2.108.25
+          title: ""
+          date: 2023-01-18T21:44:59.128Z
+        - commits:
+            - subject: "networkmanager: Make iptables wait for xtables.lock"
+              hash: afebbcddeebdda9e5988507a5fcf5ad93cf79cab
+              body: >
+                iptables takes a file lock at /run/xtables.lock. By default, if
+
+                the file is locked, iptables will fail with error. When that happens,
+
+                the iptables rules won't be configured, and the shared mode
+
+                (for which we use iptables) will not be setup properly.
+
+
+                Instead, pass "--wait 2", to block.
+
+
+                The included patch has to be removed once we upgrade to next
+
+                NetworkManager version as it is already included upstream.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Zahari Petkov <zahari@balena.io>
+                signed-off-by: Zahari Petkov <zahari@balena.io>
+              author: Zahari Petkov
+              nested: []
+          version: meta-balena-2.108.24
+          title: ""
+          date: 2023-01-18T11:11:18.440Z
+        - commits:
+            - subject: "balena-keys: rebuild if keys change"
+              hash: 64cc69a741568d2c2e95cd4197b18628310f34e2
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "classes: sign-*: resign if keys change"
+              hash: 1decda2966271638196840c04955ffa12a57158a
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.108.23
+          title: ""
+          date: 2023-01-16T23:11:19.102Z
+        - commits:
+            - subject: "workflows: esr: use semver compatible versions"
+              hash: 36b9c035f5d7b55540c2190492f6e02af890bd13
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.108.22
+          title: ""
+          date: 2023-01-16T09:25:15.067Z
+        - commits:
+            - subject: "efitools: Package lock down EFI image into its own package"
+              hash: 461ad62f13732cd325f3f532fda4fac4b9ffb3da
+              body: >
+                This EFI image contains the secure boot certificates and when executed it
+
+                is supposed to load the keys into the respective secure boot slots.
+
+
+                We don't use this binary in our secure boot implementation, but currently
+
+                the build breaks as the binary is installed but not packaged.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.108.21
+          title: ""
+          date: 2023-01-14T11:56:57.966Z
+        - commits:
+            - subject: "workflows: meta-balena-esr: Fix version calculation"
+              hash: b56da33230839f4af74bac954cf834c2116e6209
+              body: >
+                Correct the calculation of the version to include in the yml file.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.108.20
+          title: ""
+          date: 2023-01-12T14:06:53.452Z
+        - commits:
+            - subject: "redsocks: Increase maximum number of open files"
+              hash: e90b9159ed5f0dac3d9fe1b1b486201ee85f1161
+              body: >
+                This increases the number of open connections that redsocks can support
+
+                to a new maximum of 2048.
+
+
+                See https://github.com/darkk/redsocks/blob/19b822e345f6a291f6cff6b168f1cfdfeeb2cd7d/base.c#L419
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.108.19
+          title: ""
+          date: 2023-01-10T18:47:46.842Z
+        - commits:
+            - subject: 'Revert "flasher: output logs to serial console"'
+              hash: 406317b15726798d0c11928851897a530c980170
+              body: >
+                In development mode, the flasher service is killed by getty. Revert this
+
+                change to unbreak the flasher when OS development is enabled.
+
+
+                This reverts commit 131893e433ef64a1f3b05dfcd44b0e022f13646d.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: meta-balena-2.108.18
+          title: ""
+          date: 2023-01-09T22:49:31.599Z
+        - commits:
+            - subject: Update balena-os/balena-supervisor to v14.4.10
+              hash: ee049573aecb9004d53fd4134ec4aa8c21c99e6c
+              body: Update balena-supervisor
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: renovate[bot]
+              nested: []
+          version: meta-balena-2.108.17
+          title: ""
+          date: 2023-01-09T15:58:47.708Z
+        - commits:
+            - subject: "balena-supervisor: Set the supervisor package version"
+              hash: 950cbe5dd708511e37d707d4121032cc06376d1a
+              body: >
+                This should reflect the included supervisor version in the hostapp
+
+                manifest.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-2.108.16
+          title: ""
+          date: 2023-01-09T10:35:58.184Z
+  version: 2.108.25
+  title: ""
+  date: 2023-01-20T05:15:24.879Z
+- commits:
     - subject: Update balena-yocto-scripts to a30795acce48c90b23fcac273fe0cbcc7497c779
       hash: 4b52ccc09ad4f5efb7daca2b2a2b3574e2d017f8
       body: Update balena-yocto-scripts

@@ -2,6 +2,67 @@
 
 All notable changes to this project will be documented in this file
 
+# v2.108.25
+## (2023-01-20)
+
+
+<details>
+<summary> Update layers/meta-balena to b1bc70d3819c8c27041f843bccd82405a7832134 [Renovate Bot] </summary>
+
+> ## meta-balena-2.108.25
+> ### (2023-01-18)
+> 
+> * tests: os: add basic SB/FDE tests [Joseph Kogut]
+> 
+> ## meta-balena-2.108.24
+> ### (2023-01-18)
+> 
+> * networkmanager: Make iptables wait for xtables.lock [Zahari Petkov]
+> 
+> ## meta-balena-2.108.23
+> ### (2023-01-16)
+> 
+> * balena-keys: rebuild if keys change [Alex Gonzalez]
+> * classes: sign-*: resign if keys change [Alex Gonzalez]
+> 
+> ## meta-balena-2.108.22
+> ### (2023-01-16)
+> 
+> * workflows: esr: use semver compatible versions [Alex Gonzalez]
+> 
+> ## meta-balena-2.108.21
+> ### (2023-01-14)
+> 
+> * efitools: Package lock down EFI image into its own package [Alex Gonzalez]
+> 
+> ## meta-balena-2.108.20
+> ### (2023-01-12)
+> 
+> * workflows: meta-balena-esr: Fix version calculation [Alex Gonzalez]
+> 
+> ## meta-balena-2.108.19
+> ### (2023-01-10)
+> 
+> * redsocks: Increase maximum number of open files [Alex Gonzalez]
+> 
+> ## meta-balena-2.108.18
+> ### (2023-01-09)
+> 
+> * Revert "flasher: output logs to serial console" [Joseph Kogut]
+> 
+> ## meta-balena-2.108.17
+> ### (2023-01-09)
+> 
+> * Update balena-os/balena-supervisor to v14.4.10 [renovate[bot]]
+> 
+> ## meta-balena-2.108.16
+> ### (2023-01-09)
+> 
+> * balena-supervisor: Set the supervisor package version [Kyle Harding]
+> 
+
+</details>
+
 # v2.108.15+rev2
 ## (2023-01-20)
 
