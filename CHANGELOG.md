@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file
 
+# v2.108.27
+## (2023-01-25)
+
+
+<details>
+<summary> Update layers/meta-balena to 73bc1884cad100723ee16dd08c1abd5796260cc2 [Renovate Bot] </summary>
+
+> ## meta-balena-2.108.27
+> ### (2023-01-20)
+> 
+> * tests: os: fix tests that use glider on rpi0 [rcooke-warwick]
+> 
+
+</details>
+
 # v2.108.26+rev1
 ## (2023-01-25)
 

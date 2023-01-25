@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update layers/meta-balena to 73bc1884cad100723ee16dd08c1abd5796260cc2
+      hash: 83eac0abe44d0580e6fbef9aa0650d591668e045
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 73bc1884cad100723ee16dd08c1abd5796260cc2
+        changelog-entry: Update layers/meta-balena to 73bc1884cad100723ee16dd08c1abd5796260cc2
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "tests: os: fix tests that use glider on rpi0"
+              hash: 864b4ed84c7af438d61501a77996639f3af3499c
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: meta-balena-2.108.27
+          title: ""
+          date: 2023-01-20T23:08:16.096Z
+  version: 2.108.27
+  title: ""
+  date: 2023-01-25T17:15:31.940Z
+- commits:
     - subject: Update balena-yocto-scripts to 41929c1daa51086e2b62c095efac7ca79bb783e0
       hash: 53f2de266355fd8e5968ec2c221eb052fd8be4a8
       body: Update balena-yocto-scripts
