@@ -1,4 +1,63 @@
 - commits:
+    - subject: Update balena-yocto-scripts to fe6beafdcfa7406b20257cf67a6b74cd8f59142f
+      hash: 37940c9fc4749691a890d8734ac67414f66f9df6
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to fe6beafdcfa7406b20257cf67a6b74cd8f59142f
+        changelog-entry: Update balena-yocto-scripts to fe6beafdcfa7406b20257cf67a6b74cd8f59142f
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "balena-generate-ami: increase import snapshot timeout"
+              hash: 42434c60b0d86bccf45114cde0d55998399e59b8
+              body: |
+                The aarch64 images are timing out on import.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "balena-generate-ami: remove s3 temporary image if snapshot import
+                times out"
+              hash: 0d01c648eb65883099579e03ef914c29bf814e1b
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "balena-generate-ami: match instance type with image type"
+              hash: 98c1601e106a1fe194fd6c1339b33b67a57a578a
+              body: >
+                When using an amd64 AMI, use a suitable A1 Graviton instance to test it.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "balena-generate-ami: fix linter warnings"
+              hash: 799fb7e6618ababbfe14c1ee6ee2763e25517538
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: balena-yocto-scripts-1.19.23
+          title: ""
+          date: 2023-01-28T10:53:40.736Z
+  version: 2.108.29+rev1
+  title: ""
+  date: 2023-01-28T13:14:34.947Z
+- commits:
     - subject: Update layers/meta-balena to bdfe242725e83784931987d85f83a35e861683d8
       hash: cffbdf259e1b24eacf3f69fde68df3989c9796a4
       body: Update layers/meta-balena
