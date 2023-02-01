@@ -22,3 +22,6 @@
 [submodule "layers/meta-compulab-bsp"]
 	path = layers/meta-compulab-bsp
 	url = https://github.com/compulab-yokneam/meta-compulab-bsp
+[submodule "layers/meta-freescale"]
+	path = layers/meta-freescale
+	url = https://github.com/Freescale/meta-freescale/
