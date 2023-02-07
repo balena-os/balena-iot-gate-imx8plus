@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file
 
+# v2.110.1
+## (2023-02-07)
+
+
+<details>
+<summary> Update layers/meta-balena to 22f6f33279e7d152dec60de927371312093396cd [Renovate Bot] </summary>
+
+> ## meta-balena-2.110.1
+> ### (2023-02-07)
+> 
+> * renovate: Include to and from versions for supervisor and engine [Kyle Harding]
+> 
+
+</details>
+
 # v2.110.0
 ## (2023-02-07)
 
