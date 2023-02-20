@@ -1,0 +1,9 @@
+#!/bin/sh
+
+#
+# Script used by hostapps updater to flash bootloader onto internal media
+#
+
+set -o errexit
+
+# machine specific data
