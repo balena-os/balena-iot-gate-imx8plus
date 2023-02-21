@@ -1,4 +1,27 @@
 - commits:
+    - subject: Update contracts to f32bce95ef31a6890812fbcf8f403a3ac2df95fd
+      hash: 0a10dceb30bb151fea1a06aaededfa78bb64c838
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to f32bce95ef31a6890812fbcf8f403a3ac2df95fd
+        changelog-entry: Update contracts to f32bce95ef31a6890812fbcf8f403a3ac2df95fd
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "patch: Add docs to contracts for instructions partials"
+              hash: c444d6388b2acc39eab04efc1a13703d654693e5
+              body: ""
+              footer:
+                Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipul@balena.io>
+                signed-off-by: Vipul Gupta (@vipulgupta2048) <vipul@balena.io>
+              author: Vipul Gupta (@vipulgupta2048)
+          version: contracts-2.0.47
+          title: ""
+          date: 2023-02-21T11:54:08.180Z
+  version: 2.112.11+rev1
+  title: ""
+  date: 2023-02-21T13:23:36.315Z
+- commits:
     - subject: Update layers/meta-balena to d21da1fc034f4e0b09a457d0ed5eda47d0a18e13
       hash: b1acc6f2d8618857a179de116fef7f5268ef933c
       body: Update layers/meta-balena
