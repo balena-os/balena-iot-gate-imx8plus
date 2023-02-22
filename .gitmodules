@@ -25,3 +25,7 @@
 [submodule "layers/meta-freescale"]
 	path = layers/meta-freescale
 	url = https://github.com/Freescale/meta-freescale/
+[submodule "layers/meta-imx"]
+	path = layers/meta-imx
+	url = https://source.codeaurora.org/external/imx/meta-imx
+	branch = kirkstone-5.15.32-2.0.0
