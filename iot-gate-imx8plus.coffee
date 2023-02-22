@@ -1,7 +1,7 @@
 deviceTypesCommon = require '@resin.io/device-types/common'
 { networkOptions, commonImg, instructions } = deviceTypesCommon
 
-IOT_GATE_IMX8PLUS_FLASH = 'Insert USB STICK. Device will automatically boot from USB'
+IOT_GATE_IMX8PLUS_FLASH = 'Flash using USB cable and uuu'
  
 postProvisioningInstructions = [
         instructions.BOARD_SHUTDOWN
@@ -12,7 +12,7 @@ postProvisioningInstructions = [
 module.exports =
         version: 1
         slug: 'iot-gate-imx8plus'
-        name: 'Compulab IOT-GATE-iMX8PLUS'
+        name: 'Compulab IOT-GATE-iMX8PLUS 4GB'
         arch: 'aarch64'
         state: 'released'
  
@@ -35,10 +35,10 @@ module.exports =
 
         yocto:
                 machine: 'iot-gate-imx8plus'
-                image: 'balena-image-flasher'
+                image: 'balena-image'
                 fstype: 'balenaos-img'
-                version: 'yocto-dunfell'
-                deployArtifact: 'balena-image-flasher-iot-gate-imx8plus.balenaos-img'
+                version: 'yocto-kirkstone'
+                deployArtifact: 'balena-image-iot-gate-imx8plus.balenaos-img'
                 compressed: true
 
         options: [ networkOptions.group ]
