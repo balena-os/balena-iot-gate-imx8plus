@@ -1,0 +1,2 @@
+include balena-image.inc
+
