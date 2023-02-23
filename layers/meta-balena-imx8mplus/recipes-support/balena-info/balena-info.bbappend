@@ -1,1 +1,1 @@
-TTYS=" ttymxc1"
+TTYS=" ttymxc1 tty1"
