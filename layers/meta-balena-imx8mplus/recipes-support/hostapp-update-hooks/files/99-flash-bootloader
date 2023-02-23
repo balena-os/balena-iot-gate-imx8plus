@@ -10,7 +10,7 @@ set -o errexit
 
 uboot_file="imx-boot-iot-gate-imx8mplus-sd.bin-flash_evk"
 uboot_block_size=1024
-uboot_seek_blocks=33
+uboot_seek_blocks=0
 
 device="/dev/mmcblk2boot0"
 
