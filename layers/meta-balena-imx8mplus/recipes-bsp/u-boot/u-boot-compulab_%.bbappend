@@ -6,12 +6,20 @@ DEPENDS = "bison-native"
 
 SRC_URI:remove = "file://resin-specific-env-integration-kconfig.patch"
 SRC_URI:append = " \
+	file://0001-Revert-remove-include-config_defaults.h.patch \
+	file://0002-rework-Integrate-machine-independent-resin-environme.patch \
+	file://0003-integrate-with-balenaOS.patch \
+	file://0004-skip-running-bootcmd-mfg.patch \
         file://d2d4.cfg \
 "
 
+# Ensure the correct dram conf is applied everywhere
 DRAM_CONF="d2d4"
 dram_conf="d2d4"
 
+# Bring in configure step from poky
+# to make sure the merge_config script is called
+# appropriately, otherwise the build will fail
 do_configure () {
     cp ${S}/scripts/kconfig/merge_config.sh ${B}/
     if [ -n "${UBOOT_CONFIG}" ]; then
@@ -23,13 +31,8 @@ do_configure () {
                 if [ $j -eq $i ]; then
                     oe_runmake -C ${S} O=${B}/${config} ${config}
                     if [ -n "${@' '.join(find_cfgs(d))}" ]; then
-                        echo "llx "
-                        pwd
-                        echo ">>> merge_config.sh -m -O ${B}/${config} ${B}/${config}/.config ${@" ".join(find_cfgs(d))}"
                         ./merge_config.sh -m -O ${B}/${config} ${B}/${config}/.config ${@" ".join(find_cfgs(d))}
-                        echo "llal"
                         oe_runmake -C ${S} O=${B}/${config} oldconfig
-                        echo "lulu"
                     fi
                 fi
             done
