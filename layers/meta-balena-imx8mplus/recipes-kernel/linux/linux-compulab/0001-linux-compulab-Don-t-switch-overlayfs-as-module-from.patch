@@ -1,4 +1,4 @@
-From ece4d947760b0ebe1ada4ba7ff5118c407ef272f Mon Sep 17 00:00:00 2001
+From d84a512b5945430a42c4d6191b83b9811bd3751c Mon Sep 17 00:00:00 2001
 From: Alexandru Costache <alexandru@balena.io>
 Date: Thu, 23 Feb 2023 17:32:31 +0100
 Subject: [PATCH] linux-compulab: Don't switch overlayfs as module from
@@ -10,15 +10,38 @@ is built-in to avoid kernel panics that sometimes
 don't print enough information to diagnose the actual
 root cause.
 
+Same for CFG80211, we make sure it's built as module
+to avoid trying to load regulatory.db from the initramfs.
+
+Also disable the TUX logo
+
 Signed-off-by: Alexandru Costache <alexandru@balena.io>
 ---
- arch/arm64/configs/iot-gate-imx8plus_defconfig | 5 ++++-
- 1 file changed, 4 insertions(+), 1 deletion(-)
+ arch/arm64/configs/iot-gate-imx8plus_defconfig | 9 ++++++---
+ 1 file changed, 6 insertions(+), 3 deletions(-)
 
 diff --git a/arch/arm64/configs/iot-gate-imx8plus_defconfig b/arch/arm64/configs/iot-gate-imx8plus_defconfig
-index 575741d2e1e8..30046c4cf355 100644
+index 575741d2e1e8..fb1e71a0ec50 100644
 --- a/arch/arm64/configs/iot-gate-imx8plus_defconfig
 +++ b/arch/arm64/configs/iot-gate-imx8plus_defconfig
+@@ -390,7 +390,7 @@ CONFIG_BT_HCIUART_QCA=y
+ CONFIG_BT_HCIUART_AG6XX=y
+ CONFIG_BT_HCIUART_MRVL=y
+ CONFIG_BT_HCIVHCI=y
+-CONFIG_CFG80211=y
++CONFIG_CFG80211=m
+ CONFIG_NL80211_TESTMODE=y
+ CONFIG_CFG80211_WEXT=y
+ CONFIG_MAC80211=y
+@@ -915,7 +915,7 @@ CONFIG_FB_MXC_EINK_V2_PANEL=y
+ CONFIG_BACKLIGHT_PWM=y
+ CONFIG_BACKLIGHT_LP855X=m
+ CONFIG_FRAMEBUFFER_CONSOLE=y
+-CONFIG_LOGO=y
++CONFIG_LOGO=n
+ # CONFIG_LOGO_LINUX_MONO is not set
+ # CONFIG_LOGO_LINUX_VGA16 is not set
+ CONFIG_SOUND=y
 @@ -1273,6 +1273,9 @@ CONFIG_EXT2_FS_SECURITY=y
  CONFIG_EXT3_FS=y
  CONFIG_EXT3_FS_POSIX_ACL=y
