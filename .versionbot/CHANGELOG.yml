@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update layers/meta-balena to 4ec7add602a6eddcc1c95a863e0359a0c1da744c
+      hash: 882e4bf95a5a199b9bf5d359544ed9fa29762ef7
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 4ec7add602a6eddcc1c95a863e0359a0c1da744c
+        changelog-entry: Update layers/meta-balena to 4ec7add602a6eddcc1c95a863e0359a0c1da744c
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "os-helpers-fs: add dependency on util-linux fdisk"
+              hash: f27132636f4dda10d51cf0e1a3eb13d3db67b1a2
+              body: >
+                The os-helpers-fs script uses functionality not available on busybox's
+
+                fdisk.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.112.15
+          title: ""
+          date: 2023-02-24T09:45:05.390Z
+  version: 2.112.15
+  title: ""
+  date: 2023-02-24T20:37:43.085Z
+- commits:
     - subject: "coffee: Update provisioning instructions in coffee file"
       hash: 5ae95ab92390a7782b38e2955853e8e8253ade5a
       body: ""

@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file
 
+# v2.112.15
+## (2023-02-24)
+
+
+<details>
+<summary> Update layers/meta-balena to 4ec7add602a6eddcc1c95a863e0359a0c1da744c [Renovate Bot] </summary>
+
+> ## meta-balena-2.112.15
+> ### (2023-02-24)
+> 
+> * os-helpers-fs: add dependency on util-linux fdisk [Alex Gonzalez]
+> 
+
+</details>
+
 # v2.112.14+rev2
 ## (2023-02-24)
 
