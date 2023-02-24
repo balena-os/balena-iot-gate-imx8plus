@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add CHANGELOG.yml file
+      hash: 9c59b48a629e8fec137197adc523ba06f6545d97
+      body: ""
+      footer:
+        Changelog-entry: Add CHANGELOG.yml file
+        changelog-entry: Add CHANGELOG.yml file
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 2.112.14+rev1
+  title: ""
+  date: 2023-02-24T08:13:01.822Z
+- commits:
     - subject: Update layers/meta-balena to 80ca81f9e4ec9d4b2e4d21bc1cf12bd59220be5a
       hash: 28aad9361226db05fbcdf21e65bba42a3e41b4fe
       body: Update layers/meta-balena

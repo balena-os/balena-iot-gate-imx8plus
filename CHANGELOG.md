@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v2.112.14+rev1
+## (2023-02-24)
+
+* Add CHANGELOG.yml file [Alexandru Costache]
+
 # v2.112.14
 ## (2023-02-22)
 
