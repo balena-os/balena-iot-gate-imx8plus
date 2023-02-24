@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v2.112.14+rev2
+## (2023-02-24)
+
+* coffee: Update provisioning instructions in coffee file [Alexandru Costache]
+
 # v2.112.14+rev1
 ## (2023-02-24)
 

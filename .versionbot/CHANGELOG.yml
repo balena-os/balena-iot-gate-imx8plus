@@ -1,4 +1,18 @@
 - commits:
+    - subject: "coffee: Update provisioning instructions in coffee file"
+      hash: 5ae95ab92390a7782b38e2955853e8e8253ade5a
+      body: ""
+      footer:
+        Changelog-entry: "coffee: Update provisioning instructions in coffee file"
+        changelog-entry: "coffee: Update provisioning instructions in coffee file"
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 2.112.14+rev2
+  title: ""
+  date: 2023-02-24T20:30:02.293Z
+- commits:
     - subject: Add CHANGELOG.yml file
       hash: 9c59b48a629e8fec137197adc523ba06f6545d97
       body: ""
