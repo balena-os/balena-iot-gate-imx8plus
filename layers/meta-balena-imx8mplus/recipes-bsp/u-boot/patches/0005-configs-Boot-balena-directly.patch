@@ -1,0 +1,30 @@
+From 671c5011b92ffe3e2f8770742c448f0df7968f78 Mon Sep 17 00:00:00 2001
+From: Alexandru Costache <alexandru@balena.io>
+Date: Fri, 24 Feb 2023 11:32:48 +0100
+Subject: [PATCH] configs: Boot balena directly
+
+Avoid wasting boot time when searching for usb
+devices and such and boot directly from the eMMC
+
+Upstream-status: Inappropriate [configuration]
+Signed-off-by: Alexandru Costache <alexandru@balena.io>
+---
+ configs/iot-gate-imx8plus_defconfig | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/configs/iot-gate-imx8plus_defconfig b/configs/iot-gate-imx8plus_defconfig
+index 46b5b70afc..76f707e70f 100644
+--- a/configs/iot-gate-imx8plus_defconfig
++++ b/configs/iot-gate-imx8plus_defconfig
+@@ -29,7 +29,7 @@ CONFIG_SPL_FIT_GENERATOR="arch/arm/mach-imx/mkimage_fit_atf.sh"
+ CONFIG_OF_BOARD_SETUP=y
+ CONFIG_OF_SYSTEM_SETUP=y
+ CONFIG_SYS_EXTRA_OPTIONS="IMX_CONFIG=arch/arm/mach-imx/imx8m/imximage-8mp-lpddr4.cfg"
+-CONFIG_BOOTCOMMAND="run distro_bootcmd;run bsp_bootcmd"
++CONFIG_BOOTCOMMAND="run bsp_bootcmd"
+ CONFIG_DEFAULT_FDT_FILE="iot-gate-imx8plus.dtb"
+ CONFIG_ARCH_MISC_INIT=y
+ CONFIG_BOARD_EARLY_INIT_F=y
+-- 
+2.37.2
+
