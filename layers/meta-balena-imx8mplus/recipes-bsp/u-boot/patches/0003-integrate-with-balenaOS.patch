@@ -1,0 +1,104 @@
+From e89f4e96fa9bb6f7243bea54f3bf0bcaa98c4d54 Mon Sep 17 00:00:00 2001
+From: Alexandru Costache <alexandru@balena.io>
+Date: Thu, 23 Feb 2023 11:09:43 +0100
+Subject: [PATCH] integrate with balenaOS
+
+Upstream-status: inaproppriate [configuration]
+Signed-off-by: Alexandru Costache <alexandru@balena.io>
+---
+ configs/iot-gate-imx8plus_defconfig   |  8 +++++++
+ include/configs/compulab-imx8m-plus.h | 33 ++++++++++++---------------
+ 2 files changed, 22 insertions(+), 19 deletions(-)
+
+diff --git a/configs/iot-gate-imx8plus_defconfig b/configs/iot-gate-imx8plus_defconfig
+index 878606cc4b..46b5b70afc 100644
+--- a/configs/iot-gate-imx8plus_defconfig
++++ b/configs/iot-gate-imx8plus_defconfig
+@@ -156,3 +156,11 @@ CONFIG_EFI_RUNTIME_UPDATE_CAPSULE=y
+ CONFIG_EFI_CAPSULE_ON_DISK=y
+ CONFIG_EFI_CAPSULE_FIRMWARE_FIT=y
+ CONFIG_EFI_CAPSULE_FIRMWARE_RAW=y
++CONFIG_CMD_UNZIP=y
++CONFIG_CMD_IMPORTENV=y
++CONFIG_CMD_EXPORTENV=y
++CONFIG_CMD_SETEXPR=y
++CONFIG_PARTITION_UUIDS=y
++CONFIG_CMD_PART=y
++CONFIG_CMD_FS_UUID=y
++CONFIG_CMD_USB_MASS_STORAGE
+diff --git a/include/configs/compulab-imx8m-plus.h b/include/configs/compulab-imx8m-plus.h
+index ba8e706f8d..2d50f12ec3 100644
+--- a/include/configs/compulab-imx8m-plus.h
++++ b/include/configs/compulab-imx8m-plus.h
+@@ -79,11 +79,12 @@
+ 	"scriptaddr=0x43500000\0" \
+ 	"kernel_addr_r=" __stringify(CONFIG_LOADADDR) "\0" \
+ 	"bsp_script=boot.scr\0" \
+-	"image=Image\0" \
++	"image=Image.gz\0" \
+ 	"splashimage=0x50000000\0" \
+-	"console=ttymxc1,115200 console=tty1\0" \
+-	"fdt_addr_r=0x43000000\0"			\
+-	"fdt_addr=0x43000000\0"			\
++	"console=ttymxc1,115200 console=tty1\0" \
++	"zip_addr=48440000\0" \
++	"fdt_addr_r=0x44000000\0"			\
++	"fdt_addr=0x44000000\0"			\
+ 	"boot_fdt=try\0" \
+ 	"fdt_high=0xffffffffffffffff\0"		\
+ 	"boot_fit=no\0" \
+@@ -93,7 +94,7 @@
+ 	"mmcpart=" __stringify(CONFIG_SYS_MMC_IMG_LOAD_PART) "\0" \
+ 	"mmcroot=" CONFIG_MMCROOT " rootwait rw\0" \
+ 	"mmcautodetect=yes\0" \
+-	"mmcargs=setenv bootargs ${jh_clk} console=${console} root=${mmcroot}\0 " \
++	"mmcargs=setenv bootargs ${jh_clk} console=${console} ${resin_kernel_root} ${os_cmdline}\0 " \
+ 	"loadbootscript=load mmc ${mmcdev}:${mmcpart} ${loadaddr} ${bsp_script};\0" \
+ 	"bootscript=echo Running bootscript from mmc ...; " \
+ 		"source\0" \
+@@ -136,24 +137,20 @@
+ 		"usb_dev=0\0" \
+ 		"boot_part=1\0" \
+ 		"root_opt=rootwait rw\0" \
+-		"emmc_ul=setenv iface mmc; setenv dev ${emmc_dev}; setenv part ${boot_part};" \
+-		"setenv bootargs console=${console} root=${emmc_root} ${root_opt};\0" \
++		"emmc_ul=setenv iface mmc; setenv dev ${resin_dev_index}; setenv part ${resin_root_part};" \
++		"setenv bootargs console=${console} ${resin_kernel_root} ${os_cmdline};\0" \
+ 		"sd_ul=setenv iface mmc; setenv dev ${sd_dev}; setenv part ${boot_part};" \
+ 			"setenv bootargs console=${console} root=${sd_root} ${root_opt};\0" \
+ 		"usb_ul=usb start; setenv iface usb; setenv dev ${usb_dev}; setenv part ${boot_part};" \
+ 			"setenv bootargs console=${console} root=${usb_root} ${root_opt};\0" \
+ 		"ulbootscript=load ${iface} ${dev}:${part} ${loadaddr} ${script};\0" \
+-		"ulimage=load ${iface} ${dev}:${part} ${loadaddr} ${image}\0" \
+-		"ulfdt=if test ${boot_fdt} = yes || test ${boot_fdt} = try; then " \
+-			"load ${iface} ${dev}:${part} ${fdt_addr_r} ${fdtfile}; fi;\0" \
++		"ulimage=load ${iface} ${resin_dev_index}:${resin_root_part} ${zip_addr} boot/${image}; unzip ${zip_addr} ${loadaddr}; \0" \
++		"ulfdt=load ${iface} ${resin_dev_index}:${resin_root_part} ${fdt_addr} boot/${fdtfile};\0" \
+ 		"bootlist=sd_ul usb_ul emmc_ul\0" \
+ 	"bsp_bootcmd=echo Running BSP bootcmd ...; " \
+-		"for src in ${bootlist}; do " \
+-			"run ${src}; " \
+-			"env exist boot_opt && env exists bootargs && setenv bootargs ${bootargs} ${boot_opt}; " \
+-			"if run ulbootscript; then " \
+-				"run bootscript; " \
+-			"else " \
++			"mmc dev 2; " \
++			"setenv resin_kernel_load_addr ${loadaddr};" \
++			"run resin_set_kernel_root; run set_os_cmdline; run emmc_ul;" \
+ 				"if run ulimage; then " \
+ 					"if run ulfdt; then " \
+ 						"booti ${loadaddr} - ${fdt_addr_r}; " \
+@@ -162,9 +159,7 @@
+ 							"booti ${loadaddr}; " \
+ 						"fi; " \
+ 					"fi; " \
+-				"fi; " \
+-			"fi; " \
+-		"done; "
++				"fi; " 
+ #endif
+ 
+ /* Link Definitions */
+-- 
+2.37.2
+
