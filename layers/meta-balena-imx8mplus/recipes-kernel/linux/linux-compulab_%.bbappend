@@ -9,6 +9,7 @@ SRC_URI:append = "file://0001-linux-compulab-Don-t-switch-overlayfs-as-module-fr
 # along with the kernel image in the initramfs
 KERNEL_PACKAGE_NAME="kernel"
 
+
 BALENA_CONFIGS:append = " imx-sdma "
 BALENA_CONFIGS[imx-sdma] = " \
 	CONFIG_IMX_SDMA=m \
@@ -29,3 +30,6 @@ BALENA_CONFIGS[noefi] = " \
 	CONFIG_EFI_STUB=n \
 	CONFIG_EFI=n \
 "
+
+# Fixes module loading
+SCMVERSION="n"
