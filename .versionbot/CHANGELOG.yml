@@ -1,4 +1,21 @@
 - commits:
+    - subject: "iot-gate-imx8plus: Add development imx-boot for device provisioning"
+      hash: f5129960bb5a901a634963abef065ecde92c54dc
+      body: |
+        This development imx-boot can be used with uuu to provision
+        the device, if the board doesn't run a u-boot that
+        allows console access or UMS mode.
+      footer:
+        Changelog-entry: "iot-gate-imx8plus: Add development imx-boot for device provisioning"
+        changelog-entry: "iot-gate-imx8plus: Add development imx-boot for device provisioning"
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 2.112.15+rev1
+  title: ""
+  date: 2023-02-27T08:39:22.446Z
+- commits:
     - subject: Update layers/meta-balena to 4ec7add602a6eddcc1c95a863e0359a0c1da744c
       hash: 882e4bf95a5a199b9bf5d359544ed9fa29762ef7
       body: Update layers/meta-balena

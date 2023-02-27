@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v2.112.15+rev1
+## (2023-02-27)
+
+* iot-gate-imx8plus: Add development imx-boot for device provisioning [Alexandru Costache]
+
 # v2.112.15
 ## (2023-02-24)
 
