@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file
 
+# v2.113.0
+## (2023-03-01)
+
+
+<details>
+<summary> Update layers/meta-balena to 2454c531db3f57e98ec3f15459f9ab342a38b8b0 [Renovate Bot] </summary>
+
+> ## meta-balena-2.113.0
+> ### (2023-02-25)
+> 
+> * resin-init-flasher: use logging helper [Alex Gonzalez]
+> * resin-init-flasher: replace shutdown for reboot in case of migration [Alex Gonzalez]
+> * README: add installer section [Alex Gonzalez]
+> * initrdscripts: Add migration module [Alex Gonzalez]
+> * integration layers: use `android-tools` from Yocto Dunfell and before [Alex Gonzalez]
+> * resin-init-flasher: comply with recovery mode [Alex Gonzalez]
+> * initrdscritps: Move moving /run mountpoint from rootfs to migrate module [Alex Gonzalez]
+> * initrdscripts: add recovery module [Alex Gonzalez]
+> 
+
+</details>
+
 # v2.112.15+rev2
 ## (2023-03-01)
 
