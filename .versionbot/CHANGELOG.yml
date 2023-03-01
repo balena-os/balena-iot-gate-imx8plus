@@ -1,4 +1,56 @@
 - commits:
+    - subject: Update balena-yocto-scripts to ccc1f2162a25c9b4995a612411fd05ef3117a68d
+      hash: f410e200dce7cf3546a693fbe5dbe73440c241ae
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to ccc1f2162a25c9b4995a612411fd05ef3117a68d
+        changelog-entry: Update balena-yocto-scripts to ccc1f2162a25c9b4995a612411fd05ef3117a68d
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "balena-api: ignore quotes from API replies"
+              hash: ad7065112eee4e6e3865ef5581e4c53676536459
+              body: >
+                The balenaAPI has replied both `OK` and `"OK"` to patch requests. Accept
+
+                any of them as long as they contain OK.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: balena-yocto-scripts-1.19.24
+          title: ""
+          date: 2023-02-28T18:19:17.093Z
+    - subject: trigger deploy builds on multi-digit revisions too
+      hash: 7a794f41bbac9863acf06cf09bce52464beca1bb
+      body: >
+        According to github action syntax [1], there is no special character
+
+        to denote a match on zero or more of the preceding character, so
+
+        replace `[0-9]?` which only matches zero or one of the preceding
+
+        characters with a `*`.
+
+
+        [1] https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet
+
+
+        [skip ci]
+      footer:
+        Changelog-entry: trigger deploy builds on multi-digit revisions too
+        changelog-entry: trigger deploy builds on multi-digit revisions too
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.112.15+rev2
+  title: ""
+  date: 2023-03-01T08:12:53.418Z
+- commits:
     - subject: "iot-gate-imx8plus: Add development imx-boot for device provisioning"
       hash: f5129960bb5a901a634963abef065ecde92c54dc
       body: |

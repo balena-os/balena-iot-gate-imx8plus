@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file
 
+# v2.112.15+rev2
+## (2023-03-01)
+
+
+<details>
+<summary> Update balena-yocto-scripts to ccc1f2162a25c9b4995a612411fd05ef3117a68d [Renovate Bot] </summary>
+
+> ## balena-yocto-scripts-1.19.24
+> ### (2023-02-28)
+> 
+> * balena-api: ignore quotes from API replies [Alex Gonzalez]
+> 
+
+</details>
+
+* trigger deploy builds on multi-digit revisions too [Alex Gonzalez]
+
 # v2.112.15+rev1
 ## (2023-02-27)
 
