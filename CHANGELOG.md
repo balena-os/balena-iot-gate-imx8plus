@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v2.113.1+rev1
+## (2023-03-01)
+
+* iot-gate-imx8plus: Reword provisioning instructions [Alexandru Costache]
+
 # v2.113.1
 ## (2023-03-01)
 

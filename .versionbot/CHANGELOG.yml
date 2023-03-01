@@ -1,4 +1,18 @@
 - commits:
+    - subject: "iot-gate-imx8plus: Reword provisioning instructions"
+      hash: 774d5632e061814cec16c308984c28ef45cd77d0
+      body: ""
+      footer:
+        Changelog-entry: "iot-gate-imx8plus: Reword provisioning instructions"
+        changelog-entry: "iot-gate-imx8plus: Reword provisioning instructions"
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 2.113.1+rev1
+  title: ""
+  date: 2023-03-01T11:13:49.720Z
+- commits:
     - subject: Update layers/meta-balena to 6d5f0882b3b1a0386b3b56eac221fe9d955eac31
       hash: 44611fc7dc73820366a11225c52565160d8b560e
       body: Update layers/meta-balena
