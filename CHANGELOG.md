@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file
 
+# v2.113.1+rev2
+## (2023-03-01)
+
+
+<details>
+<summary> Update contracts to 40d6eaa3f0455babd1abcc1d11a6e6db60387797 [Renovate Bot] </summary>
+
+> ## contracts-2.0.51
+> ### (2023-02-24)
+> 
+> * node: do not set unsafe-perm with npm 9 and newer [Michal Toman]
+> 
+
+</details>
+
 # v2.113.1+rev1
 ## (2023-03-01)
 
