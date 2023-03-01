@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file
 
+# v2.113.1
+## (2023-03-01)
+
+
+<details>
+<summary> Update layers/meta-balena to 6d5f0882b3b1a0386b3b56eac221fe9d955eac31 [Renovate Bot] </summary>
+
+> ## meta-balena-2.113.1
+> ### (2023-02-28)
+> 
+> * os-helpers-fs: formatting and fixing lint warning [Alex Gonzalez]
+> * os-helpers-fs: fix check for media attached [Alex Gonzalez]
+> * initrdscripts: migrate: use du instead of wc to calculate byte sizes [Alex Gonzalez]
+> 
+
+</details>
+
 # v2.113.0
 ## (2023-03-01)
 
