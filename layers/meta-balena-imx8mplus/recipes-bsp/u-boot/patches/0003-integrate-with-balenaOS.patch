@@ -42,8 +42,8 @@ index ba8e706f8d..2d50f12ec3 100644
 -	"fdt_addr=0x43000000\0"			\
 +	"console=ttymxc1,115200 console=tty1\0" \
 +	"zip_addr=48440000\0" \
-+	"fdt_addr_r=0x44000000\0"			\
-+	"fdt_addr=0x44000000\0"			\
++	"fdt_addr_r=0x45000000\0"			\
++	"fdt_addr=0x45000000\0"			\
  	"boot_fdt=try\0" \
  	"fdt_high=0xffffffffffffffff\0"		\
  	"boot_fit=no\0" \
