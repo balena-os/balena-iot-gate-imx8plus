@@ -1,0 +1,27 @@
+From a1ce59fe0d279bf9ee9961d4d01dbf5f541984da Mon Sep 17 00:00:00 2001
+From: Alexandru Costache <alexandru@balena.io>
+Date: Wed, 1 Mar 2023 17:12:08 +0100
+Subject: [PATCH] fix build for it6161 driver
+
+Upstream-status: Inappropriate [configuation]
+Signed-off-by: Alexandru Costache <alexandru@balena.io>
+---
+ drivers/gpu/drm/bridge/it6161.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/drivers/gpu/drm/bridge/it6161.c b/drivers/gpu/drm/bridge/it6161.c
+index a06ec2544a42..4c43494a5b4b 100644
+--- a/drivers/gpu/drm/bridge/it6161.c
++++ b/drivers/gpu/drm/bridge/it6161.c
+@@ -11,7 +11,7 @@
+ #include <linux/i2c.h>
+ #include <linux/interrupt.h>
+ #include <sound/hdmi-codec.h>
+-
++#include <linux/gpio/consumer.h>
+ #include "it6161.h"
+ 
+ #define AUX_WAIT_TIMEOUT_MS 100
+-- 
+2.37.2
+
