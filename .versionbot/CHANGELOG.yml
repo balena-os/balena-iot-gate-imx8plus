@@ -1,4 +1,22 @@
 - commits:
+    - subject: "linux-compulab: Fix configuration merge"
+      hash: 5f28d7d7ea01e0684ae272113b4a8f06a74bdf4a
+      body: |
+        by changing the execution order of the compulab defconfig
+        merge function. We now perform the merge before balena
+        injects the necessary configs, to avoid having those
+        discarded.
+      footer:
+        Changelog-entry: "linux-compulab: Fix configuration merge"
+        changelog-entry: "linux-compulab: Fix configuration merge"
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 2.113.1+rev4
+  title: ""
+  date: 2023-03-02T11:14:14.113Z
+- commits:
     - subject: Update balena-yocto-scripts to 93f94ff88593966c1f417861b235e729d5192ba6
       hash: 5ee2ef1f3f055c26c5fc94b2e5732d32bf6d1411
       body: Update balena-yocto-scripts

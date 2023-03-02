@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v2.113.1+rev4
+## (2023-03-02)
+
+* linux-compulab: Fix configuration merge [Alexandru Costache]
+
 # v2.113.1+rev3
 ## (2023-03-01)
 
