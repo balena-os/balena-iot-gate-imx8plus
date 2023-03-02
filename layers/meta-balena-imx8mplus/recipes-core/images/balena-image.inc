@@ -6,7 +6,6 @@ BALENA_BOOT_PARTITION_FILES:iot-gate-imx8plus += " \
 
 IMAGE_INSTALL:append = " \
     imx-boot \
-    redsocks \
     linux-firmware-ax200 \
     linux-firmware-ax210 \
     firmware-imx-sdma-imx7d \
