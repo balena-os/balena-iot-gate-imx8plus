@@ -2,6 +2,62 @@
 
 All notable changes to this project will be documented in this file
 
+# v2.113.18
+## (2023-03-17)
+
+
+<details>
+<summary> Update layers/meta-balena to 47781bdd7184f17c83523e961c7039d50e5e8775 [Renovate Bot] </summary>
+
+> ## meta-balena-2.113.18
+> ### (2023-03-16)
+> 
+> * Enable CI for external contributions from forks [Kyle Harding]
+> 
+> ## meta-balena-2.113.17
+> ### (2023-03-16)
+> 
+> * Removed links to hub [Ryan H]
+> 
+> ## meta-balena-2.113.16
+> ### (2023-03-16)
+> 
+> * balena-image-flasher: Default image type to balenaos-img [Florin Sarbu]
+> 
+> ## meta-balena-2.113.15
+> ### (2023-03-16)
+> 
+> * resin-u-boot.bbclass: Replace static patch resin-specific-env-integration-kconfig.patch [Florin Sarbu]
+> 
+> ## meta-balena-2.113.14
+> ### (2023-03-15)
+> 
+> 
+> <details>
+> <summary> Update balena-supervisor to v14.9.4 [Renovate Bot] </summary>
+> 
+>> ### balena-supervisor-14.9.4
+>> #### (2023-03-13)
+>> 
+>> * Skip pin device step if release was deleted [Felipe Lalanne]
+>> 
+>> ### balena-supervisor-14.9.3
+>> #### (2023-03-10)
+>> 
+>> * Use single-arch in dockerfile [Felipe Lalanne]
+>> 
+>> ### balena-supervisor-14.9.2
+>> #### (2023-03-02)
+>> 
+>> * Replace BALENA-FIREWALL rule in INPUT chain instead of flushing [Christina Ying Wang]
+>> 
+> 
+> </details>
+> 
+> 
+
+</details>
+
 # v2.113.13+rev1
 ## (2023-03-16)
 

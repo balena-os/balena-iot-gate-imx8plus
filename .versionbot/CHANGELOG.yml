@@ -1,4 +1,184 @@
 - commits:
+    - subject: Update layers/meta-balena to 47781bdd7184f17c83523e961c7039d50e5e8775
+      hash: b9005a4fb5bbfd863b3ae77db20ea65d6c93d9eb
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 47781bdd7184f17c83523e961c7039d50e5e8775
+        changelog-entry: Update layers/meta-balena to 47781bdd7184f17c83523e961c7039d50e5e8775
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: Enable CI for external contributions from forks
+              hash: abb948565781160616f7b3982d066dd1cd8bbb22
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-2.113.18
+          title: ""
+          date: 2023-03-16T15:40:01.689Z
+        - commits:
+            - subject: Removed links to hub
+              hash: 09b8567c43f9e3aff55d2c162c5ea35080bc55bc
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Hampton (@rhampt) <rhampt@balena.io>
+                signed-off-by: Ryan Hampton (@rhampt) <rhampt@balena.io>
+              author: Ryan H
+              nested: []
+          version: meta-balena-2.113.17
+          title: ""
+          date: 2023-03-16T14:08:01.614Z
+        - commits:
+            - subject: "balena-image-flasher: Default image type to balenaos-img"
+              hash: 36750c1d0e75d82ec096faeff6d61579c075e0c4
+              body: >
+                This avoids device repositories having to specify it, and it can always
+
+                be overwritten in append files.
+
+
+                This change is an extension of https://github.com/balena-os/meta-balena/commit/a3c276a1058d05e66991871bf167079fc2824843
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-2.113.16
+          title: ""
+          date: 2023-03-16T10:00:27.471Z
+        - commits:
+            - subject: "resin-u-boot.bbclass: Replace static patch
+                resin-specific-env-integration-kconfig.patch"
+              hash: 281a2c8bd47bb77ccf1974ae05b9c42129094911
+              body: >
+                Because we use this patch with various u-boot versions it often happens
+                that this patch
+
+                does not apply so we then need to rework it in the device integration layer. Instead it
+
+                would be better to have some code at configure time parsing the same file and inserting
+
+                the balena env dynamically, so regardless of u-boot versions we use.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-2.113.15
+          title: ""
+          date: 2023-03-16T01:58:53.905Z
+        - commits:
+            - subject: Update balena-supervisor to v14.9.4
+              hash: 1220917cd334560a48faf580479e216b536dac42
+              body: |
+                Update balena-supervisor from 14.9.1 to 14.9.4
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Renovate Bot
+              nested:
+                - commits:
+                    - subject: Skip pin device step if release was deleted
+                      hash: f6435814cd86380dd3b02416f6f2199b483bb33c
+                      body: >
+                        Preloaded devices can require that the device is pinned to the preloaded
+
+                        release on provisioning. However if the provisioned release gets
+
+                        released in the future, that would lead to the device remaining in "VPN
+
+                        only" state forever as the provisioning process could not finish due to
+
+                        pinning failure.
+
+
+                        This commit changes the behavior so if the release does not exist, the
+
+                        pinning step is skipped and the device follows the fleet pinning state.
+                      footer:
+                        Closes: "#2133"
+                        closes: "#2133"
+                        Change-type: patch
+                        change-type: patch
+                      author: Felipe Lalanne
+                      nested: []
+                  version: balena-supervisor-14.9.4
+                  title: ""
+                  date: 2023-03-13T20:49:30.509Z
+                - commits:
+                    - subject: Use single-arch in dockerfile
+                      hash: 17aa625d3b115103efa30bb98b83ee1fc54230c4
+                      body: >
+                        This is necessary since the builder no longer passes the platform flag
+
+                        to the build. This would lead to dockerfiles that are mixing multi and single
+
+                        arch stages to pull the wrong architecture images, particularly when
+
+                        trying to build images in emulated builds (e.g. armv7hf built on aarch64).
+
+
+                        Moving the full build to single-arch solves this as the docker engine is
+
+                        capable of chosing the right architecture from the manifest. Once some
+
+                        of the builder issues are fixed, we should move to #2141
+                      footer:
+                        Relates-to: balena-io/balena-builder#1010
+                        relates-to: balena-io/balena-builder#1010
+                        Change-type: patch
+                        change-type: patch
+                      author: Felipe Lalanne
+                      nested: []
+                  version: balena-supervisor-14.9.3
+                  title: ""
+                  date: 2023-03-10T22:26:07.185Z
+                - commits:
+                    - subject: Replace BALENA-FIREWALL rule in INPUT chain instead of flushing
+                      hash: 84a9e7e9acd803b6b49d58ae3040694a5e2f823d
+                      body: >
+                        The issue with the original Supervisor implementation of the firewall is
+                        that
+
+                        on Supervisor start, the Supervisor flushes the INPUT chain of the filter table.
+
+                        This doesn't play well with services that add to the INPUT chain on startup that
+
+                        may start up before the Supervisor, such as certain NetworkManager connection
+
+                        profiles. This change only replaces the BALENA-FIREWALL rule in the INPUT chain,
+
+                        preserving the other rules as well as their order.
+                      footer:
+                        Closes: "#1482"
+                        closes: "#1482"
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Christina Ying Wang <christina@balena.io>
+                        signed-off-by: Christina Ying Wang <christina@balena.io>
+                      author: Christina Ying Wang
+                      nested: []
+                  version: balena-supervisor-14.9.2
+                  title: ""
+                  date: 2023-03-02T21:48:06.727Z
+          version: meta-balena-2.113.14
+          title: ""
+          date: 2023-03-15T17:11:34.345Z
+  version: 2.113.18
+  title: ""
+  date: 2023-03-17T11:09:17.204Z
+- commits:
     - subject: Prevent duplicate CI workflow executions
       hash: 04b55fc8a11fb9f9e2c4a973d857e09c811c4c39
       body: ""
