@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v2.113.18+rev2
+## (2023-03-21)
+
+* Ensure default uboot env is loaded and size is sufficient [Alexandru Costache]
+
 # v2.113.18+rev1
 ## (2023-03-17)
 

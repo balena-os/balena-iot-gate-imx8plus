@@ -1,4 +1,23 @@
 - commits:
+    - subject: Ensure default uboot env is loaded and size is sufficient
+      hash: c5ba26d5c7cdab77c9c74a21cb38ad9f60f29a52
+      body: |
+        If for some reason an env located on the eMMC is loaded,
+        the board may fail to boot. Let's ensure the default
+        env in the u-boot binary is used by forcing u-boot
+        to first attempt to load the eMMC env from
+        an inxesistent eMMC device.
+      footer:
+        Changelog-entry: Ensure default uboot env is loaded and size is sufficient
+        changelog-entry: Ensure default uboot env is loaded and size is sufficient
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 2.113.18+rev2
+  title: ""
+  date: 2023-03-21T12:14:13.563Z
+- commits:
     - subject: Update contracts to 0ff4f419b4467349d7cb1d1202b580004067664c
       hash: c69635a1a2bed3029812016406374e04a7ef826e
       body: Update contracts
