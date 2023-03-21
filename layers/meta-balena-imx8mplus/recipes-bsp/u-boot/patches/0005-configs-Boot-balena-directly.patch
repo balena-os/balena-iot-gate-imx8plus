@@ -1,4 +1,4 @@
-From 671c5011b92ffe3e2f8770742c448f0df7968f78 Mon Sep 17 00:00:00 2001
+From dbfcfac5f047e0346ab6d9a3cd5717028492a707 Mon Sep 17 00:00:00 2001
 From: Alexandru Costache <alexandru@balena.io>
 Date: Fri, 24 Feb 2023 11:32:48 +0100
 Subject: [PATCH] configs: Boot balena directly
@@ -9,22 +9,45 @@ devices and such and boot directly from the eMMC
 Upstream-status: Inappropriate [configuration]
 Signed-off-by: Alexandru Costache <alexandru@balena.io>
 ---
- configs/iot-gate-imx8plus_defconfig | 2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
+ configs/iot-gate-imx8plus_defconfig | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
 
 diff --git a/configs/iot-gate-imx8plus_defconfig b/configs/iot-gate-imx8plus_defconfig
-index 46b5b70afc..76f707e70f 100644
+index 46b5b70afc..7a6b2b0a42 100644
 --- a/configs/iot-gate-imx8plus_defconfig
 +++ b/configs/iot-gate-imx8plus_defconfig
+@@ -6,7 +6,7 @@ CONFIG_SPL_LIBCOMMON_SUPPORT=y
+ CONFIG_SPL_LIBGENERIC_SUPPORT=y
+ CONFIG_SYS_MALLOC_F_LEN=0x10000
+ CONFIG_NR_DRAM_BANKS=3
+-CONFIG_ENV_SIZE=0x4000
++CONFIG_ENV_SIZE=0x6000
+ CONFIG_ENV_OFFSET=0x3F0000
+ CONFIG_SYS_I2C_MXC_I2C1=y
+ CONFIG_SYS_I2C_MXC_I2C2=y
 @@ -29,7 +29,7 @@ CONFIG_SPL_FIT_GENERATOR="arch/arm/mach-imx/mkimage_fit_atf.sh"
  CONFIG_OF_BOARD_SETUP=y
  CONFIG_OF_SYSTEM_SETUP=y
  CONFIG_SYS_EXTRA_OPTIONS="IMX_CONFIG=arch/arm/mach-imx/imx8m/imximage-8mp-lpddr4.cfg"
 -CONFIG_BOOTCOMMAND="run distro_bootcmd;run bsp_bootcmd"
-+CONFIG_BOOTCOMMAND="run bsp_bootcmd"
++CONFIG_BOOTCOMMAND="run bsp_bootcmd;"
  CONFIG_DEFAULT_FDT_FILE="iot-gate-imx8plus.dtb"
  CONFIG_ARCH_MISC_INIT=y
  CONFIG_BOARD_EARLY_INIT_F=y
+@@ -65,7 +65,7 @@ CONFIG_CMD_REGULATOR=y
+ CONFIG_CMD_EXT4_WRITE=y
+ CONFIG_OF_CONTROL=y
+ CONFIG_SPL_OF_CONTROL=y
+-CONFIG_ENV_IS_IN_MMC=y
++CONFIG_ENV_IS_IN_MMC=y
+ CONFIG_SYS_RELOC_GD_ENV_ADDR=y
+ CONFIG_ENV_VARS_UBOOT_RUNTIME_CONFIG=y
+ CONFIG_SPL_DM=y
+@@ -164,3 +164,4 @@ CONFIG_PARTITION_UUIDS=y
+ CONFIG_CMD_PART=y
+ CONFIG_CMD_FS_UUID=y
+ CONFIG_CMD_USB_MASS_STORAGE
++CONFIG_SYS_MMC_ENV_DEV=0
 -- 
 2.37.2
 
