@@ -2,6 +2,32 @@
 
 All notable changes to this project will be documented in this file
 
+# v2.113.29
+## (2023-03-27)
+
+
+<details>
+<summary> Update layers/meta-balena to 5841b817cd3a0f2ffc063e586b7ed215655afb1c [Renovate Bot] </summary>
+
+> ## meta-balena-2.113.29
+> ### (2023-03-27)
+> 
+> 
+> <details>
+> <summary> Update balena-supervisor to v14.9.8 [Renovate Bot] </summary>
+> 
+>> ### balena-supervisor-14.9.8
+>> #### (2023-03-27)
+>> 
+>> * Revert "Use multi-arch in dockerfile" [Felipe Lalanne]
+>> 
+> 
+> </details>
+> 
+> 
+
+</details>
+
 # v2.113.28+rev1
 ## (2023-03-27)
 
