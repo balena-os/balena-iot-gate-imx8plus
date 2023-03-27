@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v2.113.28+rev1
+## (2023-03-27)
+
+* recipes-utils: Install BSP udev rules in lib [Alexandru Costache]
+
 # v2.113.28
 ## (2023-03-27)
 
