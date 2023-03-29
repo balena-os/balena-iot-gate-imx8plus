@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v2.113.31+rev1
+## (2023-03-29)
+
+* recipes-utils/iot-gate-imx8plus-config: Don't use sudo when creating ttyRS symlinks [Alexandru Costache]
+
 # v2.113.31
 ## (2023-03-28)
 

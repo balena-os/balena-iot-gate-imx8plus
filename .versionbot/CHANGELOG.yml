@@ -1,4 +1,27 @@
 - commits:
+    - subject: "recipes-utils/iot-gate-imx8plus-config: Don't use sudo when creating
+        ttyRS symlinks"
+      hash: 84a131d3ba6a14f3dc010ebb14e75bf3a7b7a336
+      body: |
+        The iotg-imx8plus-ie-config script failed to create ttyRS232_X
+        and ttyRS485_Y symlinks because it was using sudo, which is not
+        available in the balena rootfs.
+
+        The script is run as root anyway so let's remove sudo to avoid
+        failure of creating the above mentioned links.
+      footer:
+        Changelog-entry: "recipes-utils/iot-gate-imx8plus-config: Don't use sudo when
+          creating ttyRS symlinks"
+        changelog-entry: "recipes-utils/iot-gate-imx8plus-config: Don't use sudo when
+          creating ttyRS symlinks"
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 2.113.31+rev1
+  title: ""
+  date: 2023-03-29T14:09:28.559Z
+- commits:
     - subject: Update layers/meta-balena to c06fe0336f8582acf95c0615c48deafd4bed2731
       hash: 3fbdededd4bb4365dc0fa6a64cf76e1a45f99afa
       body: Update layers/meta-balena
