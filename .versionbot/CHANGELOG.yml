@@ -1,4 +1,27 @@
 - commits:
+    - subject: "gitmodules: Update meta-imx remote"
+      hash: fb0037412417baa4df388f64f77d813726bb1a7a
+      body: |
+        Previous mirror is no longer available
+      footer:
+        Changelog-entry: "gitmodules: Update meta-imx remote"
+        changelog-entry: "gitmodules: Update meta-imx remote"
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+    - subject: Update layers/meta-balena to 98b6efa43d3d83df72b49b4caed6ade5b5326fa9
+      hash: 9950ddf489b82f14b7585b1f4a8991c6ce1f7b6d
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 98b6efa43d3d83df72b49b4caed6ade5b5326fa9
+        changelog-entry: Update layers/meta-balena to 98b6efa43d3d83df72b49b4caed6ade5b5326fa9
+      author: Renovate Bot
+      nested: []
+  version: 2.113.33
+  title: ""
+  date: 2023-04-04T15:15:15.189Z
+- commits:
     - subject: "recipes-utils/iot-gate-imx8plus-config: Don't use sudo when creating
         ttyRS symlinks"
       hash: 84a131d3ba6a14f3dc010ebb14e75bf3a7b7a336
