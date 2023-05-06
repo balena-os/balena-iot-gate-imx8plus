@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file
 
+# v2.114.22+rev1
+## (2023-05-06)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 57226ffa5abafc3001cb275ad6520895c938842a [Renovate Bot] </summary>
+
+> ## balena-yocto-scripts-1.19.28
+> ### (2023-05-06)
+> 
+> * jenkins_build: accept bitbake extra arguments [Alex Gonzalez]
+> 
+
+</details>
+
 # v2.114.22
 ## (2023-05-05)
 
