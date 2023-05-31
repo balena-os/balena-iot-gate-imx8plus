@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v2.115.3+rev1
+## (2023-05-31)
+
+* Update balena-os/github-workflows to [Self-hosted Renovate Bot]
+
 # v2.115.3
 ## (2023-05-29)
 
