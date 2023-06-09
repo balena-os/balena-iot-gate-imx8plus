@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file
 
+# v2.115.7
+## (2023-06-09)
+
+
+<details>
+<summary> Update layers/meta-balena to d6546982c2e7777336a00b4d7e289cadc3efb714 [Self-hosted Renovate Bot] </summary>
+
+> ## meta-balena-2.115.7
+> ### (2023-06-09)
+> 
+> * README: Add bootloader section [Alexandru Costache]
+> 
+
+</details>
+
 # v2.115.6
 ## (2023-06-08)
 
