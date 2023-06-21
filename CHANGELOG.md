@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file
 
+# v2.115.10
+## (2023-06-21)
+
+
+<details>
+<summary> Update layers/meta-balena to f420c91e38843f5cf9b3f68122ee8cb71f9f605f [Self-hosted Renovate Bot] </summary>
+
+> ## meta-balena-2.115.10
+> ### (2023-06-21)
+> 
+> * resin-init-flasher: Format encrypted partitions as LUKS2 [Michal Toman]
+> 
+
+</details>
+
 # v2.115.9+rev1
 ## (2023-06-19)
 
