@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file
 
+# v2.115.13
+## (2023-06-26)
+
+
+<details>
+<summary> Update layers/meta-balena to 87c91cdae3ca87e44a9417627c260701a5f85df9 [Self-hosted Renovate Bot] </summary>
+
+> ## meta-balena-2.115.13
+> ### (2023-06-26)
+> 
+> * os-helpers: Fix os-helpers-api build warnings [Alex Gonzalez]
+> 
+
+</details>
+
 # v2.115.12
 ## (2023-06-23)
 
