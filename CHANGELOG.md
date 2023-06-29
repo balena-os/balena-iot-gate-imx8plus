@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file
 
+# v2.115.18+rev1
+## (2023-06-29)
+
+
+<details>
+<summary> Update contracts to 6e3d563f610303a24d0cbf43839919e451879899 [Self-hosted Renovate Bot] </summary>
+
+> ## contracts-2.0.63
+> ### (2023-06-29)
+> 
+> * sw.os+hw.device-type: Add ubuntu and debian distro configs for Orin Nano [Alexandru Costache]
+> 
+
+</details>
+
 # v2.115.18
 ## (2023-06-29)
 
