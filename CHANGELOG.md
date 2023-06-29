@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file
 
+# v2.115.18
+## (2023-06-29)
+
+
+<details>
+<summary> Update layers/meta-balena to c087c2dbcff4ed666bbad7901fe0f28794c99bc0 [Self-hosted Renovate Bot] </summary>
+
+> ## meta-balena-2.115.18
+> ### (2023-06-29)
+> 
+> * resin-init-flasher: Increase size of LUKS header to 16MB [Michal Toman]
+> 
+
+</details>
+
 # v2.115.17
 ## (2023-06-28)
 
