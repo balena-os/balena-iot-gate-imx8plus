@@ -2,6 +2,32 @@
 
 All notable changes to this project will be documented in this file
 
+# v3.0.3
+## (2023-07-05)
+
+
+<details>
+<summary> Update layers/meta-balena to 744eb2021a797c2e2b116e791c395cd0e6b133d7 [Self-hosted Renovate Bot] </summary>
+
+> ## meta-balena-3.0.3
+> ### (2023-07-05)
+> 
+> 
+> <details>
+> <summary> Update balena-supervisor to v14.11.9 [Self-hosted Renovate Bot] </summary>
+> 
+>> ### balena-supervisor-14.11.9
+>> #### (2023-06-28)
+>> 
+>> * Remove the 'Stopped' status for services [Christina Ying Wang]
+>> 
+> 
+> </details>
+> 
+> 
+
+</details>
+
 # v3.0.2
 ## (2023-07-05)
 
