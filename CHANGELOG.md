@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file
 
+# v3.0.10
+## (2023-07-14)
+
+
+<details>
+<summary> Update layers/meta-balena to 4a4b8ff5a7447c4eb4a0cd9a0caddc542384142b [Self-hosted Renovate Bot] </summary>
+
+> ## meta-balena-3.0.10
+> ### (2023-07-14)
+> 
+> * initrdscripts: make initramfs-module-cryptsetup pull libgcc in [Michal Toman]
+> 
+
+</details>
+
 # v3.0.9
 ## (2023-07-13)
 
