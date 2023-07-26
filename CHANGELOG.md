@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file
 
+# v3.1.1
+## (2023-07-26)
+
+
+<details>
+<summary> Update layers/meta-balena to ced059b1f06281129434311dddc8ddab3d65fb5b [Self-hosted Renovate Bot] </summary>
+
+> ## meta-balena-3.1.1
+> ### (2023-07-26)
+> 
+> * linux/kernel-devsrc: Fix aarch64 kernel-headers-test build [Alexandru Costache]
+> 
+
+</details>
+
 # v3.1.0
 ## (2023-07-25)
 
