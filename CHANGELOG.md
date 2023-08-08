@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file
 
+# v3.1.7
+## (2023-08-08)
+
+
+<details>
+<summary> Update layers/meta-balena to a54f1b2a8253d564634789283980d54004201bdf [Self-hosted Renovate Bot] </summary>
+
+> ## meta-balena-3.1.7
+> ### (2023-08-08)
+> 
+> * tests: os: eng. healthcheck: retry timeout change [rcooke-warwick]
+> 
+
+</details>
+
 # v3.1.6+rev2
 ## (2023-08-03)
 
