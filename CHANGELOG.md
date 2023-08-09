@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file
 
+# v3.1.8
+## (2023-08-09)
+
+
+<details>
+<summary> Update layers/meta-balena to b64d73fcc51374ed90f2ede803b3efee13351d30 [Self-hosted Renovate Bot] </summary>
+
+> ## meta-balena-3.1.8
+> ### (2023-08-09)
+> 
+> * tests: hup: retry sending image if fails [rcooke-warwick]
+> 
+
+</details>
+
 # v3.1.7
 ## (2023-08-08)
 
