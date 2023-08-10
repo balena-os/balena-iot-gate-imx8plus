@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file
 
+# v3.1.9
+## (2023-08-10)
+
+
+<details>
+<summary> Update layers/meta-balena to b7d25711fe3895125b92a0ff2852aa82f5c75cee [Self-hosted Renovate Bot] </summary>
+
+> ## meta-balena-3.1.9
+> ### (2023-08-10)
+> 
+> * tests: secureboot: add test for module signing [Joseph Kogut]
+> 
+
+</details>
+
 # v3.1.8
 ## (2023-08-09)
 
