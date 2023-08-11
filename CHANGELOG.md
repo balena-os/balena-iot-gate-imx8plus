@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v3.1.9+rev1
+## (2023-08-11)
+
+* Update build instructions in README [Alex Gonzalez]
+
 # v3.1.9
 ## (2023-08-10)
 
