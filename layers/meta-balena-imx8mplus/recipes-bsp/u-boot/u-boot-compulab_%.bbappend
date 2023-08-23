@@ -4,13 +4,12 @@ UBOOT_KCONFIG_SUPPORT = "1"
 inherit resin-u-boot
 DEPENDS = "bison-native"
 
-SRC_URI:remove = "file://resin-specific-env-integration-kconfig.patch"
 SRC_URI:append = " \
 	file://0001-Revert-remove-include-config_defaults.h.patch \
-	file://0002-rework-Integrate-machine-independent-resin-environme.patch \
 	file://0003-integrate-with-balenaOS.patch \
 	file://0004-skip-running-bootcmd-mfg.patch \
 	file://0005-configs-Boot-balena-directly.patch \
+	file://0006-Run-CRC32-checks-on-kernel-image-and-fdt.patch \
         file://d2d4.cfg \
 "
 
