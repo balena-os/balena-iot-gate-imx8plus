@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v3.2.5+rev3
+## (2023-08-23)
+
+* u-boot: Run CRC32 checks [Alexandru Costache]
+
 # v3.2.5+rev2
 ## (2023-08-23)
 

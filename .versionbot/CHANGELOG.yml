@@ -1,4 +1,23 @@
 - commits:
+    - subject: "u-boot: Run CRC32 checks"
+      hash: 5cf0dac361844652c69dd580d46f45dab3baf523
+      body: |
+        Run crc32 checks for overlap testing of the kernel and
+        fdt images.
+
+        Remove kconfig support patch, this is already enabled by
+        default in meta-balena.
+      footer:
+        Changelog-entry: "u-boot: Run CRC32 checks"
+        changelog-entry: "u-boot: Run CRC32 checks"
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 3.2.5+rev3
+  title: ""
+  date: 2023-08-23T16:59:29.297Z
+- commits:
     - subject: Update contracts to d61d9118688241409d15a3ba10e963f9a202e347
       hash: 33a20074b7981d0c8d9fd65b3807f26813634ff3
       body: Update contracts
