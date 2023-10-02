@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update contracts to d68265ebeac98e7814829da7e7f6bb2a9aff8e39
+      hash: d9f45e437bda3cdca90cb39ef3260c28f8892529
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to d68265ebeac98e7814829da7e7f6bb2a9aff8e39
+        changelog-entry: Update contracts to d68265ebeac98e7814829da7e7f6bb2a9aff8e39
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "hw.device-type: Add Eurotec Lowpad lcbzu9 device"
+              hash: dab4d718a6012af2774111fb00c0a4d2f3497d24
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Francois Loubser <francois.loubser@topic.nl>
+                signed-off-by: Francois Loubser <francois.loubser@topic.nl>
+              author: Francois Loubser
+          version: contracts-2.0.76
+          title: ""
+          date: 2023-10-02T06:46:15.804Z
+  version: 4.0.16+rev2
+  title: ""
+  date: 2023-10-02T10:31:04.908Z
+- commits:
     - subject: Update layers/meta-openembedded to
         9c5541f7e18a1fac3b8dea71e1ebb8398d58e6ff
       hash: 3ca873bb1abf7b430a2c5eca52041dee4c4e3d82
