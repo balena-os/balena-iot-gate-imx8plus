@@ -4,6 +4,8 @@ UBOOT_KCONFIG_SUPPORT = "1"
 inherit resin-u-boot
 DEPENDS = "bison-native"
 
+BALENA_DEVICE_FDT_ADDR_VAR ?= "fdt_addr_r"
+
 SRC_URI:append = " \
 	file://0001-Revert-remove-include-config_defaults.h.patch \
 	file://0003-integrate-with-balenaOS.patch \

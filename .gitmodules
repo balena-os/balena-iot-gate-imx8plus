@@ -34,3 +34,6 @@
 	path = layers/meta-imx
 	url = https://github.com/nxp-imx/meta-imx.git
 	branch = kirkstone-5.15.32-2.0.0
+[submodule "layers/meta-imx8mp-isp-imx219"]
+	path = layers/meta-imx8mp-isp-imx219
+	url = https://github.com/compulab-yokneam/meta-imx8mp-isp-imx219.git

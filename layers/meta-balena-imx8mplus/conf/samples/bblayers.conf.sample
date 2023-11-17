@@ -20,6 +20,7 @@ BBLAYERS ?= " \
     ${TOPDIR}/../layers/meta-bsp-imx8mp \
     ${TOPDIR}/../layers/meta-compulab-bsp/meta-bsp \
     ${TOPDIR}/../layers/meta-compulab-bsp/meta-utils \
+    ${TOPDIR}/../layers/meta-imx8mp-isp-imx219 \
     ${TOPDIR}/../layers/meta-openembedded/meta-networking \
     ${TOPDIR}/../layers/meta-openembedded/meta-filesystems \
     "
