@@ -1,4 +1,21 @@
 - commits:
+    - subject: "layers/meta-bsp-imx8mp: Update to IOT-GATE-IMX8PLUS Yocto Linux 2.0
+        release"
+      hash: b0dd3e7bed59d2736a223b3ca6d49aa8dd642ffe
+      body: ""
+      footer:
+        Changelog-entry: "layers/meta-bsp-imx8mp: Update to IOT-GATE-IMX8PLUS Yocto
+          Linux 2.0 release"
+        changelog-entry: "layers/meta-bsp-imx8mp: Update to IOT-GATE-IMX8PLUS Yocto
+          Linux 2.0 release"
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 4.1.5+rev2
+  title: ""
+  date: 2023-11-17T10:28:23.460Z
+- commits:
     - subject: Update balena-yocto-scripts to 84d8d394f158be4490628d7ca65a50e90667fa4b
       hash: 1407226f3e72c47c05f411fbf160686ed5906b81
       body: Update balena-yocto-scripts

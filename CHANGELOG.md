@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v4.1.5+rev2
+## (2023-11-17)
+
+* layers/meta-bsp-imx8mp: Update to IOT-GATE-IMX8PLUS Yocto Linux 2.0 release [Alexandru Costache]
+
 # v4.1.5+rev1
 ## (2023-11-13)
 
