@@ -1,6 +1,6 @@
-From 092ca6bbdd4885e1c725c8599f54d27b5584d4cc Mon Sep 17 00:00:00 2001
+From f0762d4a52bb485dd5be999fe0a8a35f13db7f0e Mon Sep 17 00:00:00 2001
 From: Alexandru Costache <alexandru@balena.io>
-Date: Mon, 5 Jun 2023 10:01:27 +0200
+Date: Fri, 17 Nov 2023 10:28:53 +0100
 Subject: [PATCH] Run CRC32 checks on kernel image and fdt
 
 Upstream-status: Inappropriate [configuration]
@@ -10,29 +10,29 @@ Signed-off-by: Alexandru Costache <alexandru@balena.io>
  1 file changed, 4 insertions(+), 2 deletions(-)
 
 diff --git a/include/configs/compulab-imx8m-plus.h b/include/configs/compulab-imx8m-plus.h
-index 2acf26ea6f..f2fcc37115 100644
+index 5c81fffbfb..86efb6f14b 100644
 --- a/include/configs/compulab-imx8m-plus.h
 +++ b/include/configs/compulab-imx8m-plus.h
-@@ -144,8 +144,8 @@
+@@ -145,8 +145,8 @@
  		"usb_ul=usb start; setenv iface usb; setenv dev ${usb_dev}; setenv part ${boot_part};" \
  			"setenv bootargs console=${console} root=${usb_root} ${root_opt};\0" \
  		"ulbootscript=load ${iface} ${dev}:${part} ${loadaddr} ${script};\0" \
 -		"ulimage=load ${iface} ${resin_dev_index}:${resin_root_part} ${zip_addr} boot/${image}; unzip ${zip_addr} ${loadaddr}; \0" \
--		"ulfdt=load ${iface} ${resin_dev_index}:${resin_root_part} ${fdt_addr} boot/${fdtfile};\0" \
+-		"ulfdt=load ${iface} ${resin_dev_index}:${resin_root_part} ${fdt_addr_r} boot/${fdtfile};\0" \
 +		"ulimage=if load ${iface} ${resin_dev_index}:${resin_root_part} ${zip_addr} boot/${image}; then unzip ${zip_addr} ${loadaddr}; run balena_kernel_load_crc_save; else false; fi; \0" \
-+		"ulfdt=if load ${iface} ${resin_dev_index}:${resin_root_part} ${fdt_addr} boot/${fdtfile}; then run balena_fdt_load_crc_save; else false; fi; \0" \
- 		"bootlist=sd_ul usb_ul emmc_ul\0" \
- 	"bsp_bootcmd=echo Running BSP bootcmd ...; " \
- 			"mmc dev 2; " \
-@@ -153,6 +153,8 @@
++		"ulfdt=if load ${iface} ${resin_dev_index}:${resin_root_part} ${fdt_addr_r} boot/${fdtfile}; then run balena_fdt_load_crc_save; else false; fi; \0" \
+ 			"if itest.s x != x${fdtofile}; then " \
+ 			    "load ${iface} ${dev}:${part} ${fdto_addr_r} ${fdtofile};" \
+ 			    "fdt addr ${fdt_addr_r}; fdt resize 0x8000; fdt apply ${fdto_addr_r};" \
+@@ -161,6 +161,8 @@
  			"run resin_set_kernel_root; run set_os_cmdline; run emmc_ul;" \
- 				"if run ulimage; then " \
- 					"if run ulfdt; then " \
-+						"run balena_kernel_load_crc_check;" \
+  				"if run ulimage; then " \
+  					"if run ulfdt; then " \
++						"run balena_kernel_load_crc_check; " \
 +						"run balena_fdt_load_crc_check; " \
- 						"booti ${loadaddr} - ${fdt_addr_r}; " \
+  						"booti ${loadaddr} - ${fdt_addr_r}; " \
  					"else " \
  						"if test ${boot_fdt} != yes; then " \
 -- 
-2.37.2
+2.17.1
 
