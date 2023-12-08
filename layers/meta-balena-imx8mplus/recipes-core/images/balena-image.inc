@@ -1,7 +1,9 @@
 IMAGE_FSTYPES:append = " balenaos-img"
 
-BALENA_BOOT_PARTITION_FILES:iot-gate-imx8plus += " \
-    imx-boot_${MACHINE}_d2d4:/imx-boot-${MACHINE}-sd.bin-flash_evk \
+dram_conf = "${@bb.utils.contains('DRAM_CONF', 'd2d4', 'd2d4', 'd1d8', d)}"
+
+BALENA_BOOT_PARTITION_FILES:append = " \
+    imx-boot_${MACHINE}_${dram_conf}:/imx-boot-${MACHINE}-sd.bin-flash_evk \
 "
 
 IMAGE_INSTALL:append = " \
