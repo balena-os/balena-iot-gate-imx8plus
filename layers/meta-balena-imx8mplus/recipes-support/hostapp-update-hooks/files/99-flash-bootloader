@@ -8,7 +8,8 @@ set -o errexit
 
 # machine specific data
 
-uboot_file="imx-boot-iot-gate-imx8plus-sd.bin-flash_evk"
+uboot_file_path=$(find /resin-boot/ -name "imx-boot-iot-gate-imx8plus*bin-flash_evk")
+uboot_file=$(basename ${uboot_file_path})
 uboot_block_size=1024
 
 device="/dev/mmcblk2boot0"
