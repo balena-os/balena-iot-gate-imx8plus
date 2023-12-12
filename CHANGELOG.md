@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v5.0.8+rev1
+## (2023-12-12)
+
+* remove migrator module for iot-gate-imx8plus [Alex Gonzalez]
+
 # v5.0.8
 ## (2023-12-11)
 
