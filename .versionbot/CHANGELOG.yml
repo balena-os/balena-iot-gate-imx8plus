@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update layers/poky to 3e73216a32a2b01916eb8c555a41579bd69a47aa
+      hash: c17b5f615d58766082a34cd0851871b5cb0de826
+      body: Update layers/poky
+      footer:
+        Changelog-entry: Update layers/poky to 3e73216a32a2b01916eb8c555a41579bd69a47aa
+        changelog-entry: Update layers/poky to 3e73216a32a2b01916eb8c555a41579bd69a47aa
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 5.0.8+rev2
+  title: ""
+  date: 2023-12-12T17:35:06.588Z
+- commits:
     - subject: remove migrator module for iot-gate-imx8plus
       hash: 47b57608c47b6ea234a80c14b9034a707d9c222a
       body: |

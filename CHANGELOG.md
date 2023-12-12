@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v5.0.8+rev2
+## (2023-12-12)
+
+* Update layers/poky to 3e73216a32a2b01916eb8c555a41579bd69a47aa [Self-hosted Renovate Bot]
+
 # v5.0.8+rev1
 ## (2023-12-12)
 
