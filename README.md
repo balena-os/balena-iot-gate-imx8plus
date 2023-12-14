@@ -58,6 +58,10 @@ up serial console support for example) and build prerequisites. Build flags can
 be set by using the build scripts (barys or balena-build) or by manually
 modifying `local.conf`.
 
+## Provisioning
+
+Provisioning tools for flashing balenaOS on Compulab IOT-GATE-iMX8 devices can be found [here](https://github.com/balena-os/iot-gate-imx8plus-flashtools.git)
+
 ## Contributing
 
 ### Issues

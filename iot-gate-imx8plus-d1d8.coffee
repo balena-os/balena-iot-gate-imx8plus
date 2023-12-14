@@ -9,8 +9,8 @@ postProvisioningInstructions = [
  
 module.exports =
         version: 1
-        slug: 'iot-gate-imx8plus'
-        name: 'Compulab IOT-GATE-iMX8PLUS 2G-4G DRAM'
+        slug: 'iot-gate-imx8plus-d1d8'
+        name: 'Compulab IOT-GATE-iMX8PLUS 1G-8G DRAM'
         arch: 'aarch64'
         state: 'released'
  
@@ -29,11 +29,11 @@ module.exports =
         supportsBlink: false
 
         yocto:
-                machine: 'iot-gate-imx8plus'
+                machine: 'iot-gate-imx8plus-d1d8'
                 image: 'balena-image'
                 fstype: 'balenaos-img'
                 version: 'yocto-kirkstone'
-                deployArtifact: 'balena-image-iot-gate-imx8plus.balenaos-img'
+                deployArtifact: 'balena-image-iot-gate-imx8plus-d1d8.balenaos-img'
                 compressed: true
 
         options: [ networkOptions.group ]

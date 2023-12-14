@@ -9,15 +9,26 @@ BALENA_DEVICE_FDT_ADDR_VAR ?= "fdt_addr_r"
 SRC_URI:append = " \
 	file://0001-Revert-remove-include-config_defaults.h.patch \
 	file://0003-integrate-with-balenaOS.patch \
-	file://0004-skip-running-bootcmd-mfg.patch \
 	file://0005-configs-Boot-balena-directly.patch \
 	file://0006-Run-CRC32-checks-on-kernel-image-and-fdt.patch \
-        file://d2d4.cfg \
 "
 
-# Ensure the correct dram conf is applied everywhere
-DRAM_CONF="d2d4"
-dram_conf="d2d4"
+SRC_URI:remove:iot-gate-imx8plus-d1d8 = "file://d2d4.cfg"
+SRC_URI:append:iot-gate-imx8plus-d1d8 = "file://d1d8.cfg"
+
+# meta-bsp-imx8mp uses ${MACHINE}_defconfig, but because
+# we use a separate machine for the seconday DRAM configuration
+# and no defconfig exists for it, we have to replace ${MACHINE} with the
+# base machine in our layer
+do_merge_config () {
+    cd ${S}
+    cp ${S}/configs/iot-gate-imx8plus_defconfig ${S}/configs/compulab_defconfig
+    ${S}/scripts/kconfig/merge_config.sh  -O ${S}/configs/ -m ${S}/configs/iot-gate-imx8plus_defconfig ${WORKDIR}/*.cfg
+    mv ${S}/configs/.config ${S}/configs/iot-gate-imx8plus_defconfig
+    cd -
+    oe_runmake iot-gate-imx8plus_defconfig
+    mv ${S}/configs/compulab_defconfig ${S}/configs/iot-gate-imx8plus_defconfig
+}
 
 # Bring in configure step from poky
 # to make sure the merge_config script is called
@@ -53,5 +64,7 @@ do_configure () {
     fi
 }
 
+do_unpack[nostamp]="1"
+do_patch[nostamp]="1"
 do_configure[nostamp] = "1"
 do_compile[nostamp] = "1"

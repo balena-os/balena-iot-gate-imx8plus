@@ -9,6 +9,8 @@ SRC_URI:append = "file://0001-fix-kernel-build.patch"
 # along with the kernel image in the initramfs
 KERNEL_PACKAGE_NAME="kernel"
 
+KERNEL_CONFIG:remove:iot-gate-imx8plus-d1d8 = "iot-gate-imx8plus-d1d8_defconfig"
+KERNEL_CONFIG:prepend:iot-gate-imx8plus-d1d8 = "iot-gate-imx8plus_defconfig "
 
 BALENA_CONFIGS:append = " imx-sdma "
 BALENA_CONFIGS[imx-sdma] = " \
