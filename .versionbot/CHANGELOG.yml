@@ -1,4 +1,28 @@
 - commits:
+    - subject: "u-boot: Allow fastboot to run if programming cable is plugged"
+      hash: bced6c441fdd873c53caf235a08757e209cdb5f3
+      body: ""
+      footer:
+        Changelog-entry: "u-boot: Allow fastboot to run if programming cable is plugged"
+        changelog-entry: "u-boot: Allow fastboot to run if programming cable is plugged"
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+    - subject: "hostapp-update-hooks: update to accomodate d1d8 DRAM boards"
+      hash: 9c61029ce8ae01b8cbda50be08b3a81e53f3810c
+      body: ""
+      footer:
+        Changelog-entry: "hostapp-update-hooks: update to accomodate d1d8 DRAM boards"
+        changelog-entry: "hostapp-update-hooks: update to accomodate d1d8 DRAM boards"
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 5.0.10+rev2
+  title: ""
+  date: 2023-12-14T12:24:18.661Z
+- commits:
     - subject: Update layers/poky to eadd5efcb3a7a78e9b89be935ac1649dc33cbad6
       hash: 5ff4f0f6fc0cfecc468689e621cf679396dd8de1
       body: Update layers/poky

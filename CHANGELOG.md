@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file
 
+# v5.0.10+rev2
+## (2023-12-14)
+
+* u-boot: Allow fastboot to run if programming cable is plugged [Alexandru Costache]
+* hostapp-update-hooks: update to accomodate d1d8 DRAM boards [Alexandru Costache]
+
 # v5.0.10+rev1
 ## (2023-12-14)
 
