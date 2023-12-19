@@ -1,4 +1,21 @@
 - commits:
+    - subject: "u-boot-compulab: Rebase defconfig changes"
+      hash: 8c98e4a19280cef915247f938b947d4d354d8901
+      body: |
+        because upstream uses AUTOREV and has modified
+        the defconfig in which we set CONFIG_BOOTCOMMAND
+        and increase the ENV_SIZE
+      footer:
+        Changelog-entry: "u-boot-compulab: Rebase defconfig changes"
+        changelog-entry: "u-boot-compulab: Rebase defconfig changes"
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 5.0.11+rev1
+  title: ""
+  date: 2023-12-19T07:43:22.999Z
+- commits:
     - subject: Update layers/meta-balena to 6a73c51909f49e11abbce78ba645eb80d91d4bba
       hash: a7f0bec51f1a9f917487d0c58877d13d00909d67
       body: Update layers/meta-balena

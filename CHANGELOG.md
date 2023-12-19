@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v5.0.11+rev1
+## (2023-12-19)
+
+* u-boot-compulab: Rebase defconfig changes [Alexandru Costache]
+
 # v5.0.11
 ## (2023-12-14)
 
