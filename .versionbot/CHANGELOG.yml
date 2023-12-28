@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update contracts to b0c1495877e23b27af209082e6cc9959b94fd541
+      hash: ad4440eb0f4f9ca239d729751f7caaef781540a6
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to b0c1495877e23b27af209082e6cc9959b94fd541
+        changelog-entry: Update contracts to b0c1495877e23b27af209082e6cc9959b94fd541
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "hw.device-type: Add Variscite DART-MX8M-PLUS"
+              hash: dd4e9de9d010e49040adf8d9f4ce8a4d68c69cce
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+          version: contracts-2.0.86
+          title: ""
+          date: 2023-12-28T11:16:43.472Z
+  version: 5.1.4+rev2
+  title: ""
+  date: 2023-12-28T14:02:46.776Z
+- commits:
     - subject: Update layers/poky to f754b5d45b504e7486364ea9cfcb5f96086084bc
       hash: 555d116052fd86add00f31f0f89ed29a26195a5e
       body: Update layers/poky
