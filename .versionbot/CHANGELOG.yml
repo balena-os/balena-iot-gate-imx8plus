@@ -1,4 +1,22 @@
 - commits:
+    - subject: "u-boot: Fix build, rework patches"
+      hash: 6949bbf94b83f5f084db8e5325688309140bfea0
+      body: |
+        Upstream removed distro_bootcmd from CONFIG_BOOTCOMMAND
+        so we can now drop that from our patches as well, and
+        thus fix the recent failures. Note that the build failure
+        started happening because upstream uses AUTOREV.
+      footer:
+        Changelog-entry: "u-boot: Fix build, rework patches"
+        changelog-entry: "u-boot: Fix build, rework patches"
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 5.1.5+rev1
+  title: ""
+  date: 2024-01-05T12:33:53.452Z
+- commits:
     - subject: Update layers/meta-balena to aa9cd7315d801b22635e8468a0341d5dd7182a11
       hash: 8386ed1a071fc1cb4d49db822ca5d68d6df876a7
       body: Update layers/meta-balena

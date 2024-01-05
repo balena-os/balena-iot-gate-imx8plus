@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v5.1.5+rev1
+## (2024-01-05)
+
+* u-boot: Fix build, rework patches [Alexandru Costache]
+
 # v5.1.5
 ## (2024-01-01)
 
