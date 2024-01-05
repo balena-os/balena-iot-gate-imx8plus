@@ -8,8 +8,8 @@ BALENA_DEVICE_FDT_ADDR_VAR ?= "fdt_addr_r"
 
 SRC_URI:append = " \
 	file://0001-Revert-remove-include-config_defaults.h.patch \
+	file://0001-iot-gate-imx8plus-Increase-default-ENV-size.patch \
 	file://0003-integrate-with-balenaOS.patch \
-	file://0005-configs-Boot-balena-directly.patch \
 	file://0006-Run-CRC32-checks-on-kernel-image-and-fdt.patch \
 "
 
