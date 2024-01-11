@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v5.1.8+rev2
+## (2024-01-11)
+
+* u-boot-compulab: Pin to known to work version [Alexandru Costache]
+
 # v5.1.8+rev1
 ## (2024-01-10)
 

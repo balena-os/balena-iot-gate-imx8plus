@@ -1,4 +1,21 @@
 - commits:
+    - subject: "u-boot-compulab: Pin to known to work version"
+      hash: 116fa62963fbbeaa874d6df1b56d341c841ba720
+      body: |
+        Upstream uses autorev and this broke patch applying
+        a number of times already. We need to unblock leviathan
+        tests so pin to the last known to work version for now.
+      footer:
+        Changelog-entry: "u-boot-compulab: Pin to known to work version"
+        changelog-entry: "u-boot-compulab: Pin to known to work version"
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 5.1.8+rev2
+  title: ""
+  date: 2024-01-11T14:44:20.418Z
+- commits:
     - subject: Update contracts to 14a10d925b56660c59471447ca74ae324da68f79
       hash: 698f067163c297a1a6ba5fd819fcf294de3ea1d2
       body: Update contracts
