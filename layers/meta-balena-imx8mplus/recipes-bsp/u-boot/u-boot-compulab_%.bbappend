@@ -6,6 +6,10 @@ DEPENDS = "bison-native"
 
 BALENA_DEVICE_FDT_ADDR_VAR ?= "fdt_addr_r"
 
+# Pin to last working version for now, because upstream changes
+# have been breaking applying of patches multiple times already
+SRCREV = "436b70159e2567daae8bd619e67272cf2439122e"
+
 SRC_URI:append = " \
 	file://0001-Revert-remove-include-config_defaults.h.patch \
 	file://0001-iot-gate-imx8plus-Increase-default-ENV-size.patch \
