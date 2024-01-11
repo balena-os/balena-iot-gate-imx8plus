@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update layers/poky to d9532264b9f8677914bfe6646c8cee7aa108d175
+      hash: 61708345337557406c618ce62d406085fea77ed8
+      body: Update layers/poky
+      footer:
+        Changelog-entry: Update layers/poky to d9532264b9f8677914bfe6646c8cee7aa108d175
+        changelog-entry: Update layers/poky to d9532264b9f8677914bfe6646c8cee7aa108d175
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 5.1.8+rev3
+  title: ""
+  date: 2024-01-11T16:57:41.385Z
+- commits:
     - subject: "u-boot-compulab: Pin to known to work version"
       hash: 116fa62963fbbeaa874d6df1b56d341c841ba720
       body: |
