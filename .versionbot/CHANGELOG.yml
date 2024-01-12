@@ -1,4 +1,20 @@
 - commits:
+    - subject: "u-boot: Remove prebuilt development imx-boot"
+      hash: 13d150b23428f9a1d153a9f208d6d8d8cbce485d
+      body: |
+        Because provisioning is now done with a container
+        which extracts imx-boot from the image
+      footer:
+        Changelog-entry: "u-boot: Remove prebuilt development imx-boot"
+        changelog-entry: "u-boot: Remove prebuilt development imx-boot"
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 5.1.9+rev1
+  title: ""
+  date: 2024-01-12T16:03:09.027Z
+- commits:
     - subject: Update layers/meta-balena to 7322b033dd6efde288f564e657df0f1c1f217b7e
       hash: e8c6c6ab0316164d0d1bdaff585622b82015b00e
       body: Update layers/meta-balena

@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v5.1.9+rev1
+## (2024-01-12)
+
+* u-boot: Remove prebuilt development imx-boot [Alexandru Costache]
+
 # v5.1.9
 ## (2024-01-11)
 
