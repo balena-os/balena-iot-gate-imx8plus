@@ -2,6 +2,43 @@
 
 All notable changes to this project will be documented in this file
 
+# v5.1.19
+## (2024-02-01)
+
+
+<details>
+<summary> Update layers/meta-balena to 03a97aa37d6dd74ad0c18e944d7dc6022b5851b1 [Self-hosted Renovate Bot] </summary>
+
+> ## meta-balena-5.1.19
+> ### (2024-02-01)
+> 
+> * Add balena bootloader class [Michal Toman]
+> * initrdscripts: remove nr_cpus kernel arg before kexec [Michal Toman]
+> 
+> ## meta-balena-5.1.18
+> ### (2024-01-29)
+> 
+> * classes: kernel-balena: expose watchdog in sysfs [Alex Gonzalez]
+> 
+> ## meta-balena-5.1.17
+> ### (2024-01-29)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 01e65ec [Self-hosted Renovate Bot] </summary>
+> 
+>> ### leviathan-2.29.42
+>> #### (2024-01-29)
+>> 
+>> * Update Lock file maintenance [Self-hosted Renovate Bot]
+>> 
+> 
+> </details>
+> 
+> 
+
+</details>
+
 # v5.1.16+rev1
 ## (2024-01-29)
 
