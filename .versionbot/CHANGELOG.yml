@@ -1,4 +1,43 @@
 - commits:
+    - subject: Update contracts to 75a97647a44cfe534f93926ab039afca6570cb86
+      hash: eeb1d8ab64c7df361538029c21073b98a1b7c8e8
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 75a97647a44cfe534f93926ab039afca6570cb86
+        changelog-entry: Update contracts to 75a97647a44cfe534f93926ab039afca6570cb86
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "hw.device-type: Add phyboard-lyra-am62xx-2 device"
+              hash: d9e57b1f2432aac0ea4b6d9e6285e805e5359a6f
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Atanas Bunchev <atanas.bunchev@konsulko.com>
+                signed-off-by: Atanas Bunchev <atanas.bunchev@konsulko.com>
+              author: Atanas Bunchev
+          version: contracts-2.0.92
+          title: ""
+          date: 2024-02-01T10:43:30.336Z
+        - commits:
+            - subject: Remove generic-amd64-fde device type
+              hash: a9e475afc5c9a0cc02fe39293b83c2476af2a7e7
+              body: |
+                FDE is a feature, it does not need a separate device type.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+          version: contracts-2.0.91
+          title: ""
+          date: 2024-01-31T10:51:22.461Z
+  version: 5.1.19+rev1
+  title: ""
+  date: 2024-02-01T18:18:31.491Z
+- commits:
     - subject: Update layers/meta-balena to 03a97aa37d6dd74ad0c18e944d7dc6022b5851b1
       hash: fd15e13c82ab2c750416b8de02d01ce04541a179
       body: Update layers/meta-balena
