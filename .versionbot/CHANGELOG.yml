@@ -1,4 +1,73 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 57b2f7c97e4d95e74b76a0827e910d46e3b3ce2f
+      hash: 2236f5eb76f379e5970c06f1bd1cad94a68aa02d
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 57b2f7c97e4d95e74b76a0827e910d46e3b3ce2f
+        changelog-entry: Update balena-yocto-scripts to 57b2f7c97e4d95e74b76a0827e910d46e3b3ce2f
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "balena-deploy: Remove docker.io when pulling image"
+              hash: bd23b9ad59a1645bce79b0df5ef3879d10774a3a
+              body: |
+                This seems to cause docker images --format to fail
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru
+              nested: []
+          version: balena-yocto-scripts-1.21.1
+          title: ""
+          date: 2024-02-07T12:39:41.622Z
+        - commits:
+            - subject: Return image id after pulling helper images
+              hash: f2fb17399ede63ceaada8c8625a250747745d97a
+              body: |
+                Also refactor the pull helper image functions to
+                support a single repository with multiple variant tags.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Build and publish helper images with Flowzone
+              hash: 8a15692852f38bfd5158b61b5870dffd8f758a64
+              body: |
+                Rather than build helper images on demand, we will
+                publish them to ghcr.io with every revision of this project.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.21.0
+          title: ""
+          date: 2024-02-02T18:52:51.154Z
+        - commits:
+            - subject: Remove unused block-build functions
+              hash: 130d7fb70f4a10755731e898e87610547fe44692
+              body: ""
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.20.0
+          title: ""
+          date: 2024-02-02T16:29:21.897Z
+  version: 5.1.24+rev1
+  title: ""
+  date: 2024-02-07T16:43:44.201Z
+- commits:
     - subject: Update layers/meta-balena to e3519f1960bc68e72abf3ec052564cbf5878629f
       hash: 71a631950aaaa5e403cb2d8f445a7681416eae92
       body: Update layers/meta-balena
