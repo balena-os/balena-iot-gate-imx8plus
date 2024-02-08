@@ -1,4 +1,36 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 6ccd3b1013b6d25ea9990a07a06bee864fe0a172
+      hash: fdd6fd1478221371b3f5446aa51f20e2187a3f22
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 6ccd3b1013b6d25ea9990a07a06bee864fe0a172
+        changelog-entry: Update balena-yocto-scripts to 6ccd3b1013b6d25ea9990a07a06bee864fe0a172
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "automation/include: Pass helper image version"
+              hash: 2a8e25e0d0b46b3249c1c77b0c38219ebcdea1f0
+              body: >
+                This is needed by the balena-push-env helper image that needs
+                the
+
+                balena-yocto-scripts version but has no way of getting that info
+
+                otherwise.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: balena-yocto-scripts-1.21.2
+          title: ""
+          date: 2024-02-08T07:44:50.538Z
+  version: 5.1.26+rev2
+  title: ""
+  date: 2024-02-08T13:43:56.007Z
+- commits:
     - subject: Update layers/meta-openembedded to
         ce9c0d76171ce9d07e4bcb702b750416b265562a
       hash: 1bd2fffc0d0c4e7396b0bd3518292f38fbb10e9d
