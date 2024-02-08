@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v5.1.26+rev1
+## (2024-02-08)
+
+* Update layers/meta-openembedded to ce9c0d76171ce9d07e4bcb702b750416b265562a [Self-hosted Renovate Bot]
+
 # v5.1.26
 ## (2024-02-07)
 
