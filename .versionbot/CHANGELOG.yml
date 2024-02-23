@@ -1,4 +1,140 @@
 - commits:
+    - subject: Update layers/meta-balena to bf4ec98227e4cce4c22ff3d7037bdcd78ffdd9ec
+      hash: 99769ea4d598319431cf0a41c67545c1e72419ef
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to bf4ec98227e4cce4c22ff3d7037bdcd78ffdd9ec
+        changelog-entry: Update layers/meta-balena to bf4ec98227e4cce4c22ff3d7037bdcd78ffdd9ec
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "tests/device-tree: Minor spelling fixes"
+              hash: 928fa031f794d09ce603795acc224fcb61e855d9
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru
+              nested: []
+            - subject: "test/device-tree: Send vcdbg to DUT"
+              hash: aab7e1390f9f1181a47905328ef5fba1b5e509f6
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+            - subject: "patch: Add vcdbg binary to tests"
+              hash: db56a276b23ba900bbbb1b4944a6a8fd4ca2f55f
+              body: ""
+              footer:
+                Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+                signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+              author: Vipul Gupta (@vipulgupta2048)
+              nested: []
+          version: meta-balena-5.1.37
+          title: ""
+          date: 2024-02-22T20:38:47.969Z
+        - commits:
+            - subject: "tests: hup: test breadcrumbs after rollback services"
+              hash: dde3e48743fc32349d1a1a33cfdf9b061c804e04
+              body: >
+                During HUP, rollback-health-breadcrumb and
+                rollback-altboot-breadcrumb
+
+                are created in the state partition to trigger rollback-health and
+
+                rollback-altboot respectively on the next boot. After these services
+
+                complete, they will remove these breadcrumbs.
+
+
+                Make the broken init fallback tests wait for these services to become
+
+                inactive before testing the state of the breadcrumbs. Otherwise, a race
+
+                condition can make these tests fail. Most notably on slower systems,
+
+                such as emulated generic-aarch64.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: meta-balena-5.1.36
+          title: ""
+          date: 2024-02-21T16:31:08.117Z
+        - commits:
+            - subject: Update tests/leviathan digest to 95a9d72
+              hash: 16d56c258da245227711868d61df9b49b29842cb
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Update Lock file maintenance
+                      hash: 491d5df14d6197c1acae3542d4e950869e710309
+                      body: |
+                        Update
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: leviathan-2.29.59
+                  title: ""
+                  date: 2024-02-19T00:47:50.443Z
+                - commits:
+                    - subject: Update core/contracts digest to 0c54ce2
+                      hash: bfb9b6bd67bf8bfe6a337ebcb439aa7f3852fb5c
+                      body: |
+                        Update core/contracts
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: leviathan-2.29.58
+                  title: ""
+                  date: 2024-02-14T12:19:16.753Z
+          version: meta-balena-5.1.35
+          title: ""
+          date: 2024-02-19T05:22:59.235Z
+        - commits:
+            - subject: "resin-init-flasher: add jq dependency"
+              hash: 87aa01801d193a893f10367ba71b9cc824bf7e69
+              body: >
+                Without this dependency, the call to `jq` does not happen and
+                the check
+
+                for INTERNAL_DEVICE_KERNEL is not performed.
+
+
+                Several devices that define internal storage but do not define
+
+                INTERNAL_DEVICE_KERNEL will now fail and need to be fixed.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-5.1.34
+          title: ""
+          date: 2024-02-14T23:11:49.455Z
+  version: 5.1.37
+  title: ""
+  date: 2024-02-23T02:40:20.103Z
+- commits:
     - subject: Update layers/meta-balena to 905446e98206f871145d1c70107c01d567e1303d
       hash: 68f908b15950fc64c2e90becfc6aff1e4850c53d
       body: Update layers/meta-balena

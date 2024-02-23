@@ -2,6 +2,54 @@
 
 All notable changes to this project will be documented in this file
 
+# v5.1.37
+## (2024-02-23)
+
+
+<details>
+<summary> Update layers/meta-balena to bf4ec98227e4cce4c22ff3d7037bdcd78ffdd9ec [Self-hosted Renovate Bot] </summary>
+
+> ## meta-balena-5.1.37
+> ### (2024-02-22)
+> 
+> * tests/device-tree: Minor spelling fixes [Alexandru]
+> * test/device-tree: Send vcdbg to DUT [Alexandru Costache]
+> * patch: Add vcdbg binary to tests [Vipul Gupta (@vipulgupta2048)]
+> 
+> ## meta-balena-5.1.36
+> ### (2024-02-21)
+> 
+> * tests: hup: test breadcrumbs after rollback services [Joseph Kogut]
+> 
+> ## meta-balena-5.1.35
+> ### (2024-02-19)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 95a9d72 [Self-hosted Renovate Bot] </summary>
+> 
+>> ### leviathan-2.29.59
+>> #### (2024-02-19)
+>> 
+>> * Update Lock file maintenance [Self-hosted Renovate Bot]
+>> 
+>> ### leviathan-2.29.58
+>> #### (2024-02-14)
+>> 
+>> * Update core/contracts digest to 0c54ce2 [Self-hosted Renovate Bot]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-5.1.34
+> ### (2024-02-14)
+> 
+> * resin-init-flasher: add jq dependency [Alex Gonzalez]
+> 
+
+</details>
+
 # v5.1.33
 ## (2024-02-14)
 
