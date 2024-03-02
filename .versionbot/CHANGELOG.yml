@@ -1,4 +1,106 @@
 - commits:
+    - subject: Update layers/meta-balena to 548477f18ea46d404e44121c9ccb399f40ccabd3
+      hash: 6c7beb11e466502d55ebbc98eed04041470fed34
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 548477f18ea46d404e44121c9ccb399f40ccabd3
+        changelog-entry: Update layers/meta-balena to 548477f18ea46d404e44121c9ccb399f40ccabd3
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "resin_update_state_probe: ignore RAID members when looking for root"
+              hash: e984b21b0270729784735d99f222294be65afd20
+              body: >
+                At this moment resin_update_state_probe looks for the root
+                partition
+
+                by UUID and assumes that only a single device is returned. This
+
+                assumption breaks when the root is on a MD RAID1 device as not only
+
+                the virtual MD device holds a filesystem with the given UUID,
+
+                each member does as well.
+
+
+                This patch makes resin_update_state_probe ignore devices
+
+                that are RAID members which in that case will only return
+
+                the MD device as expected.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-5.1.46
+          title: ""
+          date: 2024-03-02T01:20:54.562Z
+        - commits:
+            - subject: Update tests/leviathan digest to 2b34fec
+              hash: 695bd2b086a94945e80d9d677a6019462dd9e35f
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Update core/contracts digest to f3ba2ee
+                      hash: 2334fd02530b6669a3fb5275421543c0a66bca2f
+                      body: |
+                        Update core/contracts
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: leviathan-2.29.63
+                  title: ""
+                  date: 2024-02-27T17:34:15.697Z
+          version: meta-balena-5.1.45
+          title: ""
+          date: 2024-02-29T23:05:05.727Z
+        - commits:
+            - subject: "resin-init-flasher: Allow building images for non-flasher devices that
+                have internal storage"
+              hash: 3a887512b343b80208196f6792a48f81d1a8c8f9
+              body: >
+                As per the internal thread:
+                https://balena.zulipchat.com/#narrow/stream/360838-balena-io.2Fos.2Fdevices/topic/balena-raspberrypi.20jenkins.20build.20failures/near/423970246
+
+
+                Currently devices with on-board storage fail to build in jenkins, if they don't provide a flasher image. One example is the CM4. Since there are multiple devices using this configuration, let's re-enable builds for all of them.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru
+              nested: []
+          version: meta-balena-5.1.44
+          title: ""
+          date: 2024-02-29T16:16:34.376Z
+        - commits:
+            - subject: Start os-config service after extracting CA
+              hash: 0a531b5787e9dfd11a851fa36babd5374135e935
+              body: |
+                OS-config should always run after extracting balena CA
+                to prevent race conditions
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: jaomaloy
+              nested: []
+          version: meta-balena-5.1.43
+          title: ""
+          date: 2024-02-28T09:12:11.684Z
+  version: 5.1.46
+  title: ""
+  date: 2024-03-02T06:10:25.553Z
+- commits:
     - subject: Update layers/meta-balena to 086ba32588bb45247bc4785eafcb6540115bbf2e
       hash: 2cd68b1b74960c3fd46e45616677de201f42d76d
       body: Update layers/meta-balena
