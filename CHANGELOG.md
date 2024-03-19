@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file
 
+# v5.2.0+rev1
+## (2024-03-19)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 775e16968edc4c3803834bc524687ae4316ab6e4 [Self-hosted Renovate Bot] </summary>
+
+> ## balena-yocto-scripts-1.21.5
+> ### (2024-03-14)
+> 
+> * Merge AMI publishing dependencies into yocto-build-env [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.21.4
+> ### (2024-03-13)
+> 
+> * balena-build: avoid using device-type as a prefix in yocto sstate [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.21.3
+> ### (2024-02-11)
+> 
+> * Enable S3 Server Side Encryption flags [Kyle Harding]
+> 
+
+</details>
+
 # v5.2.0
 ## (2024-03-18)
 
