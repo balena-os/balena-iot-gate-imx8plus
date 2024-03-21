@@ -1,4 +1,77 @@
 - commits:
+    - subject: Update contracts to 2de35264348458938cf5c85c28660a58a1e8066a
+      hash: e49f52634a2313eca2ac1af25347bdf7e68ccfbd
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 2de35264348458938cf5c85c28660a58a1e8066a
+        changelog-entry: Update contracts to 2de35264348458938cf5c85c28660a58a1e8066a
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "hw.device-type: Add beagleplay device"
+              hash: 409c34db01a2bb6db66b82d8a1af2abed7f9f200
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Sidd-Gupta sidd.gupta@zylum.in
+                signed-off-by: Sidd-Gupta sidd.gupta@zylum.in
+              author: delhiryder
+          version: contracts-2.0.97
+          title: ""
+          date: 2024-03-21T07:50:18.202Z
+        - commits:
+            - subject: "hw.device-type: Add beaglebone-play device"
+              hash: 67c4505e12b1ef6abfc37c9466470e062875bf00
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Sidd-Gupta sidd.gupta@zylum.in
+                signed-off-by: Sidd-Gupta sidd.gupta@zylum.in
+              author: delhiryder
+          version: contracts-2.0.96
+          title: ""
+          date: 2024-03-14T16:14:23.733Z
+        - commits:
+            - subject: "sw.os+hw.device-type: Update Jetson Orin repositories"
+              hash: 1e715e7850a856ce6fef42588d40a0e66d417081
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+            - subject: "jetson-orin-nx-seeed-j4012: Add ubuntu and debian distro tpl files"
+              hash: 3a10086228aa29364d2679d12eb6f8be680a925e
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.95
+          title: ""
+          date: 2024-02-26T15:04:54.874Z
+        - commits:
+            - subject: "odyssey-x86: Update icon to latest revision"
+              hash: 83ad917b2027f2a6fecd8d1422984987efc9da13
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.94
+          title: ""
+          date: 2024-02-14T10:35:34.159Z
+  version: 5.2.1+rev2
+  title: ""
+  date: 2024-03-21T13:22:47.520Z
+- commits:
     - subject: Update balena-os/github-workflows to v0.0.27
       hash: f4fed77b7f11e2a4d45c9bc69242c2ce19154935
       body: Update balena-os/github-workflows

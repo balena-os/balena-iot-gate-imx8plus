@@ -2,6 +2,37 @@
 
 All notable changes to this project will be documented in this file
 
+# v5.2.1+rev2
+## (2024-03-21)
+
+
+<details>
+<summary> Update contracts to 2de35264348458938cf5c85c28660a58a1e8066a [Self-hosted Renovate Bot] </summary>
+
+> ## contracts-2.0.97
+> ### (2024-03-21)
+> 
+> * hw.device-type: Add beagleplay device [delhiryder]
+> 
+> ## contracts-2.0.96
+> ### (2024-03-14)
+> 
+> * hw.device-type: Add beaglebone-play device [delhiryder]
+> 
+> ## contracts-2.0.95
+> ### (2024-02-26)
+> 
+> * sw.os+hw.device-type: Update Jetson Orin repositories [Alexandru Costache]
+> * jetson-orin-nx-seeed-j4012: Add ubuntu and debian distro tpl files [Alexandru Costache]
+> 
+> ## contracts-2.0.94
+> ### (2024-02-14)
+> 
+> * odyssey-x86: Update icon to latest revision [Alexandru Costache]
+> 
+
+</details>
+
 # v5.2.1+rev1
 ## (2024-03-20)
 
