@@ -2,6 +2,38 @@
 
 All notable changes to this project will be documented in this file
 
+# v5.2.1+rev4
+## (2024-04-18)
+
+
+<details>
+<summary> Update contracts to d06ad25196f67c4d20ad309941192fdddf80e307 [Self-hosted Renovate Bot] </summary>
+
+> ## contracts-2.0.103
+> ### (2024-04-11)
+> 
+> * Remove Ubuntu Lunar 23.04 since it's EOL [Thodoris Greasidis]
+> 
+> ## contracts-2.0.102
+> ### (2024-04-11)
+> 
+> * Remove Fedora 36 since it's EOL [Thodoris Greasidis]
+> 
+> ## contracts-2.0.101
+> ### (2024-04-10)
+> 
+> * Remove outdated jdk & jre 8 [Thodoris Greasidis]
+> * Remove python 3.7.16 since it's in EOL [Thodoris Greasidis]
+> * Remove node v14 & v16 since they are EOL [Thodoris Greasidis]
+> 
+> ## contracts-2.0.100
+> ### (2024-04-08)
+> 
+> * Add Advantech ECU1370 to hardware contract. [Lisandro Pérez Meyer]
+> 
+
+</details>
+
 # v5.2.1+rev3
 ## (2024-04-08)
 
