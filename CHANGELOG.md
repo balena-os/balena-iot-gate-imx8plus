@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file
 
+# v5.2.1+rev6
+## (2024-04-25)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 45b33b1ab2a550bd8292e61139c7e1316d75219c [Self-hosted Renovate Bot] </summary>
+
+> ## balena-yocto-scripts-1.21.7
+> ### (2024-04-19)
+> 
+> * Add missing $select for release_asset.asset_key [Thodoris Greasidis]
+> 
+> ## balena-yocto-scripts-1.21.6
+> ### (2024-03-25)
+> 
+> * Revert "balena-build: avoid using device-type as a prefix in yocto sstate" [Kyle Harding]
+> 
+
+</details>
+
 # v5.2.1+rev5
 ## (2024-04-20)
 

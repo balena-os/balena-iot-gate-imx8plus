@@ -1,4 +1,42 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 45b33b1ab2a550bd8292e61139c7e1316d75219c
+      hash: ecad8ebf14f4a616c546d22bafc4ea10d0ceec58
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 45b33b1ab2a550bd8292e61139c7e1316d75219c
+        changelog-entry: Update balena-yocto-scripts to 45b33b1ab2a550bd8292e61139c7e1316d75219c
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Add missing $select for release_asset.asset_key
+              hash: 4f4f65c0b2cace726eccbea5d5ed8ed0f8302e54
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Thodoris Greasidis
+              nested: []
+          version: balena-yocto-scripts-1.21.7
+          title: ""
+          date: 2024-04-19T14:22:55.708Z
+        - commits:
+            - subject: 'Revert "balena-build: avoid using device-type as a prefix in yocto
+                sstate"'
+              hash: 7a85083784a3225debf2276a978558df5a307ec7
+              body: |
+                This reverts commit f4a9566941083770151ebe3edd78e9866b4856fb.
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.21.6
+          title: ""
+          date: 2024-03-25T14:58:37.715Z
+  version: 5.2.1+rev6
+  title: ""
+  date: 2024-04-25T20:40:30.547Z
+- commits:
     - subject: Update layers/poky to 364c5c906e20e8c3a5dc93309281b52ed92dc351
       hash: 11977c86de4a17958182edb60d28d4e3a4ceda67
       body: Update layers/poky
