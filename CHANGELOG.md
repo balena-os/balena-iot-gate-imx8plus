@@ -2,6 +2,113 @@
 
 All notable changes to this project will be documented in this file
 
+# v5.3.15
+## (2024-06-05)
+
+
+<details>
+<summary> Update layers/meta-balena to 8352e3480e96f4503361752cfe72aca9622250a3 [Self-hosted Renovate Bot] </summary>
+
+> ## meta-balena-5.3.15
+> ### (2024-06-05)
+> 
+> * os-helpers-tpm2: fix empty efivar reads [Joseph Kogut]
+> * rollback-health: bind mount EFI partition in old_rootfs [Joseph Kogut]
+> * rollback-health: mount securityfs in old_rootfs [Joseph Kogut]
+> * os-helpers-tpm2: compute_pcr7 w/ events post separator [Joseph Kogut]
+> 
+> ## meta-balena-5.3.14
+> ### (2024-06-02)
+> 
+> * rtl8192cu: Remove this unmaintained out-of-tree kernel driver [Florin Sarbu]
+> 
+> ## meta-balena-5.3.13
+> ### (2024-06-01)
+> 
+> 
+> <details>
+> <summary> Update balena-supervisor to v16.3.11 [Self-hosted Renovate Bot] </summary>
+> 
+>> ### balena-supervisor-16.3.11
+>> #### (2024-05-27)
+>> 
+>> * Move OS variant retrieval to config module [Felipe Lalanne]
+>> * Do not export balenaApi on api-binder [Felipe Lalanne]
+>> * Move api-keys module to src/lib [Felipe Lalanne]
+>> * Do not re-export ContractObject on lib/contracts [Felipe Lalanne]
+>> * Move Compose(Network|Volume)Config to top level types [Felipe Lalanne]
+>> * Move composition types to compose/types [Felipe Lalanne]
+>> * Split compose types into interface and implementation [Felipe Lalanne]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-5.3.12
+> ### (2024-06-01)
+> 
+> * patch: Add Test Suite specific config for GHA [Vipul Gupta (@vipulgupta2048)]
+> 
+> ## meta-balena-5.3.11
+> ### (2024-05-27)
+> 
+> 
+> <details>
+> <summary> Update balena-supervisor to v16.3.10 [Self-hosted Renovate Bot] </summary>
+> 
+>> ### balena-supervisor-16.3.10
+>> #### (2024-05-27)
+>> 
+>> * Update got to v14.3.0 [Self-hosted Renovate Bot]
+>> 
+>> ### balena-supervisor-16.3.9
+>> #### (2024-05-27)
+>> 
+>> * Update balena-io/deploy-to-balena-action action to v2.0.69 [Self-hosted Renovate Bot]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-5.3.10
+> ### (2024-05-24)
+> 
+> 
+> <details>
+> <summary> Update balena-supervisor to v16.3.8 [Self-hosted Renovate Bot] </summary>
+> 
+>> ### balena-supervisor-16.3.8
+>> #### (2024-05-24)
+>> 
+>> * Update balena-io/deploy-to-balena-action action to v2.0.68 [Self-hosted Renovate Bot]
+>> 
+>> ### balena-supervisor-16.3.7
+>> #### (2024-05-24)
+>> 
+>> * Update sinon to v18 [Self-hosted Renovate Bot]
+>> 
+>> ### balena-supervisor-16.3.6
+>> #### (2024-05-20)
+>> 
+>> * Update balena-io/deploy-to-balena-action action to v2.0.67 [Self-hosted Renovate Bot]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-5.3.9
+> ### (2024-05-24)
+> 
+> * NetworkManager: do not use FW rule numbers in shared dispatcher script [Michal Toman]
+> 
+> ## meta-balena-5.3.8
+> ### (2024-05-23)
+> 
+> * tests: safe-reboot: fetch and modify target state [rcooke-warwick]
+> 
+
+</details>
+
 # v5.3.7+rev2
 ## (2024-06-02)
 
