@@ -1,4 +1,58 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 2bb54e7c3c715176446a895ed765346c52d480b2
+      hash: b9ee21433b2d0f9b54f7921204a353e5e8668e6d
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 2bb54e7c3c715176446a895ed765346c52d480b2
+        changelog-entry: Update balena-yocto-scripts to 2bb54e7c3c715176446a895ed765346c52d480b2
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Prevent duplicate workflow runs for multiple triggers
+              hash: e0132cfba86fcc05527dc4702d6841723752be38
+              body: |
+                This may need to be force merged.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Add catchall job to yocto-build-deploy for merge requirements
+              hash: 6b023b572a35d18743cf4a5d36b9d2f7443fc744
+              body: |
+                This is a helper job to avoid having to mark all build/test
+                matrices as required, as this job will always run and return
+                success or failure.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.22.1
+          title: ""
+          date: 2024-06-07T13:45:18.699Z
+        - commits:
+            - subject: Create workflow to build and deploy balenaOS
+              hash: 5868caaa3b7bf506381c8d22f7b0b4035f7e2658
+              body: ""
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.22.0
+          title: ""
+          date: 2024-06-06T17:24:03.676Z
+  version: 5.3.15+rev2
+  title: ""
+  date: 2024-06-07T20:27:24.199Z
+- commits:
     - subject: Update contracts to 8adfb6d81fb673d26e3ab7038b3ef2264c1d1fe7
       hash: aa194c7f59c82a74a81944d0109dc1dac4add1a3
       body: Update contracts
