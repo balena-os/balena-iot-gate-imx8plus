@@ -2,6 +2,33 @@
 
 All notable changes to this project will be documented in this file
 
+# v5.3.20+rev3
+## (2024-06-27)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 7fa652ca218ce38ec260360c01064b483fa4dc8d [Self-hosted Renovate Bot] </summary>
+
+> ## balena-yocto-scripts-1.24.0
+> ### (2024-06-26)
+> 
+> * Support runner selection in the test matrix [Kyle Harding]
+> * Allow both combinatorial and include syntax for test_matrix [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.23.1
+> ### (2024-06-26)
+> 
+> * Refactor secrets and variables to use environments [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.23.0
+> ### (2024-06-19)
+> 
+> * Dockerfiles: update balenaCLI version to 18.2.2 [Joseph Kogut]
+> * Dockerfile_yocto-build-env: bump base image to 22.04 [Joseph Kogut]
+> 
+
+</details>
+
 # v5.3.20+rev2
 ## (2024-06-25)
 
