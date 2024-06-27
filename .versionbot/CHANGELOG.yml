@@ -1,4 +1,46 @@
 - commits:
+    - subject: Update layers/meta-balena to cacc9bcb2b67a9f37654ca8500c96c833f741762
+      hash: 82b6af1afb561e56d6223b2b56053e88dcf1ec55
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to cacc9bcb2b67a9f37654ca8500c96c833f741762
+        changelog-entry: Update layers/meta-balena to cacc9bcb2b67a9f37654ca8500c96c833f741762
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "initrdscripts: Allow passing extra kernel arguments to kexec"
+              hash: 02d42d3cc887fb761da348f86bf5e13f1dacaeb2
+              body: >
+                At this moment the kexec initrd script just takes the original
+                kernel
+
+                command line, replaces root with UUID and removes bootloader
+                args.
+
+
+                We have found at least one use-case (on the Pi4 and firmware
+                GPIOs),
+
+                where a different initrd script needs to pass extra arguments
+
+                to the kexec'd kernel. With this patch it will append the
+                contents
+
+                of the KEXEC_EXTRA_ARGS variable to the kernel command line.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-5.3.21
+          title: ""
+          date: 2024-06-13T10:02:03.824Z
+  version: 5.3.21
+  title: ""
+  date: 2024-06-27T10:44:22.457Z
+- commits:
     - subject: Update balena-yocto-scripts to 7fa652ca218ce38ec260360c01064b483fa4dc8d
       hash: f8ced51057904b47326d498130a9196c87abf08f
       body: Update balena-yocto-scripts
