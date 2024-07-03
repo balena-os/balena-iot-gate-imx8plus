@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file
 
+# v5.3.21+rev1
+## (2024-07-03)
+
+
+<details>
+<summary> Update balena-yocto-scripts to da6fe23e89509549866b16cbc6ff404980a189c0 [Self-hosted Renovate Bot] </summary>
+
+> ## balena-yocto-scripts-1.24.3
+> ### (2024-07-02)
+> 
+> * patch: No upload to GH artifacts when PR is closed [Vipul Gupta (@vipulgupta2048)]
+> 
+> ## balena-yocto-scripts-1.24.2
+> ### (2024-07-02)
+> 
+> * Fix quoting of $GITHUB_OUTPUT [Leandro Motta Barros]
+> 
+> ## balena-yocto-scripts-1.24.1
+> ### (2024-06-27)
+> 
+> * Simplify check for secure boot [Leandro Motta Barros]
+> 
+
+</details>
+
 # v5.3.21
 ## (2024-06-27)
 

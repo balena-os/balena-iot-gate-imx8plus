@@ -1,4 +1,78 @@
 - commits:
+    - subject: Update balena-yocto-scripts to da6fe23e89509549866b16cbc6ff404980a189c0
+      hash: 46c73911842a409989daad5a63629d19e2ef460c
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to da6fe23e89509549866b16cbc6ff404980a189c0
+        changelog-entry: Update balena-yocto-scripts to da6fe23e89509549866b16cbc6ff404980a189c0
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "patch: No upload to GH artifacts when PR is closed"
+              hash: cdee530e227972e251a2c7c06f4a3e97747419ca
+              body: >
+                Uploading artifacts to GH artifact storage when PR is merged
+
+                (closed event) is wasterful. Since they are only uploaded for
+                temporary
+
+                basis so it can be used for testing. Hence, the PR to stop doing
+                that
+
+                for closed PR event
+              footer:
+                Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+                signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+              author: Vipul Gupta (@vipulgupta2048)
+              nested: []
+          version: balena-yocto-scripts-1.24.3
+          title: ""
+          date: 2024-07-02T22:05:09.072Z
+        - commits:
+            - subject: Fix quoting of $GITHUB_OUTPUT
+              hash: 5f56f3236d8ee3d764e46e419aa2431dd42d45ff
+              body: |
+                We had typos in two cases, in which we missed the opening quote.
+              footer:
+                Signed-off-by: Leandro Motta Barros <leandro@balena.io>
+                signed-off-by: Leandro Motta Barros <leandro@balena.io>
+                Change-type: patch
+                change-type: patch
+              author: Leandro Motta Barros
+              nested: []
+          version: balena-yocto-scripts-1.24.2
+          title: ""
+          date: 2024-07-02T00:54:39.074Z
+        - commits:
+            - subject: Simplify check for secure boot
+              hash: be189f7e2f6fb26f778f29e1f955a1cdd01bc8a4
+              body: >
+                We were previously introducing a variable that was essentially
+
+                replicating the contents of an input. This commit makes use of
+                the input
+
+                directly.
+
+
+                Incidentally, the previous code also had a small bug/typo, in
+                which we
+
+                mixed a test for string length with a test for string equality.
+              footer:
+                Signed-off-by: Leandro Motta Barros <leandro@balena.io>
+                signed-off-by: Leandro Motta Barros <leandro@balena.io>
+                Change-type: patch
+                change-type: patch
+              author: Leandro Motta Barros
+              nested: []
+          version: balena-yocto-scripts-1.24.1
+          title: ""
+          date: 2024-06-27T20:35:29.474Z
+  version: 5.3.21+rev1
+  title: ""
+  date: 2024-07-03T04:06:17.673Z
+- commits:
     - subject: Update layers/meta-balena to cacc9bcb2b67a9f37654ca8500c96c833f741762
       hash: 82b6af1afb561e56d6223b2b56053e88dcf1ec55
       body: Update layers/meta-balena
