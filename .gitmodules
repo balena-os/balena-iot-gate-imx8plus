@@ -37,3 +37,4 @@
 [submodule "layers/meta-imx8mp-isp-imx219"]
 	path = layers/meta-imx8mp-isp-imx219
 	url = https://github.com/compulab-yokneam/meta-imx8mp-isp-imx219.git
+	branch = kirkstone-2.2.0
