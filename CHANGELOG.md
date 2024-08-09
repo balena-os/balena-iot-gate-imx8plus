@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.0.6+rev1
+## (2024-08-09)
+
+
+<details>
+<summary> Update contracts to bb77690aa0498f1060b64bebc183aea4fafb57e7 [balena-renovate[bot]] </summary>
+
+> ## contracts-2.0.111
+> ### (2024-08-08)
+> 
+> * patch: Add versionList to OpenJDK [Vipul Gupta (@vipulgupta2048)]
+> 
+
+</details>
+
 # v6.0.6
 ## (2024-08-08)
 
