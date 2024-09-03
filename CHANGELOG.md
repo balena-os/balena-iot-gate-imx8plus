@@ -2,6 +2,57 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.0.21
+## (2024-09-03)
+
+
+<details>
+<summary> Update layers/meta-balena to 5310f76b1f409f6fc164ab3f307b381250ff8f5a [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.0.21
+> ### (2024-09-01)
+> 
+> * Update balena-os/balena-yocto-scripts action to v1.25.30 [balena-renovate[bot]]
+> 
+> ## meta-balena-6.0.20
+> ### (2024-09-01)
+> 
+> * tests: config: restore both network options to false [Kyle Harding]
+> 
+> ## meta-balena-6.0.19
+> ### (2024-09-01)
+> 
+> 
+> <details>
+> <summary> Update balena-supervisor to v16.6.1 [balena-renovate[bot]] </summary>
+> 
+>> ### balena-supervisor-16.6.1
+>> #### (2024-08-29)
+>> 
+>> * Remove unused patchDevice function [Felipe Lalanne]
+>> 
+>> ### balena-supervisor-16.6.0
+>> #### (2024-08-28)
+>> 
+>> * Add support for redsocks dnsu2t config [Christina Ying Wang]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-6.0.18
+> ### (2024-09-01)
+> 
+> * Update balena-os/balena-yocto-scripts action to v1.25.28 [balena-renovate[bot]]
+> 
+> ## meta-balena-6.0.17
+> ### (2024-09-01)
+> 
+> * Update Pin balena-os/balena-yocto-scripts action to a3dfa26 [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.0.16+rev2
 ## (2024-09-03)
 
