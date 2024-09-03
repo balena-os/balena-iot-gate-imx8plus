@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.0.16+rev2
+## (2024-09-03)
+
+
+<details>
+<summary> Update contracts to 59752b7f99c1e5576c605a2f4188f9661468319f [balena-renovate[bot]] </summary>
+
+> ## contracts-2.0.113
+> ### (2024-08-20)
+> 
+> * iotdin-imx8p: Update the devices contract [Valentin Raevsky]
+> 
+> ## contracts-2.0.112
+> ### (2024-08-19)
+> 
+> * Add support for Ubuntu Noble [ruffsl]
+> 
+
+</details>
+
 # v6.0.16+rev1
 ## (2024-09-03)
 
