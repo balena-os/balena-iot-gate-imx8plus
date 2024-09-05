@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.0.21+rev1
+## (2024-09-05)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 0f0b5cc033b03b5535c13082000225f179a60758 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.25.36
+> ### (2024-09-05)
+> 
+> * Update balena-os/leviathan digest to 5db2b5d [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.35
+> ### (2024-09-04)
+> 
+> * Update balena-os/leviathan digest to da52396 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.34
+> ### (2024-09-04)
+> 
+> * Update actions/create-github-app-token action to v1.10.4 [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.0.21
 ## (2024-09-03)
 

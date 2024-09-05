@@ -1,4 +1,55 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 0f0b5cc033b03b5535c13082000225f179a60758
+      hash: 937eb31644f4b3b33a83bdb27e8a70716f056535
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 0f0b5cc033b03b5535c13082000225f179a60758
+        changelog-entry: Update balena-yocto-scripts to 0f0b5cc033b03b5535c13082000225f179a60758
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update balena-os/leviathan digest to 5db2b5d
+              hash: 3ea0421883a4c50185c8fa4f66de9f4e74f12a0b
+              body: |
+                Update balena-os/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.25.36
+          title: ""
+          date: 2024-09-05T16:03:09.417Z
+        - commits:
+            - subject: Update balena-os/leviathan digest to da52396
+              hash: 807851bdb98648080dfd8565e3de047f92323454
+              body: |
+                Update balena-os/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.25.35
+          title: ""
+          date: 2024-09-04T09:07:04.754Z
+        - commits:
+            - subject: Update actions/create-github-app-token action to v1.10.4
+              hash: e6a68531b03ca9d6b477fa85c9ec43990edd1a7a
+              body: |
+                Update actions/create-github-app-token from 1.10.3 to 1.10.4
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.25.34
+          title: ""
+          date: 2024-09-04T06:38:29.340Z
+  version: 6.0.21+rev1
+  title: ""
+  date: 2024-09-05T21:18:17.459Z
+- commits:
     - subject: Update layers/meta-balena to 5310f76b1f409f6fc164ab3f307b381250ff8f5a
       hash: 65d351e15143d396c596be8b474f8456597efa8d
       body: Update layers/meta-balena
