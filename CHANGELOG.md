@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.0.36
+## (2024-10-03)
+
+* Add GHA Build Test Deploy workflows [Vipul Gupta (@vipulgupta2048)]
+
 # v6.0.30+rev1
 ## (2024-09-19)
 
