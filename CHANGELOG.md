@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.0.47+rev2
+## (2024-10-22)
+
+* Update balena-os/balena-yocto-scripts to v1.26.0 [balena-renovate[bot]]
+
 # v6.0.47+rev1
 ## (2024-10-22)
 
