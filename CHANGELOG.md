@@ -2,6 +2,119 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.0.47+rev1
+## (2024-10-22)
+
+
+<details>
+<summary> Update balena-yocto-scripts to d9a810c7eb0d8e37c37b1bc27ecc0b4347a9dc21 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.26.0
+> ### (2024-10-15)
+> 
+> * Expose secure boot testing features via matrix input [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.25.63
+> ### (2024-10-11)
+> 
+> * Update balena-os/leviathan action to v2.31.60 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.62
+> ### (2024-10-11)
+> 
+> * Fix concurrency and cancel in progress contexts [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.25.61
+> ### (2024-10-10)
+> 
+> * Update balena-os/leviathan action to v2.31.59 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.60
+> ### (2024-10-09)
+> 
+> * Update actions/upload-artifact action to v4.4.3 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.59
+> ### (2024-10-09)
+> 
+> * Update actions/upload-artifact action to v4.4.2 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.58
+> ### (2024-10-09)
+> 
+> * Update balena-os/leviathan action to v2.31.56 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.57
+> ### (2024-10-08)
+> 
+> * Update balena-os/leviathan action to v2.31.54 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.56
+> ### (2024-10-07)
+> 
+> * Update actions/upload-artifact action to v4.4.1 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.55
+> ### (2024-10-07)
+> 
+> * Update balena-os/leviathan action to v2.31.51 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.54
+> ### (2024-10-07)
+> 
+> * Update actions/checkout action to v4.2.1 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.53
+> ### (2024-10-07)
+> 
+> * fix balena deploy quotes [Ryan Cooke]
+> 
+> ## balena-yocto-scripts-1.25.52
+> ### (2024-10-07)
+> 
+> * Update Lock file maintenance [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.51
+> ### (2024-10-04)
+> 
+> * Update balena-os/leviathan action to v2.31.50 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.50
+> ### (2024-10-02)
+> 
+> * use github app installation token for device repository cloning [Ryan Cooke]
+> 
+> ## balena-yocto-scripts-1.25.49
+> ### (2024-10-01)
+> 
+> * Only attempt to decrypt if we have encrypted in the build step [Ryan Cooke]
+> * Fetch full depth in order to checkout custom meta-balena-refs [Kyle Harding]
+> * Encrypt balenaOS artifacts at rest in GitHub [Anton Belodedenko]
+> 
+> ## balena-yocto-scripts-1.25.48
+> ### (2024-10-01)
+> 
+> * Update actions/checkout action to v4.2.0 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.47
+> ### (Invalid date)
+> 
+> * patch: Stop persisting credentials in actions/checkout [Vipul Gupta (@vipulgupta2048)]
+> 
+> ## balena-yocto-scripts-1.25.46
+> ### (2024-09-27)
+> 
+> * use genericx86-64-ext image for testing the workflow [rcooke-warwick]
+> 
+> ## balena-yocto-scripts-1.25.45
+> ### (2024-09-19)
+> 
+> * fix check of finalize value [rcooke-warwick]
+> * Improve checking of previous test results [Kyle Harding]
+> 
+
+</details>
+
 # v6.0.47
 ## (2024-10-21)
 
