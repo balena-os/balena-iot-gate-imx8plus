@@ -1,0 +1,194 @@
+From 06b258617429fadd3235088e496bc274210b5c19 Mon Sep 17 00:00:00 2001
+From: Valentin Raevsky <valentin@compulab.co.il>
+Date: Fri, 13 Sep 2024 22:58:41 +0300
+Subject: [PATCH] kernel-module-isp-vvcam: Fix Linux Kernel 6.y build issue
+
+Signed-off-by: Valentin Raevsky <valentin@compulab.co.il>
+---
+ vvcam/v4l2/focus/vcm_dw9790/dw9790.c             |  6 +++---
+ vvcam/v4l2/sensor/ar1335/ar1335_mipi_v3.c        |  4 ++--
+ .../basler-camera-driver-vvcam.c                 | 16 ++++++++--------
+ vvcam/v4l2/sensor/imx219/imx219_mipi_v3.c        |  4 ++--
+ vvcam/v4l2/sensor/os08a20/os08a20_mipi_v3.c      |  4 ++--
+ vvcam/v4l2/sensor/ov2775/ov2775_mipi_v3.c        |  4 ++--
+ 6 files changed, 19 insertions(+), 19 deletions(-)
+
+diff --git a/vvcam/v4l2/focus/vcm_dw9790/dw9790.c b/vvcam/v4l2/focus/vcm_dw9790/dw9790.c
+index 8e052d3..f1d0175 100644
+--- a/vvcam/v4l2/focus/vcm_dw9790/dw9790.c
++++ b/vvcam/v4l2/focus/vcm_dw9790/dw9790.c
+@@ -361,7 +361,7 @@ err_cleanup:
+     return ret;
+ }
+ 
+-static int dw9790_remove(struct i2c_client *client) 
++static void dw9790_remove(struct i2c_client *client) 
+ {
+     struct v4l2_subdev *sd = i2c_get_clientdata(client);
+     struct dw9790_device *dw9790_dev = sd_to_dw9790_device(sd);
+@@ -372,7 +372,7 @@ static int dw9790_remove(struct i2c_client *client)
+ 
+     pm_runtime_disable(&client->dev);
+     mutex_destroy(&dw9790_dev->lock);
+-    return 0;
++    return;
+ }
+ 
+ static int __maybe_unused dw9790_vcm_suspend(struct device *dev) 
+@@ -421,4 +421,4 @@ static struct i2c_driver dw9790_i2c_driver = {
+ module_i2c_driver(dw9790_i2c_driver);
+ 
+ MODULE_DESCRIPTION("DW9790 vcm Driver");
+-MODULE_LICENSE("GPL");
+\ No newline at end of file
++MODULE_LICENSE("GPL");
+diff --git a/vvcam/v4l2/sensor/ar1335/ar1335_mipi_v3.c b/vvcam/v4l2/sensor/ar1335/ar1335_mipi_v3.c
+index 8e87cfe..9abdfb7 100644
+--- a/vvcam/v4l2/sensor/ar1335/ar1335_mipi_v3.c
++++ b/vvcam/v4l2/sensor/ar1335/ar1335_mipi_v3.c
+@@ -1167,7 +1167,7 @@ probe_err_regulator_disable:
+ 	return retval;
+ }
+ 
+-static int ar1335_remove(struct i2c_client *client)
++static void ar1335_remove(struct i2c_client *client)
+ {
+ 	struct v4l2_subdev *sd = i2c_get_clientdata(client);
+ 	struct ar1335 *sensor = client_to_ar1335(client);
+@@ -1180,7 +1180,7 @@ static int ar1335_remove(struct i2c_client *client)
+ 	ar1335_regulator_disable(sensor);
+ 	mutex_destroy(&sensor->lock);
+ 
+-	return 0;
++	return;
+ }
+ 
+ static int __maybe_unused ar1335_suspend(struct device *dev)
+diff --git a/vvcam/v4l2/sensor/camera-proxy-driver/basler-camera-driver-vvcam/basler-camera-driver-vvcam.c b/vvcam/v4l2/sensor/camera-proxy-driver/basler-camera-driver-vvcam/basler-camera-driver-vvcam.c
+index d3a707b..d0efa63 100644
+--- a/vvcam/v4l2/sensor/camera-proxy-driver/basler-camera-driver-vvcam/basler-camera-driver-vvcam.c
++++ b/vvcam/v4l2/sensor/camera-proxy-driver/basler-camera-driver-vvcam/basler-camera-driver-vvcam.c
+@@ -76,9 +76,9 @@ static int basler_read_register_chunk(struct i2c_client* client, __u8* buffer, _
+ 
+ static int basler_camera_s_ctrl(struct v4l2_ctrl *ctrl);
+ static int basler_camera_g_volatile_ctrl(struct v4l2_ctrl *ctrl);
+-static int basler_camera_validate(const struct v4l2_ctrl *ctrl, u32 idx, union v4l2_ctrl_ptr ptr);
+-static void basler_camera_init(const struct v4l2_ctrl *ctrl, u32 idx, union v4l2_ctrl_ptr ptr);
+-static bool basler_camera_equal(const struct v4l2_ctrl *ctrl, u32 idx, union v4l2_ctrl_ptr ptr1, union v4l2_ctrl_ptr ptr2);
++static int basler_camera_validate(const struct v4l2_ctrl *ctrl, union v4l2_ctrl_ptr ptr);
++static void basler_camera_init(const struct v4l2_ctrl *ctrl, unsigned int idx, union v4l2_ctrl_ptr ptr);
++static bool basler_camera_equal(const struct v4l2_ctrl *ctrl, union v4l2_ctrl_ptr ptr1, union v4l2_ctrl_ptr ptr2);
+ 
+ struct basler_camera_dev {
+ 	struct i2c_client *i2c_client;
+@@ -731,7 +731,7 @@ static const struct v4l2_ctrl_type_ops basler_camera_ctrl_type_ops = {
+  *
+  * Returns always zero
+  */
+-static int basler_camera_validate(const struct v4l2_ctrl *ctrl, u32 idx, union v4l2_ctrl_ptr ptr )
++static int basler_camera_validate(const struct v4l2_ctrl *ctrl, union v4l2_ctrl_ptr ptr )
+ {
+ 	return 0;
+ }
+@@ -742,7 +742,7 @@ static int basler_camera_validate(const struct v4l2_ctrl *ctrl, u32 idx, union v
+  * Note: Not needed by access-register control
+  *
+  */
+-static void basler_camera_init(const struct v4l2_ctrl *ctrl, u32 idx, union v4l2_ctrl_ptr ptr )
++static void basler_camera_init(const struct v4l2_ctrl *ctrl, unsigned int idx, union v4l2_ctrl_ptr ptr )
+ {
+ }
+ 
+@@ -753,7 +753,7 @@ static void basler_camera_init(const struct v4l2_ctrl *ctrl, u32 idx, union v4l2
+  *
+  * Returns always zero
+  */
+-static bool basler_camera_equal(const struct v4l2_ctrl *ctrl, u32 idx, union v4l2_ctrl_ptr ptr1, union v4l2_ctrl_ptr ptr2 )
++static bool basler_camera_equal(const struct v4l2_ctrl *ctrl, union v4l2_ctrl_ptr ptr1, union v4l2_ctrl_ptr ptr2 )
+ {
+ 	return 0;
+ }
+@@ -1047,7 +1047,7 @@ entity_cleanup:
+ 	return ret;
+ }
+ 
+-static int basler_camera_remove(struct i2c_client *client)
++static void basler_camera_remove(struct i2c_client *client)
+ {
+ 	struct v4l2_subdev *sd = i2c_get_clientdata(client);
+ 	struct basler_camera_dev *sensor = to_basler_camera_dev(sd);
+@@ -1058,7 +1058,7 @@ static int basler_camera_remove(struct i2c_client *client)
+ 	mutex_destroy(&sensor->lock);
+ 	media_entity_cleanup(&sensor->sd.entity);
+ 
+-	return 0;
++	return;
+ }
+ 
+ static const struct i2c_device_id basler_camera_id[] = {
+diff --git a/vvcam/v4l2/sensor/imx219/imx219_mipi_v3.c b/vvcam/v4l2/sensor/imx219/imx219_mipi_v3.c
+index e398d11..6008db1 100644
+--- a/vvcam/v4l2/sensor/imx219/imx219_mipi_v3.c
++++ b/vvcam/v4l2/sensor/imx219/imx219_mipi_v3.c
+@@ -1570,7 +1570,7 @@ probe_err_power_off:
+ 	return retval;
+ }
+ 
+-static int imx219_remove(struct i2c_client *client)
++static void imx219_remove(struct i2c_client *client)
+ {
+ 	struct v4l2_subdev *sd = i2c_get_clientdata(client);
+ 	struct imx219 *sensor = client_to_imx219(client);
+@@ -1588,7 +1588,7 @@ static int imx219_remove(struct i2c_client *client)
+ 	mutex_destroy(&sensor->lock);
+ 	mutex_destroy(&sensor->mutex);
+ 
+-	return 0;
++	return;
+ }
+ 
+ static int __maybe_unused imx219_suspend(struct device *dev)
+diff --git a/vvcam/v4l2/sensor/os08a20/os08a20_mipi_v3.c b/vvcam/v4l2/sensor/os08a20/os08a20_mipi_v3.c
+index 7cc02c2..a4ea615 100644
+--- a/vvcam/v4l2/sensor/os08a20/os08a20_mipi_v3.c
++++ b/vvcam/v4l2/sensor/os08a20/os08a20_mipi_v3.c
+@@ -1320,7 +1320,7 @@ probe_err_regulator_disable:
+ 	return retval;
+ }
+ 
+-static int os08a20_remove(struct i2c_client *client)
++static void os08a20_remove(struct i2c_client *client)
+ {
+ 	struct v4l2_subdev *sd = i2c_get_clientdata(client);
+ 	struct os08a20 *sensor = client_to_os08a20(client);
+@@ -1333,7 +1333,7 @@ static int os08a20_remove(struct i2c_client *client)
+ 	os08a20_regulator_disable(sensor);
+ 	mutex_destroy(&sensor->lock);
+ 
+-	return 0;
++	return;
+ }
+ 
+ static int __maybe_unused os08a20_suspend(struct device *dev)
+diff --git a/vvcam/v4l2/sensor/ov2775/ov2775_mipi_v3.c b/vvcam/v4l2/sensor/ov2775/ov2775_mipi_v3.c
+index 1fe75f2..1d7decd 100644
+--- a/vvcam/v4l2/sensor/ov2775/ov2775_mipi_v3.c
++++ b/vvcam/v4l2/sensor/ov2775/ov2775_mipi_v3.c
+@@ -1729,7 +1729,7 @@ probe_err_regulator_disable:
+ 	return retval;
+ }
+ 
+-static int ov2775_remove(struct i2c_client *client)
++static void ov2775_remove(struct i2c_client *client)
+ {
+ 	struct v4l2_subdev *sd = i2c_get_clientdata(client);
+ 	struct ov2775 *sensor = client_to_ov2775(client);
+@@ -1742,7 +1742,7 @@ static int ov2775_remove(struct i2c_client *client)
+ 	ov2775_regulator_disable(sensor);
+ 	mutex_destroy(&sensor->lock);
+ 
+-	return 0;
++	return;
+ }
+ 
+ static int __maybe_unused ov2775_suspend(struct device *dev)
