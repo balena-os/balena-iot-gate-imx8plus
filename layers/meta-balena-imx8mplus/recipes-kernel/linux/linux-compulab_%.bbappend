@@ -15,22 +15,12 @@ KERNEL_CONFIG:prepend:iot-gate-imx8plus-d1d8 = "iot-gate-imx8plus_defconfig "
 BALENA_CONFIGS:append = " imx-sdma "
 BALENA_CONFIGS[imx-sdma] = " \
 	CONFIG_IMX_SDMA=m \
-	CONFIG_EFI_STUB=n \
-	CONFIG_EFI=n \
 "
 
 # Ensure this module isn't built-in
 BALENA_CONFIGS:append = " cf80211 "
 BALENA_CONFIGS[cf80211] = " \
 	CONFIG_CFG80211=m \
-"
-
-# We don't load grub with u-boot, instead
-# balenaOS u-boot loads the kernel directly
-BALENA_CONFIGS:append = " noefi "
-BALENA_CONFIGS[noefi] = " \
-	CONFIG_EFI_STUB=n \
-	CONFIG_EFI=n \
 "
 
 # Fixes module loading
