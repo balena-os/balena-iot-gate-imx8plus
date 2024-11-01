@@ -1,3 +1,4 @@
+From 7b1b4c421896e6d2ead52d8ac38a185594e5be40 Mon Sep 17 00:00:00 2001
 From: Alexandru Costache <alexandru@balena.io>
 Date: Fri, 17 Nov 2023 10:24:27 +0100
 Subject: [PATCH] integrate with balenaOS
@@ -5,9 +6,9 @@ Subject: [PATCH] integrate with balenaOS
 Upstream-status: inaproppriate [configuration]
 Signed-off-by: Alexandru Costache <alexandru@balena.io>
 ---
- configs/iot-gate-imx8plus_defconfig   |  8 +++++++
- include/configs/compulab-imx8m-plus.h | 34 +++++++++++++--------------
- 2 files changed, 24 insertions(+), 18 deletions(-)
+ configs/iot-gate-imx8plus_defconfig   |  8 +++++
+ include/configs/compulab-imx8m-plus.h | 44 +++++++++++++--------------
+ 2 files changed, 30 insertions(+), 22 deletions(-)
 
 diff --git a/configs/iot-gate-imx8plus_defconfig b/configs/iot-gate-imx8plus_defconfig
 index ce4561486f4d..d848df2e85ab 100644
@@ -26,7 +27,7 @@ index ce4561486f4d..d848df2e85ab 100644
 +CONFIG_CMD_FS_UUID=y
 +CONFIG_CMD_USB_MASS_STORAGE
 diff --git a/include/configs/compulab-imx8m-plus.h b/include/configs/compulab-imx8m-plus.h
-index ba8e706f8d1c..e055c64be0bd 100644
+index ba8e706f8d1c..61529bde1900 100644
 --- a/include/configs/compulab-imx8m-plus.h
 +++ b/include/configs/compulab-imx8m-plus.h
 @@ -79,11 +79,13 @@
@@ -36,9 +37,10 @@ index ba8e706f8d1c..e055c64be0bd 100644
 -	"image=Image\0" \
 +	"image=Image.gz\0" \
  	"splashimage=0x50000000\0" \
- 	"console=ttymxc1,115200 console=tty1\0" \
+-	"console=ttymxc1,115200 console=tty1\0" \
 -	"fdt_addr_r=0x43000000\0"			\
 -	"fdt_addr=0x43000000\0"			\
++	"console=ttymxc1,115200\0" \
 +	"fdt_addr_r=0x45000000\0"			\
 +	"fdt_addr=0x45000000\0"			\
 +	"fdto_addr_r=0x45800000\0"		\
@@ -51,28 +53,39 @@ index ba8e706f8d1c..e055c64be0bd 100644
  	"mmcroot=" CONFIG_MMCROOT " rootwait rw\0" \
  	"mmcautodetect=yes\0" \
 -	"mmcargs=setenv bootargs ${jh_clk} console=${console} root=${mmcroot}\0 " \
-+	"mmcargs=setenv bootargs ${jh_clk} console=${console} ${resin_kernel_root} ${os_cmdline}\0 " \
++	"mmcargs=setenv bootargs ${jh_clk} ${resin_kernel_root} ${root_opt} ${os_cmdline} "__stringify(BALENA_STAGE2)" \0 " \
  	"loadbootscript=load mmc ${mmcdev}:${mmcpart} ${loadaddr} ${bsp_script};\0" \
  	"bootscript=echo Running bootscript from mmc ...; " \
  		"source\0" \
-@@ -136,24 +138,21 @@
+@@ -110,7 +112,7 @@
+ 				"echo WARN: Cannot load the DT; " \
+ 			"fi; " \
+ 		"fi;\0" \
+-	"netargs=setenv bootargs ${jh_clk} console=${console} " \
++	"netargs=setenv bootargs ${jh_clk} " \
+ 		"root=/dev/nfs " \
+ 		"ip=dhcp nfsroot=${serverip}:${nfsroot},v3,tcp\0" \
+ 	"netboot=echo Booting from net ...; " \
+@@ -136,26 +138,25 @@
  		"usb_dev=0\0" \
  		"boot_part=1\0" \
  		"root_opt=rootwait rw\0" \
 -		"emmc_ul=setenv iface mmc; setenv dev ${emmc_dev}; setenv part ${boot_part};" \
 -		"setenv bootargs console=${console} root=${emmc_root} ${root_opt};\0" \
 +		"emmc_ul=setenv iface mmc; setenv dev ${emmc_dev}; setenv part ${resin_root_part};" \
-+		"setenv bootargs console=${console} ${resin_kernel_root} ${root_opt};\0" \
++		"run mmcargs; \0" \
  		"sd_ul=setenv iface mmc; setenv dev ${sd_dev}; setenv part ${boot_part};" \
- 			"setenv bootargs console=${console} root=${sd_root} ${root_opt};\0" \
+-			"setenv bootargs console=${console} root=${sd_root} ${root_opt};\0" \
++			"setenv bootargs root=${sd_root} ${root_opt} "__stringify(BALENA_STAGE2)"; \0" \
  		"usb_ul=usb start; setenv iface usb; setenv dev ${usb_dev}; setenv part ${boot_part};" \
- 			"setenv bootargs console=${console} root=${usb_root} ${root_opt};\0" \
+-			"setenv bootargs console=${console} root=${usb_root} ${root_opt};\0" \
++			"setenv bootargs root=${usb_root} ${root_opt} "__stringify(BALENA_STAGE2)"; \0" \
  		"ulbootscript=load ${iface} ${dev}:${part} ${loadaddr} ${script};\0" \
 -		"ulimage=load ${iface} ${dev}:${part} ${loadaddr} ${image}\0" \
 -		"ulfdt=if test ${boot_fdt} = yes || test ${boot_fdt} = try; then " \
 -			"load ${iface} ${dev}:${part} ${fdt_addr_r} ${fdtfile}; fi;\0" \
-+		"ulimage=load ${iface} ${resin_dev_index}:${resin_root_part} ${zip_addr} boot/${image}; unzip ${zip_addr} ${loadaddr}; \0" \
-+		"ulfdt=load ${iface} ${resin_dev_index}:${resin_root_part} ${fdt_addr_r} boot/${fdtfile}; \0" \
++		"ulimage=if load ${iface} ${dev}:${resin_boot_part} ${zip_addr} ${image}; then unzip ${zip_addr} ${loadaddr}; run balena_kernel_load_crc_save; else if load ${iface} ${dev}:${resin_root_part} ${zip_addr} boot/${image}; then unzip ${zip_addr} ${loadaddr}; run balena_kernel_load_crc_save; else false; fi; fi; \0" \
++		"ulfdt=if load ${iface} ${dev}:${resin_boot_part} ${fdt_addr_r} ${fdtfile}; then run balena_fdt_load_crc_save; else if load ${iface} ${dev}:${resin_root_part} boot/${fdt_addr_r} ${fdtfile}; then run balena_fdt_load_crc_save; else false; fi; fi; \0" \
  		"bootlist=sd_ul usb_ul emmc_ul\0" \
 -	"bsp_bootcmd=echo Running BSP bootcmd ...; " \
 -		"for src in ${bootlist}; do " \
@@ -88,8 +101,12 @@ index ba8e706f8d1c..e055c64be0bd 100644
 +				"run resin_set_kernel_root; run set_os_cmdline; run emmc_ul;" \
  				"if run ulimage; then " \
  					"if run ulfdt; then " \
++						"run balena_kernel_load_crc_check; " \
++						"run balena_fdt_load_crc_check; " \
  						"booti ${loadaddr} - ${fdt_addr_r}; " \
-@@ -163,8 +162,7 @@
+ 					"else " \
+ 						"if test ${boot_fdt} != yes; then " \
+@@ -163,8 +164,7 @@
  						"fi; " \
  					"fi; " \
  				"fi; " \
