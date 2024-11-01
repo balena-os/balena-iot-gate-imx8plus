@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.0.50+rev1
+## (2024-11-01)
+
+* adapt u-boot-compulab to upstream changes [Alex Gonzalez]
+* mask unavailable recipes [Alex Gonzalez]
+* adapt imx-boot to latest meta-freescale [Alex Gonzalez]
+* adapt imx-atf to latest meta-freescale [Alex Gonzalez]
+* adapt kernel-module-isp-vvcam to current meta-freescale [Alex Gonzalez]
+* Update layers/meta-bsp-imx8mp to 4829d51e9690cd037f24a1f4cb1524fd81593ab5 [balena-renovate[bot]]
+
 # v6.0.50
 ## (2024-10-29)
 
