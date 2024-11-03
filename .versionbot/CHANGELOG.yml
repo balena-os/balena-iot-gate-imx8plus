@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update layers/poky to 647bd689e95f971e5ec069cd123bdf5157c686a4
+      hash: 62857fa677c27eb6f625ac45f8bfa9f9aa8f6472
+      body: Update layers/poky
+      footer:
+        Changelog-entry: Update layers/poky to 647bd689e95f971e5ec069cd123bdf5157c686a4
+        changelog-entry: Update layers/poky to 647bd689e95f971e5ec069cd123bdf5157c686a4
+      author: balena-renovate[bot]
+      nested: []
+  version: 6.0.50+rev2
+  title: ""
+  date: 2024-11-03T11:26:36.470Z
+- commits:
     - subject: adapt u-boot-compulab to upstream changes
       hash: 0250acc69f22dcf878793590ec751af6fd4c319c
       body: ""
