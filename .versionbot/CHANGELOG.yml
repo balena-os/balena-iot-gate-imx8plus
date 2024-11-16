@@ -1,4 +1,45 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 2543e49b79e8161d5d2d9f4625ac70101594cd76
+      hash: 9fbd3ddbd60f5c5c2fed8a8cf04b8147932f139a
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 2543e49b79e8161d5d2d9f4625ac70101594cd76
+        changelog-entry: Update balena-yocto-scripts to 2543e49b79e8161d5d2d9f4625ac70101594cd76
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Set explicit permissions at the job level
+              hash: 9dc5aacccbd5ffdb154df3a1db172736cca36145
+              body: |
+                This is the more secure approach that defaults
+                to lowest possible permissions.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.27.10
+          title: ""
+          date: 2024-11-11T19:16:32.044Z
+        - commits:
+            - subject: Update Lock file maintenance
+              hash: 271d9ee084c71d4eb128948b15ea3bf9150a0a39
+              body: |
+                Update 
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.27.9
+          title: ""
+          date: 2024-11-11T01:34:43.508Z
+  version: 6.1.0+rev5
+  title: ""
+  date: 2024-11-16T21:32:27.447Z
+- commits:
     - subject: Update balena-os/balena-yocto-scripts to v1.27.10
       hash: 4d90da5aa65634b45cfb6b391716b4af393ad2c1
       body: Update balena-os/balena-yocto-scripts

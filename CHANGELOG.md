@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.1.0+rev5
+## (2024-11-16)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 2543e49b79e8161d5d2d9f4625ac70101594cd76 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.27.10
+> ### (2024-11-11)
+> 
+> * Set explicit permissions at the job level [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.27.9
+> ### (2024-11-11)
+> 
+> * Update Lock file maintenance [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.1.0+rev4
 ## (2024-11-16)
 
