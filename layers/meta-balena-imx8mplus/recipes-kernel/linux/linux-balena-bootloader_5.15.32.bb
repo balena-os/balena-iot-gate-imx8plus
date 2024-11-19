@@ -1,6 +1,6 @@
 SUMMARY = "CompuLab Linux Kernel for compulab-imx8m-plus SOM"
 
-inherit kernel-yocto kernel fsl-kernel-localversion fsl-vivante-kernel-driver-handler
+inherit kernel-yocto kernel fsl-kernel-localversion
 
 LICENSE = "GPL-2.0-only"
 LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
@@ -27,16 +27,15 @@ KERNEL_EXTRA_ARGS += "LOADADDR=${UBOOT_ENTRYPOINT}"
 
 DEPENDS += "lzop-native bc-native"
 
-require linux-compulab_${PV}.inc
+require ${PN}_${PV}.inc
 
 DEFAULT_PREFERENCE = "1"
 
 KERNEL_VERSION_SANITY_SKIP="1"
 
-# Merged from the bbappend
-FILESEXTRAPATHS:prepend := "${THISDIR}/compulab/${PV}/imx8mp:"
-
-require compulab/${PV}/imx8mp.inc
+# Fetch this from meta-bsp-imx8mm
+FILESEXTRAPATHS:prepend := "${COREBASE}/../meta-bsp-imx8mp/recipes-kernel/linux/compulab/${PV}/imx8mp:"
+require recipes-kernel/linux/compulab/${PV}/imx8mp.inc
 
 do_configure:append() {
     if [ -z ${SKIP_MACHINE_DEFCONFIG} ];then
@@ -73,11 +72,5 @@ do_kernel_localversion:prepend() {
     touch ${WORKDIR}/defconfig
 }
 
-PACKAGES =+ "linux-compulab-headers"
-FILES:linux-compulab-headers = "${exec_prefix}/src/linux*"
-
-PACKAGESPLITFUNCS:remove = "split_kernel_module_packages"
-
-FILES:${KERNEL_PACKAGE_NAME}-modules = "/lib/modules/ /etc/"
 
 COMPATIBLE_MACHINE = "(ucm-imx8m-plus|som-imx8m-plus|iot-gate-imx8plus)"
