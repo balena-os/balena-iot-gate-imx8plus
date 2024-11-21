@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.1.0+rev6
+## (2024-11-21)
+
+* remove keyctl-caam append [Alex Gonzalez]
+* add flasher support [Alex Gonzalez]
+* re-add migrate module [Alex Gonzalez]
+* extend initramfs size [Alex Gonzalez]
+* allow abroot to detect an unbootable rollback and fix it up [Alex Gonzalez]
+* adapt u-boot environment to launch balena bootloader [Alex Gonzalez]
+* use balena bootloader in update hooks [Alex Gonzalez]
+* deploy balena bootloader in images [Alex Gonzalez]
+* fix kexec freeze by enabling ocotp clocks [Alex Gonzalez]
+* configure linux-compulab with EFI support [Alex Gonzalez]
+* specialize to balena bootloader [Alex Gonzalez]
+* adapt recipe to bootloader [Alex Gonzalez]
+* add balena bootloader recipe [Alex Gonzalez]
+
 # v6.1.0+rev5
 ## (2024-11-16)
 
