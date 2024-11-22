@@ -2,10 +2,11 @@ IMAGE_FSTYPES:append = " balenaos-img"
 
 dram_conf = "${@bb.utils.contains('DRAM_CONF', 'd2d4', 'd2d4', 'd1d8', d)}"
 
+KERNEL_DEVICE_TREES = "${@' '.join(map(str, [os.path.join('balena-bootloader', os.path.basename(dt) + ':/' + os.path.basename(dt)) for dt in d.getVar('KERNEL_DEVICETREE').split()]))}"
+
 BALENA_BOOT_PARTITION_FILES += " \
     imx-boot_${MACHINE}_${dram_conf}:/imx-boot-${MACHINE}-sd.bin-flash_evk \
-    balena-bootloader/iot-gate-imx8plus-usbdev.dtb:/iot-gate-imx8plus-usbdev.dtb \
-    balena-bootloader/iot-gate-imx8plus.dtb:/iot-gate-imx8plus.dtb \
+    ${KERNEL_DEVICE_TREES} \
     balena-bootloader/${KERNEL_IMAGETYPE}-initramfs-${MACHINE}.bin:/${KERNEL_IMAGETYPE} \
     balena-bootloader/bootenv:/bootenv \
 "
