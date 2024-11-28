@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update layers/poky to c0dcc563322cbe8b4c323172d66d04d16d2067e8
+      hash: 2e38757d29072848875476c873e593493fa2755d
+      body: Update layers/poky
+      footer:
+        Changelog-entry: Update layers/poky to c0dcc563322cbe8b4c323172d66d04d16d2067e8
+        changelog-entry: Update layers/poky to c0dcc563322cbe8b4c323172d66d04d16d2067e8
+      author: balena-renovate[bot]
+      nested: []
+  version: 6.1.0+rev10
+  title: ""
+  date: 2024-11-28T11:31:31.922Z
+- commits:
     - subject: Update layers/meta-compulab-bsp to
         3e7050b60551f0d4d9505e1e5f202ad548a7a7a4
       hash: cf56ae2b8d07320ba206d94780f6f0b65a1a2de3
