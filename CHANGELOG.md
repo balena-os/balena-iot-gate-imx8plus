@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.1.0+rev12
+## (2024-11-30)
+
+
+<details>
+<summary> Update contracts to 01757392e1088465b996fb9e92e1b6ab8a45d3b1 [balena-renovate[bot]] </summary>
+
+> ## contracts-2.0.117
+> ### (2024-11-25)
+> 
+> * hw.device-type: Rename Seeed J3010 and J4012 to include module name [Alexandru Costache]
+> 
+
+</details>
+
 # v6.1.0+rev11
 ## (2024-11-30)
 

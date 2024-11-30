@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update contracts to 01757392e1088465b996fb9e92e1b6ab8a45d3b1
+      hash: 6807f0fa8316c9d96bc3fa0fe9103d64da419be0
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 01757392e1088465b996fb9e92e1b6ab8a45d3b1
+        changelog-entry: Update contracts to 01757392e1088465b996fb9e92e1b6ab8a45d3b1
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "hw.device-type: Rename Seeed J3010 and J4012 to include module name"
+              hash: f803589c9885fb0d8cee7d9c674ec6bde235e7af
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.117
+          title: ""
+          date: 2024-11-25T15:38:04.848Z
+  version: 6.1.0+rev12
+  title: ""
+  date: 2024-11-30T16:20:56.423Z
+- commits:
     - subject: Explicitly set GITHUB_TOKEN permissions for yocto workflow
       hash: 928f47f759427b491674499030e884fc6a0508de
       body: ""
