@@ -1,4 +1,105 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 3eebec1f898038f5bbee0fcccb62b7178db2ef47
+      hash: 5af15b3920fda733502db95e75f840f7038dfc0f
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 3eebec1f898038f5bbee0fcccb62b7178db2ef47
+        changelog-entry: Update balena-yocto-scripts to 3eebec1f898038f5bbee0fcccb62b7178db2ef47
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Set additional github token permissions
+              hash: 41cd691fdad8edfcb6664cd1a2cc8966da7e3475
+              body: >
+                THis is to allow the workflow to function under an org with
+                restricitve github token permissions
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: Ryan Cooke
+              nested: []
+          version: balena-yocto-scripts-1.27.16
+          title: ""
+          date: 2024-11-29T19:18:27.347Z
+        - commits:
+            - subject: Update balena-os/leviathan action to v2.31.65
+              hash: ae9f251d20e4f473318d92e22fa26866d0a7924d
+              body: |
+                Update balena-os/leviathan from 2.31.62 to 2.31.65
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.27.15
+          title: ""
+          date: 2024-11-23T22:39:50.484Z
+        - commits:
+            - subject: Update balena-os/leviathan action to v2.31.62
+              hash: 72364fff1e6bc138bef37a89197bf1db5213c90b
+              body: |
+                Update balena-os/leviathan from 2.31.60 to 2.31.62
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.27.14
+          title: ""
+          date: 2024-11-20T18:43:55.552Z
+        - commits:
+            - subject: Explicitly set GH_TOKEN permissions
+              hash: 389d08cfa7af88eb059f1d56fcf6a0db69598bbb
+              body: ""
+              footer:
+                change-type: patch
+              author: Anton Belodedenko
+              nested: []
+          version: balena-yocto-scripts-1.27.13
+          title: ""
+          date: 2024-11-18T22:20:04.431Z
+        - commits:
+            - subject: Update Lock file maintenance
+              hash: da98468af30dee76cdea3934db771b5f7cf4e6e3
+              body: |
+                Update 
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.27.12
+          title: ""
+          date: 2024-11-18T01:34:47.609Z
+        - commits:
+            - subject: "github/workflows/yocto-build-deploy.yml: Add hostapp metadata to OS
+                release"
+              hash: 0c8631cf2d935b139aff85004bb7c41883c355a6
+              body: >
+                This is needed for supervisor managed OS updates. For example,
+                the supervisor
+
+                can check this metadata against the equivalent field from
+                /etc/os-release to
+
+                determine if the device is already running the latest OS
+                release.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: balena-yocto-scripts-1.27.11
+          title: ""
+          date: 2024-11-17T19:41:07.287Z
+  version: 6.1.0+rev13
+  title: ""
+  date: 2024-11-30T20:28:57.643Z
+- commits:
     - subject: Update contracts to 01757392e1088465b996fb9e92e1b6ab8a45d3b1
       hash: 6807f0fa8316c9d96bc3fa0fe9103d64da419be0
       body: Update contracts
