@@ -1,4 +1,23 @@
 - commits:
+    - subject: recover support for TPM module
+      hash: 00d679c045c5bdf983d7c82a58ca664fd4c23a6a
+      body: |
+        The linux-compulab 5.15.35 contained support for the TPM module that
+        goes into the M.2 slot. The update to 5.15.71 dropped this support.
+
+        This commit re-introduces support for this TPM module in both
+        linux-compulab and linux-balena-bootloader.
+      footer:
+        Changelog-entry: recover support for TPM module
+        changelog-entry: recover support for TPM module
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 6.1.0+rev14
+  title: ""
+  date: 2024-12-02T16:23:43.985Z
+- commits:
     - subject: Update balena-yocto-scripts to 3eebec1f898038f5bbee0fcccb62b7178db2ef47
       hash: 5af15b3920fda733502db95e75f840f7038dfc0f
       body: Update balena-yocto-scripts

@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.1.0+rev14
+## (2024-12-02)
+
+* recover support for TPM module [Alex Gonzalez]
+
 # v6.1.0+rev13
 ## (2024-11-30)
 
