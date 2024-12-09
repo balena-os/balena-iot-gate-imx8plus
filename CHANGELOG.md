@@ -2,6 +2,37 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.1.0+rev16
+## (2024-12-09)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 4b3036aab57f3a204049d79f38fc013302f66c12 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.28.0
+> ### (2024-12-09)
+> 
+> * Update the App Id and Private Key for ephemeral app tokens [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.27.20
+> ### (2024-12-09)
+> 
+> * barys: add support for scarthgap [Joseph Kogut]
+> * barys: make honister+ syntax default [Joseph Kogut]
+> 
+> ## balena-yocto-scripts-1.27.19
+> ### (2024-12-07)
+> 
+> * Update balena-os/leviathan action to v2.31.68 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.27.18
+> ### (2024-12-07)
+> 
+> * Update balena-os/leviathan action to v2.31.67 [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.1.0+rev15
 ## (2024-12-05)
 
