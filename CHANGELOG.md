@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.1.0+rev17
+## (2024-12-10)
+
+
+<details>
+<summary> Update contracts to 474ab2d22fa0c6fb82dfb382beb6f14975927166 [balena-renovate[bot]] </summary>
+
+> ## contracts-2.0.118
+> ### (2024-12-04)
+> 
+> * hw.device-type: update logo for nitrogen8M Mini [Jonathan Berger]
+> 
+
+</details>
+
 # v6.1.0+rev16
 ## (2024-12-09)
 
