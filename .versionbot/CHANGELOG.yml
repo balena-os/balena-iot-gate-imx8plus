@@ -1,4 +1,55 @@
 - commits:
+    - subject: Update contracts to 9383b369225a93451dcb595930106a36f5b2dc45
+      hash: 7c8c0caa2d77dbfa19fcb86529bf74d839586e63
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 9383b369225a93451dcb595930106a36f5b2dc45
+        changelog-entry: Update contracts to 9383b369225a93451dcb595930106a36f5b2dc45
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "hw.device-type: Fix compatibility with existing sdk structure"
+              hash: e234b48207f0a7e82e56fb636d2791ba2a364a68
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.121
+          title: ""
+          date: 2024-12-18T20:31:37.211Z
+        - commits:
+            - subject: add eg5120-imx8mp contract
+              hash: 272015edab63d911b6a716b43d3ef52f3c577153
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: Ryan Cooke
+          version: contracts-2.0.120
+          title: ""
+          date: 2024-12-18T12:47:37.969Z
+        - commits:
+            - subject: "contracts/hw.device-type: Update instructions for Orin flasher types"
+              hash: 79b1757276a189f0b898903f5d85658e0b5c478a
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.119
+          title: ""
+          date: 2024-12-16T04:57:49.690Z
+  version: 6.1.0+rev19
+  title: ""
+  date: 2024-12-19T00:23:58.012Z
+- commits:
     - subject: Update balena-yocto-scripts to 890851b95fef702fb41d180392e2ce02870e2421
       hash: 00e9ad036cb4093cd043a3903c7d4cfc36fe3b86
       body: Update balena-yocto-scripts

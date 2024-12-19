@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.1.0+rev19
+## (2024-12-19)
+
+
+<details>
+<summary> Update contracts to 9383b369225a93451dcb595930106a36f5b2dc45 [balena-renovate[bot]] </summary>
+
+> ## contracts-2.0.121
+> ### (2024-12-18)
+> 
+> * hw.device-type: Fix compatibility with existing sdk structure [Alexandru Costache]
+> 
+> ## contracts-2.0.120
+> ### (2024-12-18)
+> 
+> * add eg5120-imx8mp contract [Ryan Cooke]
+> 
+> ## contracts-2.0.119
+> ### (2024-12-16)
+> 
+> * contracts/hw.device-type: Update instructions for Orin flasher types [Alexandru Costache]
+> 
+
+</details>
+
 # v6.1.0+rev18
 ## (2024-12-17)
 
