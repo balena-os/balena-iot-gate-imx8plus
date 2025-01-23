@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.1.0+rev27
+## (2025-01-23)
+
+* provide custom template path in workflow for iot-gate-imx8plus [Alex Gonzalez]
+* add IOT Gate i.MX8Plus secure boot variant [Alex Gonzalez]
+* add meta-balena-hab submodule [Alex Gonzalez]
+
 # v6.1.0+rev26
 ## (2025-01-20)
 

@@ -1,4 +1,38 @@
 - commits:
+    - subject: provide custom template path in workflow for iot-gate-imx8plus
+      hash: 73098ffd1c689d1e2fc1b916d184fd9ee54f8144
+      body: ""
+      footer:
+        Changelog-entry: provide custom template path in workflow for iot-gate-imx8plus
+        changelog-entry: provide custom template path in workflow for iot-gate-imx8plus
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: add IOT Gate i.MX8Plus secure boot variant
+      hash: 082fb200e188f6783664a842cd061cdc14f7e9dd
+      body: ""
+      footer:
+        Changelog-entry: add IOT Gate i.MX8Plus secure boot variant
+        changelog-entry: add IOT Gate i.MX8Plus secure boot variant
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: add meta-balena-hab submodule
+      hash: 7b3b435ab860cbff431a8511085cdcf8fd2ecf3b
+      body: ""
+      footer:
+        Changelog-entry: add meta-balena-hab submodule
+        changelog-entry: add meta-balena-hab submodule
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 6.1.0+rev27
+  title: ""
+  date: 2025-01-23T16:36:40.409Z
+- commits:
     - subject: Update balena-yocto-scripts to b35b15decb6d244144d42a699d88057e715aa006
       hash: ce2a5027a339958c5d34917e8b851569c8c3ca7e
       body: Update balena-yocto-scripts
