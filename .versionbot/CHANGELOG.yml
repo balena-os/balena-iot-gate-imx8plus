@@ -1,4 +1,18 @@
 - commits:
+    - subject: "u-boot: Update the supported dram list"
+      hash: a843b03663e270ec361846db532dd1dc578b6148
+      body: ""
+      footer:
+        Changelog-entry: "u-boot: Update the supported dram list"
+        changelog-entry: "u-boot: Update the supported dram list"
+        Signed-off-by: Valentin Raevsky <valentin@compulab.co.il>
+        signed-off-by: Valentin Raevsky <valentin@compulab.co.il>
+      author: Valentin Raevsky
+      nested: []
+  version: 6.1.0+rev28
+  title: ""
+  date: 2025-01-27T16:50:25.813Z
+- commits:
     - subject: provide custom template path in workflow for iot-gate-imx8plus
       hash: 73098ffd1c689d1e2fc1b916d184fd9ee54f8144
       body: ""
