@@ -1,0 +1,51 @@
+From 70b6f9b89a45ee096c03ad41bdc3c9c08958e226 Mon Sep 17 00:00:00 2001
+From: Valentin Raevsky <valentin@compulab.co.il>
+Date: Fri, 24 Jan 2025 20:42:57 +0200
+Subject: [PATCH] board: compulab: imx8mp: Update the supported dram list.
+ Synchronize with the latest CompuLab DRAM support.
+
+Signed-off-by: Valentin Raevsky <valentin@compulab.co.il>
+---
+ board/compulab/plat/imx8mp/ddr/ddr.h | 15 +++++++++++++++
+ 1 file changed, 15 insertions(+)
+
+diff --git a/board/compulab/plat/imx8mp/ddr/ddr.h b/board/compulab/plat/imx8mp/ddr/ddr.h
+index 869bbb4689d..0e94c26268d 100644
+--- a/board/compulab/plat/imx8mp/ddr/ddr.h
++++ b/board/compulab/plat/imx8mp/ddr/ddr.h
+@@ -60,6 +60,11 @@ static const struct lpddr4_desc lpddr4_array[] = {
+ 	{ .name = "Micron",	.id = 0xff000010, .subind = 0x4, .size = 4096, .count = 1,
+ #ifdef CONFIG_SPL_BUILD
+ 		.timing = &ucm_dram_timing_ff000010
++#endif
++	},
++	{ .name = "Micron",	.id = 0xff000110, .subind = 0x4, .size = 4096, .count = 1,
++#ifdef CONFIG_SPL_BUILD
++		.timing = &ucm_dram_timing_ff000010
+ #endif
+ 	},
+ 	{ .name = "Nanya",	.id = 0x05000010, .subind = 0x2, .size = 2048, .count = 1,
+@@ -70,6 +75,11 @@ static const struct lpddr4_desc lpddr4_array[] = {
+ 	{ .name = "Samsung",	.id = 0x01061010, .subind = 0x2, .size = 2048, .count = 1,
+ #ifdef CONFIG_SPL_BUILD
+ 		.timing = &ucm_dram_timing_01061010_2G
++#endif
++	},
++	{ .name = "Samsung",	.id = 0x01080010, .subind = 0x2, .size = 2048, .count = 1,
++#ifdef CONFIG_SPL_BUILD
++		.timing = &ucm_dram_timing_01061010_2G
+ #endif
+ 	},
+ #else
+@@ -91,6 +101,11 @@ static const struct lpddr4_desc lpddr4_array[] = {
+ 	{ .name = "Micron",	.id = 0xff060018, .subind = 0x8, .size = 8192, .count = 1,
+ #ifdef CONFIG_SPL_BUILD
+ 		.timing = &ucm_dram_timing_ff060018
++#endif
++	},
++	{ .name = "Micron",	.id = 0xff070018, .subind = 0x8, .size = 8192, .count = 1,
++#ifdef CONFIG_SPL_BUILD
++		.timing = &ucm_dram_timing_ff060018
+ #endif
+ 	},
+ #endif

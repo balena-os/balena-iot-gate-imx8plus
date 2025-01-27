@@ -12,6 +12,7 @@ UBOOT_VARS += "BALENA_STAGE2"
 SRC_URI:remove = "git://source.codeaurora.org/external/imx/uboot-imx.git;protocol=https;branch=${SRCBRANCH}"
 SRC_URI:append = "git://github.com/nxp-imx/uboot-imx.git;protocol=https;branch=${SRCBRANCH}"
 SRC_URI:append = " \
+	file://0001-board-compulab-imx8mp-Update-the-supported-dram-list.patch \
 	file://0001-Revert-remove-include-config_defaults.h.patch \
 	file://0001-iot-gate-imx8plus-Increase-default-ENV-size.patch \
   file://0003-integrate-with-balenaOS.patch \
