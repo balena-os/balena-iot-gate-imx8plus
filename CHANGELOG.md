@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.3.11
+## (2025-01-28)
+
+* layers/meta-balena: Update to v6.3.11 [Alexandru Costache]
+
 # v6.1.0+rev28
 ## (2025-01-27)
 

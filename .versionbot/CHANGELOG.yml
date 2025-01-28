@@ -1,4 +1,18 @@
 - commits:
+    - subject: "layers/meta-balena: Update to v6.3.11"
+      hash: 3eaffae963d230ad5aadc8ba219cff1ee76ae211
+      body: ""
+      footer:
+        Changelog-entry: "layers/meta-balena: Update to v6.3.11"
+        changelog-entry: "layers/meta-balena: Update to v6.3.11"
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 6.3.11
+  title: ""
+  date: 2025-01-28T16:19:37.921Z
+- commits:
     - subject: "u-boot: Update the supported dram list"
       hash: a843b03663e270ec361846db532dd1dc578b6148
       body: ""
