@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.3.12
+## (2025-01-30)
+
+
+<details>
+<summary> Update layers/meta-balena to a62daefb9f01eb0c494ec27b1efe051b40f1f54b [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.3.12
+> ### (Invalid date)
+> 
+> * kernel-balena.bbclass: silence regex escape warnings [Michal Toman]
+> * kernel-balena.bbclass: Add aufs patches for 6.6 kernels [Michal Toman]
+> 
+
+</details>
+
 # v6.3.11
 ## (2025-01-28)
 
