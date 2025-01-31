@@ -1,4 +1,150 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 0789537c32942ad53f61c59388d71b87a831387d
+      hash: b8c459d2bcf60095cea0492376eba4c0d502b330
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 0789537c32942ad53f61c59388d71b87a831387d
+        changelog-entry: Update balena-yocto-scripts to 0789537c32942ad53f61c59388d71b87a831387d
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update actions/create-github-app-token action to v1.11.2
+              hash: 6938c085f37c260298839882c98b3e18d548948d
+              body: |
+                Update actions/create-github-app-token from 1.11.1 to 1.11.2
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.30.23
+          title: ""
+          date: 2025-01-31T01:13:36.721Z
+        - commits:
+            - subject: Update balena-os/leviathan action to v2.31.87
+              hash: 72422a8e8023a78b6cf76adc899f864b38edeab9
+              body: |
+                Update balena-os/leviathan from 2.31.86 to 2.31.87
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.30.22
+          title: ""
+          date: 2025-01-28T01:48:55.645Z
+        - commits:
+            - subject: Update aws-actions/configure-aws-credentials action to v4.0.3
+              hash: 5bf1f0e3fa2bd91d483e37b3391ea6f83f4b53c7
+              body: |
+                Update aws-actions/configure-aws-credentials from 4.0.2 to 4.0.3
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.30.21
+          title: ""
+          date: 2025-01-27T22:49:35.974Z
+        - commits:
+            - subject: Update balena-os/leviathan action to v2.31.86
+              hash: 7e2b64978c33696c9f595efa6c3c23f313f81c22
+              body: |
+                Update balena-os/leviathan from 2.31.85 to 2.31.86
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.30.20
+          title: ""
+          date: 2025-01-26T14:49:21.666Z
+        - commits:
+            - subject: Update balena-os/leviathan action to v2.31.85
+              hash: b07be91b6f5f5edc2b135056f72827b1158e6c5c
+              body: |
+                Update balena-os/leviathan from 2.31.83 to 2.31.85
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.30.19
+          title: ""
+          date: 2025-01-24T21:18:58.111Z
+        - commits:
+            - subject: "barys: allow to specify custom templates paths directly"
+              hash: 8f1cf78e5b073a1f9c03c3f302dc539eba09baae
+              body: >
+                This simplifies the logic, adds flexibility and is easier to
+                understand
+
+                as it works in the same way as the Yocto documentation for the
+
+                TEMPLATECONF variable.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "generate-conf-notes: simplify arguments"
+              hash: b56c2847e4c6fb627f2a62f7408050acdb2b98ba
+              body: >
+                The input directory just needs to contain the template files, no
+                need
+
+                to force a format on it.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "barys: do not build duplicated machines"
+              hash: 7318e7e8d7179cb749758d3d74aee5004cf500ac
+              body: >
+                The same machine could build OS variants, like with secure boot
+                support,
+
+                that end up being deployed to different slugs but only need to
+                be built
+
+                once.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "workflows: yocto-build-deploy: distinguish machine from slug"
+              hash: cb5b49e5c728617a242770aab2407977d114b974
+              body: >
+                Machine refers to the Yocto machine configuration, while slug
+                refers to
+
+                the balenaCloud device type.
+
+
+                This allows to build the same machine but deploy to a different
+                device type.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: balena-yocto-scripts-1.30.18
+          title: ""
+          date: 2025-01-23T17:46:30.038Z
+  version: 6.3.12+rev3
+  title: ""
+  date: 2025-01-31T07:49:54.204Z
+- commits:
     - subject: Update contracts to b042ab7fbdd2b774e8b462f442c1c37fa6da1377
       hash: 6007e68d9e5d8c09a6c7c21e684c7e5ee4106ada
       body: Update contracts
