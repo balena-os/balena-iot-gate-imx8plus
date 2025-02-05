@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.3.13
+## (2025-02-05)
+
+
+<details>
+<summary> Update layers/meta-balena to df69a1d75891f90de111f40fc279772b1ec14e39 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.3.13
+> ### (2025-02-01)
+> 
+> * tests: secureboot: fix reference to unavailable kernel-module-headers [Ryan Cooke]
+> 
+
+</details>
+
 # v6.3.12+rev3
 ## (2025-01-31)
 
