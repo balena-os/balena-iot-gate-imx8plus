@@ -2,6 +2,36 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.3.13+rev2
+## (2025-02-11)
+
+
+<details>
+<summary> Update balena-yocto-scripts to aa023bcecf7150e38137b401a6e4043c5ea7815d [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.30.28
+> ### (2025-02-11)
+> 
+> * Update aws-actions/configure-aws-credentials action to v4.1.0 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.30.27
+> ### (2025-02-06)
+> 
+> * Update balena-os/leviathan action to v2.31.89 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.30.26
+> ### (2025-02-06)
+> 
+> * Update actions/create-github-app-token action to v1.11.3 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.30.25
+> ### (2025-02-06)
+> 
+> * generate-oscontracts: remove sw.os-image selector [Ryan Cooke]
+> 
+
+</details>
+
 # v6.3.13+rev1
 ## (2025-02-05)
 
