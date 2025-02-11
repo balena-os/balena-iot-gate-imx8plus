@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.3.13+rev3
+## (2025-02-11)
+
+* Update layers/meta-compulab-bsp to ae4e6022c3f19db7d26364f54b6acc56db9c415f [balena-renovate[bot]]
+
 # v6.3.13+rev2
 ## (2025-02-11)
 
