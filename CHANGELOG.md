@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.3.20
+## (2025-02-19)
+
+
+<details>
+<summary> Update layers/meta-balena to b7c6be86cbba1562554b3e708025d3199cee9031 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.3.20
+> ### (2025-02-18)
+> 
+> * resin-mounts: only run non-encrypted mount if partition exists [Alex Gonzalez]
+> 
+
+</details>
+
 # v6.3.19+rev1
 ## (2025-02-15)
 
