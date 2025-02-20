@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.3.20+rev3
+## (2025-02-20)
+
+
+<details>
+<summary> Update balena-yocto-scripts to c071a7173ca278c851954cbbad15f17d831d12b0 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.30.30
+> ### (2025-02-17)
+> 
+> * Update Lock file maintenance [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.3.20+rev2
 ## (2025-02-20)
 
