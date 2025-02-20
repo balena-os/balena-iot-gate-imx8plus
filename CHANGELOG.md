@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.3.20+rev2
+## (2025-02-20)
+
+
+<details>
+<summary> Update contracts to 1adfd1c331b3464969cc09a5c7cc3583ef1fe3de [balena-renovate[bot]] </summary>
+
+> ## contracts-2.0.128
+> ### (2025-02-05)
+> 
+> * Improve testing of contracts [Felipe Lalanne]
+> * Remove unused sw.os-image contracts [Felipe Lalanne]
+> 
+
+</details>
+
 # v6.3.20+rev1
 ## (2025-02-19)
 
