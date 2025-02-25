@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 2620a0faf744cb9561c6e0b402c913c19b251ff6
+      hash: 001b0f00a771ea5e44e620d0a99b93818ef59462
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 2620a0faf744cb9561c6e0b402c913c19b251ff6
+        changelog-entry: Update balena-yocto-scripts to 2620a0faf744cb9561c6e0b402c913c19b251ff6
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Remove legacy yocto NFS cache host setup
+              hash: 3554f19eecca29a7c7af2d73693b1238a787bfb9
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.30.33
+          title: ""
+          date: 2025-02-24T16:35:19.346Z
+  version: 6.3.21+rev3
+  title: ""
+  date: 2025-02-25T04:46:15.974Z
+- commits:
     - subject: Update layers/meta-compulab-bsp to
         18ad7cc27ad2dc461e5fd2e04ac51c0c9df7354e
       hash: ca811fb75cd918773b3fe438870110ef1beeadac
