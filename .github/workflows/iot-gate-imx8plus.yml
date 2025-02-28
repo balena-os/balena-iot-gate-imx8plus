@@ -25,11 +25,16 @@ on:
         required: false
         type: boolean
         default: false
-      deploy-environment:
-        description: Environment to use for build and deploy
+      build-environment:
+        description: The balena environment to use for yocto build - includes the related vars and secrets
         required: false
         type: string
-        default: balena-staging.com
+        default: balena-cloud.com
+      hostapp-deploy-environment:
+        description: The balena environment to use for hostApp deployment - includes the related vars and secrets
+        required: false
+        type: string
+        default: balena-cloud.com
 
 permissions:
   id-token: write # This is required for requesting the JWT #https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/configuring-openid-connect-in-amazon-web-services#requesting-the-access-token
