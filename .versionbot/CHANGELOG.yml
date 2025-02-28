@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update layers/meta-balena-hab to a41f8aaa4c0e0be72ddd888d24ebc2bd347efc77
+      hash: 27ad44b0a9a964b6063fbc75b0365cce4e2325d2
+      body: Update layers/meta-balena-hab
+      footer:
+        Changelog-entry: Update layers/meta-balena-hab to
+          a41f8aaa4c0e0be72ddd888d24ebc2bd347efc77
+        changelog-entry: Update layers/meta-balena-hab to
+          a41f8aaa4c0e0be72ddd888d24ebc2bd347efc77
+      author: balena-renovate[bot]
+      nested: []
+  version: 6.4.0+rev1
+  title: ""
+  date: 2025-02-28T02:41:30.057Z
+- commits:
     - subject: Update layers/meta-balena to 7f68a574d7fe5cd42aa29bf0c37e84a384521c4d
       hash: 43f540b58de792b408fd8f158290b30efebd9745
       body: Update layers/meta-balena
