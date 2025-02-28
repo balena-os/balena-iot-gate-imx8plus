@@ -2,6 +2,47 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.4.0+rev2
+## (2025-02-28)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 30d173e0cc80789ecaf0c11970f8bb4e3f93d486 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.31.2
+> ### (2025-02-27)
+> 
+> * Unset the new environment inputs until they have been deployed [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.31.1
+> ### (2025-02-27)
+> 
+> * Update Pin dependencies [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.0
+> ### (2025-02-27)
+> 
+> * Remove balena API key from yocto build step [Kyle Harding]
+> * Separate build jobs by environments [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.30.36
+> ### (2025-02-26)
+> 
+> * Update product-os/review-commit-action action to v0.1.12 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.30.35
+> ### (2025-02-26)
+> 
+> * Update balena-os/leviathan action to v2.31.90 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.30.34
+> ### (2025-02-25)
+> 
+> * Update product-os/review-commit-action action to v0.1.11 [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.4.0+rev1
 ## (2025-02-28)
 

@@ -1,4 +1,134 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 30d173e0cc80789ecaf0c11970f8bb4e3f93d486
+      hash: d6ac41670d4916663e00c5f8f0d498fda11f3047
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 30d173e0cc80789ecaf0c11970f8bb4e3f93d486
+        changelog-entry: Update balena-yocto-scripts to 30d173e0cc80789ecaf0c11970f8bb4e3f93d486
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Unset the new environment inputs until they have been deployed
+              hash: 5ee032a311e915b27420eb261d06f6d6555b9c8d
+              body: |
+                By setting defaults here we are overriding values that may
+                have been set at the device level via deploy-environment.
+
+                For now leave them blank until we have rolled out the new
+                environments to all the repositories.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.31.2
+          title: ""
+          date: 2025-02-27T20:42:14.925Z
+        - commits:
+            - subject: Update Pin dependencies
+              hash: 9ad66c325cd50213bd128ed684684b8ad13f335d
+              body: |
+                Update actions/github-script
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.31.1
+          title: ""
+          date: 2025-02-27T18:02:39.719Z
+        - commits:
+            - subject: Remove balena API key from yocto build step
+              hash: 4beb0be8adddcf2dcac6e04f38a25b7e72ab7b05
+              body: >
+                This key was only used to fetch the supervisor image name from
+                the API,
+
+                but that endpoint does not need auth as the supervisor images
+                are public.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Separate build jobs by environments
+              hash: c91dc23ff49f1c7f07206709b5a4cda77fa7c26c
+              body: >
+                This allows more granular control over which environments are
+                used
+
+                for which steps, and avoids requiring a single environment to
+                define
+
+                how to build, sign, and publish.
+
+
+                This is better for security as it allows each job to only have
+
+                the secrets it needs, and not all secrets for all steps.
+
+
+                We retain backwards compatibility by falling back to the
+                original
+
+                monolith environment input for now.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.31.0
+          title: ""
+          date: 2025-02-27T14:28:24.783Z
+        - commits:
+            - subject: Update product-os/review-commit-action action to v0.1.12
+              hash: 42105754eb5dfd53b4535d76f70122a796ff26f6
+              body: |
+                Update product-os/review-commit-action from 0.1.11 to 0.1.12
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.30.36
+          title: ""
+          date: 2025-02-26T03:12:54.670Z
+        - commits:
+            - subject: Update balena-os/leviathan action to v2.31.90
+              hash: 795fff76a07637937692262d557d252b4d9072dd
+              body: |
+                Update balena-os/leviathan from 2.31.89 to 2.31.90
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.30.35
+          title: ""
+          date: 2025-02-26T02:24:03.285Z
+        - commits:
+            - subject: Update product-os/review-commit-action action to v0.1.11
+              hash: 9a175c1e8d4e95ab7a17a8dbe495da529d956ee3
+              body: |
+                Update product-os/review-commit-action from 0.1.7 to 0.1.11
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.30.34
+          title: ""
+          date: 2025-02-25T22:51:33.890Z
+  version: 6.4.0+rev2
+  title: ""
+  date: 2025-02-28T05:11:41.052Z
+- commits:
     - subject: Update layers/meta-balena-hab to a41f8aaa4c0e0be72ddd888d24ebc2bd347efc77
       hash: 27ad44b0a9a964b6063fbc75b0365cce4e2325d2
       body: Update layers/meta-balena-hab
