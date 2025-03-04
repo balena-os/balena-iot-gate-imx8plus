@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update balena-yocto-scripts to a0963e8a0a86ba15eff836aa717e3bb6bb897109
+      hash: b1c6cb61d8eeb4bbfe610a55a82a3b38f21a1e5f
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to a0963e8a0a86ba15eff836aa717e3bb6bb897109
+        changelog-entry: Update balena-yocto-scripts to a0963e8a0a86ba15eff836aa717e3bb6bb897109
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Add signing environment to All Jobs context
+              hash: 592bf3a1261009519b101577c64258306e932f34
+              body: |
+                This is one of the unique identifiers for merge requirements.
+              footer:
+                CHange-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.31.13
+          title: ""
+          date: 2025-03-04T12:49:02.985Z
+  version: 6.4.1+rev3
+  title: ""
+  date: 2025-03-04T17:18:15.397Z
+- commits:
     - subject: Update layers/poky to 47cb7bfa667b6dad7c44ba62b0689ea303a19dce
       hash: 32149c8e2a12c769be2f3e8f707dba49517fba89
       body: Update layers/poky

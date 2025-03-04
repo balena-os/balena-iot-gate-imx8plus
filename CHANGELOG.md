@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.4.1+rev3
+## (2025-03-04)
+
+
+<details>
+<summary> Update balena-yocto-scripts to a0963e8a0a86ba15eff836aa717e3bb6bb897109 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.31.13
+> ### (2025-03-04)
+> 
+> * Add signing environment to All Jobs context [Kyle Harding]
+> 
+
+</details>
+
 # v6.4.1+rev2
 ## (2025-03-04)
 
