@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.4.1
+## (2025-03-04)
+
+
+<details>
+<summary> Update layers/meta-balena to c5c44af22a753a6678504d2f1d3c3f23d1405a45 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.4.1
+> ### (2025-02-28)
+> 
+> * tests/device-tree: Rework test to not use the sysfs gpio interface [Florin Sarbu]
+> 
+
+</details>
+
 # v6.4.0+rev4
 ## (2025-03-03)
 
