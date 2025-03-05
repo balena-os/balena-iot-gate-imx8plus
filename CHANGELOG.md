@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.4.1+rev6
+## (2025-03-05)
+
+* Provide signing environments to secure boot yocto workflows [Kyle Harding]
+
 # v6.4.1+rev5
 ## (2025-03-05)
 
