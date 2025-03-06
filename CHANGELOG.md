@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.4.1+rev8
+## (2025-03-06)
+
+* add signing environment to workflow dispatch [Alex Gonzalez]
+
 # v6.4.1+rev7
 ## (2025-03-06)
 
