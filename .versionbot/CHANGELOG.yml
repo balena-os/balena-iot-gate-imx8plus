@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update balena-yocto-scripts to dfcd71c3dfd72a499858bc4be61c35e142994f02
+      hash: bf58113b23d1f021860e2fc69e78ffba1d1818eb
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to dfcd71c3dfd72a499858bc4be61c35e142994f02
+        changelog-entry: Update balena-yocto-scripts to dfcd71c3dfd72a499858bc4be61c35e142994f02
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update aws/aws-cli to v2.24.19
+              hash: 9eb99f99b792bae15a6ea088f968a03fbf404e0b
+              body: |
+                Update aws/aws-cli from 2.24.18 to 2.24.19
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.31.16
+          title: ""
+          date: 2025-03-06T23:25:01.683Z
+  version: 6.4.1+rev9
+  title: ""
+  date: 2025-03-07T03:51:19.030Z
+- commits:
     - subject: add signing environment to workflow dispatch
       hash: 15a9e58a71c078161d36a0cc75c0d399fb9a0f20
       body: ""
