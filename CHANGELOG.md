@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.4.2+rev5
+## (2025-03-09)
+
+* Update layers/poky to d103d2df505abd76f75e75114905062503a6bcc8 [balena-renovate[bot]]
+
 # v6.4.2+rev4
 ## (2025-03-08)
 
