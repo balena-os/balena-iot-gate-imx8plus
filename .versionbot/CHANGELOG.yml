@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update balena-yocto-scripts to d727c0d74901bdd22d81a0a00a97511d37d384d5
+      hash: ed7f45ac8829dd33e2094695d189b3e68fe18e15
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to d727c0d74901bdd22d81a0a00a97511d37d384d5
+        changelog-entry: Update balena-yocto-scripts to d727c0d74901bdd22d81a0a00a97511d37d384d5
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update balena-io/balena-cli to v21.1.0
+              hash: b7ea716a541cc19ffbbb8615ef8bf4da17ec3ac3
+              body: |
+                Update balena-io/balena-cli from 21.0.0 to 21.1.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.31.26
+          title: ""
+          date: 2025-03-12T21:00:21.792Z
+  version: 6.4.4+rev1
+  title: ""
+  date: 2025-03-13T01:06:49.144Z
+- commits:
     - subject: Update layers/meta-balena to 0d774efb495bf46ca48abb0aea94667825d74804
       hash: 37f31887a0557a431562687836bab6d66b71243d
       body: Update layers/meta-balena
