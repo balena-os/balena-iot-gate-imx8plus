@@ -1,0 +1,21 @@
+#!/bin/sh
+
+#
+# Initial flashing of u-boot
+#
+
+set -o errexit
+
+# shellcheck disable=SC1091
+. /usr/sbin/balena-config-vars
+
+# machine specific data
+uboot_file="$(find "/mnt/boot" -name "imx-boot-iot-gate-imx8plus*bin-flash_evk")"
+uboot_block_size=1024
+uboot_device="/dev/mmcblk2boot0"
+
+# Make sure to configure the eMMC to boot from the boot0 partition
+mmc bootpart enable 1 0 ${uboot_device%boot0}
+echo 0 > /sys/block/mmcblk2boot0/force_ro
+dd if="$uboot_file" of="$uboot_device" conv=fdatasync bs=$uboot_block_size
+echo 1 > /sys/block/mmcblk2boot0/force_ro
