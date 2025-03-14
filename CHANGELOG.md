@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.5.1+rev2
+## (2025-03-14)
+
+* support u-boot programming from flasher [Alex Gonzalez]
+* Use balena-cloud as test environment for iot-gate-imx8plus-sb [Alex Gonzalez]
+* Avoid duplicated build jobs for iot-gate-imx8plus-sb [Alex Gonzalez]
+
 # v6.5.1+rev1
 ## (2025-03-14)
 

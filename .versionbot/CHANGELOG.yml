@@ -1,4 +1,49 @@
 - commits:
+    - subject: support u-boot programming from flasher
+      hash: 17ed40d5330ef89626c403c7aa710460d95c8e62
+      body: |
+        The flasher needs to update the signed u-boot before closing the device.
+
+        The details of the programming are already in 99-flash-bootloader which
+        is used by HUP, but original come from Compulab's cl-uboot tool.
+
+        To note that the flasher programming is also setting the boot0 eMMC
+        partition to be used at boot by default after programming, and that
+        the programming offset is 0.
+      footer:
+        Changelog-entry: support u-boot programming from flasher
+        changelog-entry: support u-boot programming from flasher
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: Use balena-cloud as test environment for iot-gate-imx8plus-sb
+      hash: dd678a8ad5a59c64b5c2bcb1e4bb900309f9fa47
+      body: >
+        Currently only public device types can be tested agains bm.balena-dev.com
+      footer:
+        Changelog-entry: Use balena-cloud as test environment for iot-gate-imx8plus-sb
+        changelog-entry: Use balena-cloud as test environment for iot-gate-imx8plus-sb
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: Avoid duplicated build jobs for iot-gate-imx8plus-sb
+      hash: 93ffff1c7a6aaec766b77b02d092561a32aa8b99
+      body: |
+        Avoid building both balena-image and balena-image-flasher for the
+        secure boot variant.
+      footer:
+        Changelog-entry: Avoid duplicated build jobs for iot-gate-imx8plus-sb
+        changelog-entry: Avoid duplicated build jobs for iot-gate-imx8plus-sb
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 6.5.1+rev2
+  title: ""
+  date: 2025-03-14T15:38:07.031Z
+- commits:
     - subject: Update balena-yocto-scripts to 3d0e54aaaec762612b0aab2c710d496636619f02
       hash: 204a70f07fba3f780ac90f3179511145788f3f20
       body: Update balena-yocto-scripts
