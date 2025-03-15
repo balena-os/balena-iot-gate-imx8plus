@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.5.1+rev4
+## (2025-03-15)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 67ed08ab80835b69252ca7fbe0bad7eb405ed81e [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.31.29
+> ### (2025-03-14)
+> 
+> * Update aws/aws-cli to v2.24.24 [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.5.1+rev3
 ## (2025-03-14)
 
