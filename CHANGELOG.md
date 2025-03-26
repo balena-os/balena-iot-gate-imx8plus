@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.5.2+rev4
+## (2025-03-26)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 246de688aab8b8b4e92cb090acdeb4cdb4ccc4ee [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.31.45
+> ### (2025-03-26)
+> 
+> * Update balena-os/leviathan action to v2.31.95 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.44
+> ### (2025-03-26)
+> 
+> * Update tespkg/actions-cache action to v1.8.0 [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.5.2+rev3
 ## (2025-03-26)
 
