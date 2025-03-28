@@ -1,4 +1,37 @@
 - commits:
+    - subject: Update layers/meta-balena to 5393bc5f097a6e03e605abf7211625a02d11133c
+      hash: 34d4a4a6276ec31c9e92c260b957f3d50bf333da
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 5393bc5f097a6e03e605abf7211625a02d11133c
+        changelog-entry: Update layers/meta-balena to 5393bc5f097a6e03e605abf7211625a02d11133c
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "classes: kernel-balena: enable CONFIG_MEMCG_V1 when needed"
+              hash: b7d69ac707a1c1ce58e28033d8a5aeeaaf542c27
+              body: >
+                From kernel v6.11 the memory controller for cgroups v1 has to be
+
+                explicitely selected or its compiled out.
+
+
+                This is required for the engine to apply memory resource
+                constraints.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-6.5.4
+          title: ""
+          date: 2025-03-27T22:08:15.577Z
+  version: 6.5.4
+  title: ""
+  date: 2025-03-28T04:49:47.304Z
+- commits:
     - subject: Update layers/meta-openembedded to
         084df16f561ebce5aea2ae9241cc500247771ef3
       hash: 80ea1aa31320779273710b46f142644bf844e48c
