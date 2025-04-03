@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.5.6
+## (2025-04-03)
+
+
+<details>
+<summary> Update contracts to 34033e690fc5b1c194114c3aab492036db837bd2 [balena-renovate[bot]] </summary>
+
+> ## contracts-2.0.131
+> ### (2025-04-03)
+> 
+> * Add EDATEC Sensing contract and logo [RayX123456]
+> 
+
+</details>
+
+* Update layers/meta-balena to 116c4ecdae65da21061650c6177d35a62e9d7da9 [balena-renovate[bot]]
+
 # v6.5.5
 ## (2025-04-01)
 

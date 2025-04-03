@@ -1,4 +1,37 @@
 - commits:
+    - subject: Update contracts to 34033e690fc5b1c194114c3aab492036db837bd2
+      hash: 34d8169e63f16fcfddd4115e21b9bb646426941e
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 34033e690fc5b1c194114c3aab492036db837bd2
+        changelog-entry: Update contracts to 34033e690fc5b1c194114c3aab492036db837bd2
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Add EDATEC Sensing contract and logo
+              hash: 2504d5f5bb1a11056495ce3e44f8f60f297593e4
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ray <rxie@edatec.cn>
+                signed-off-by: Ray <rxie@edatec.cn>
+              author: RayX123456
+          version: contracts-2.0.131
+          title: ""
+          date: 2025-04-03T09:12:05.127Z
+    - subject: Update layers/meta-balena to 116c4ecdae65da21061650c6177d35a62e9d7da9
+      hash: 9ba374d87fc877ad6972e7b9d8a902868c81bf62
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 116c4ecdae65da21061650c6177d35a62e9d7da9
+        changelog-entry: Update layers/meta-balena to 116c4ecdae65da21061650c6177d35a62e9d7da9
+      author: balena-renovate[bot]
+      nested: []
+  version: 6.5.6
+  title: ""
+  date: 2025-04-03T18:41:47.119Z
+- commits:
     - subject: Update layers/meta-balena to 0c657af51fe6209c35447ed13870dfca4e38b19b
       hash: 53168ec26a6032d72fa932cc3d64891e8f1c02fb
       body: Update layers/meta-balena
