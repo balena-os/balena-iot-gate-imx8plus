@@ -2,6 +2,33 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.5.9
+## (2025-04-05)
+
+
+<details>
+<summary> Update layers/meta-balena to 538b193865ffd18d7a2becce76cccc962945813d [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.5.9
+> ### (2025-04-03)
+> 
+> * balena-unique-key: Fix dependency on /home/root/.rnd mount point [Florin Sarbu]
+> 
+> ## meta-balena-6.5.8
+> ### (2025-04-02)
+> 
+> * resin-init-flasher: Do not check exitcode of reboot, halt or poweroff [Michal Toman]
+> * Replace the usage of /dev/fd/1 by /proc/self/fd/1 [Michal Toman]
+> * balena-init-flasher-efi: look for kernel in both / and /tmp [Michal Toman]
+> 
+> ## meta-balena-6.5.7
+> ### (2025-04-01)
+> 
+> * kernel-balena.bbclass: enable multipath TCP [Joseph Kogut]
+> 
+
+</details>
+
 # v6.5.6+rev2
 ## (2025-04-05)
 
