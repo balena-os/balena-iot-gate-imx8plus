@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.5.17
+## (2025-04-10)
+
+
+<details>
+<summary> Update layers/meta-balena to c2846896f832365bb2205d75d509fe69e034385f [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.5.17
+> ### (2025-04-09)
+> 
+> * tests: os: secureboot: update kernel-module-build to v3.0.2 [Alex Gonzalez]
+> * tests: secureboot: adapt kernel modules test to private device types [Alex Gonzalez]
+> 
+
+</details>
+
 # v6.5.16
 ## (2025-04-09)
 

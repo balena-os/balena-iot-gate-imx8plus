@@ -1,4 +1,42 @@
 - commits:
+    - subject: Update layers/meta-balena to c2846896f832365bb2205d75d509fe69e034385f
+      hash: f5a5f7908cbc7ed69620b7251916691b56ccf2d2
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to c2846896f832365bb2205d75d509fe69e034385f
+        changelog-entry: Update layers/meta-balena to c2846896f832365bb2205d75d509fe69e034385f
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "tests: os: secureboot: update kernel-module-build to v3.0.2"
+              hash: 230a38b7b558fe4c9104f86fc605d5d1982759b9
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "tests: secureboot: adapt kernel modules test to private device types"
+              hash: ffb5bd295200dbd081a30789cf0c6a7b5d7d1650
+              body: >
+                If a kernel headers file is provided, use it for the kernel
+                module test.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-6.5.17
+          title: ""
+          date: 2025-04-09T21:47:13.513Z
+  version: 6.5.17
+  title: ""
+  date: 2025-04-10T04:06:41.255Z
+- commits:
     - subject: Update layers/meta-balena to 908a989d9cd5e71f03e6590d37b94a5b299f9397
       hash: d77189aff9398e5eca5604103a9fb6ee54bb0e4e
       body: Update layers/meta-balena
