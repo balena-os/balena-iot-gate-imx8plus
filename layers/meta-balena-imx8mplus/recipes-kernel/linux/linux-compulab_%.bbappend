@@ -56,3 +56,6 @@ do_merge_config_before_resin_inject () {
 }
 
 addtask do_merge_config_before_resin_inject after do_configure before kernel_resin_injectconfig
+
+# meta-bsp-imx8mp explicitly packages for /lib so let's also append the path set by nonarch_base_libdir for future use of usrmerge
+FILES:${KERNEL_PACKAGE_NAME}-modules += "${nonarch_base_libdir}/modules/"
