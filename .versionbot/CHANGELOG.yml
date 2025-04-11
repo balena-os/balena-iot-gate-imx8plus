@@ -1,4 +1,25 @@
 - commits:
+    - subject: Package the kernel modules using the nonarch_base_libdir variable
+        instead of hardcoding the path to the modules
+      hash: 987226504c0e9799ca3346c8bdc328b49b5d413e
+      body: >
+        Use a variable to select from where to package the kernel modules from
+        instead of hardcoding this path.
+
+        This is going to be of use when we enable the usrmerge feature.
+      footer:
+        Changelog-entry: Package the kernel modules using the nonarch_base_libdir
+          variable instead of hardcoding the path to the modules
+        changelog-entry: Package the kernel modules using the nonarch_base_libdir
+          variable instead of hardcoding the path to the modules
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 6.5.17+rev3
+  title: ""
+  date: 2025-04-11T10:26:46.331Z
+- commits:
     - subject: Update balena-yocto-scripts to 4e6f14418996d814bcc2a9043a44887b508dfddd
       hash: 285cc81003c0054b7d9c81326cfb0ed671d37be9
       body: Update balena-yocto-scripts

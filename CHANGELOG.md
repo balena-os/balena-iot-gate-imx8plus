@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.5.17+rev3
+## (2025-04-11)
+
+* Package the kernel modules using the nonarch_base_libdir variable instead of hardcoding the path to the modules [Florin Sarbu]
+
 # v6.5.17+rev2
 ## (2025-04-11)
 
