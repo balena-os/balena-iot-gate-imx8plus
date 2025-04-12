@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 1c9b4cbc8be5a0e1f8c56fd899adff1f23fef285
+      hash: 5c9ed7107d0a0cd07744b1cd669b37477ca86e07
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 1c9b4cbc8be5a0e1f8c56fd899adff1f23fef285
+        changelog-entry: Update balena-yocto-scripts to 1c9b4cbc8be5a0e1f8c56fd899adff1f23fef285
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update aws/aws-cli to v2.26.1
+              hash: 80eb78c9e30ed5637d1f7967b0ef700f9ce1581d
+              body: |
+                Update aws/aws-cli from 2.26.0 to 2.26.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.31.74
+          title: ""
+          date: 2025-04-11T21:08:17.140Z
+  version: 6.5.17+rev4
+  title: ""
+  date: 2025-04-12T02:18:47.869Z
+- commits:
     - subject: Package the kernel modules using the nonarch_base_libdir variable
         instead of hardcoding the path to the modules
       hash: 987226504c0e9799ca3346c8bdc328b49b5d413e
