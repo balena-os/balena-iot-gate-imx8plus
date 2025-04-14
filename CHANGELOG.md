@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.5.17+rev6
+## (2025-04-14)
+
+* Package the optee-os files using the nonarch_base_libdir variable instead of hardcoding the path to the files [Florin Sarbu]
+
 # v6.5.17+rev5
 ## (2025-04-12)
 
