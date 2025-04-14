@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update balena-yocto-scripts to b6d2022cd4aedb63d03b40f05103ec31d01adfed
+      hash: 86ee323d2fbfd810e6a702fbd40019f5113c9204
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to b6d2022cd4aedb63d03b40f05103ec31d01adfed
+        changelog-entry: Update balena-yocto-scripts to b6d2022cd4aedb63d03b40f05103ec31d01adfed
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update Lock file maintenance
+              hash: f7559dff39ccf70e06cbe7c83d8ca9ff55946f4a
+              body: |
+                Update 
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.31.75
+          title: ""
+          date: 2025-04-14T02:26:49.959Z
+  version: 6.5.17+rev7
+  title: ""
+  date: 2025-04-14T15:43:36.433Z
+- commits:
     - subject: Package the optee-os files using the nonarch_base_libdir variable
         instead of hardcoding the path to the files
       hash: d738ad3458bb5d6a647cd4e7fa569818561f24a9
