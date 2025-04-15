@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.5.18
+## (2025-04-15)
+
+
+<details>
+<summary> Update layers/meta-balena to e3612fc15c85277a09039d53fadd4c3aa08ee647 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.5.18
+> ### (2025-04-15)
+> 
+> * hostapp-update-hooks: make rollback possible when migrating to TPM NVRAM [Michal Toman]
+> 
+
+</details>
+
 # v6.5.17+rev8
 ## (2025-04-15)
 
