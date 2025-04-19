@@ -1,4 +1,34 @@
 - commits:
+    - subject: Update layers/meta-balena to 506616fc1e9ab4cb54148a0bed38303312c796dc
+      hash: 8455904bc0bef3185e704c5efb85df6709018a68
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 506616fc1e9ab4cb54148a0bed38303312c796dc
+        changelog-entry: Update layers/meta-balena to 506616fc1e9ab4cb54148a0bed38303312c796dc
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "kernel-balena: add aufs commit for v6.6.84"
+              hash: 6a63c9f2e9e064be591e4e29d6c50f86393c752f
+              body: >
+                We will continue to update to the stable head of v6.6 until
+                v6.12 is
+
+                officially deployed.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-6.5.20
+          title: ""
+          date: 2025-04-19T06:11:53.850Z
+  version: 6.5.20
+  title: ""
+  date: 2025-04-19T10:18:42.647Z
+- commits:
     - subject: Update layers/meta-compulab-bsp to
         4760cd7e0a04f52330413a313008cbf197981ea1
       hash: 927634152752ce91b8394fd6ff12a451bf350007
