@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.5.24+rev5
+## (2025-04-29)
+
+* Update layers/meta-balena-hab to 17e95295e55be4c79ecc710fda3cf4db5d88f597 [balena-renovate[bot]]
+
 # v6.5.24+rev4
 ## (2025-04-29)
 
