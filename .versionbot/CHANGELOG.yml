@@ -1,4 +1,20 @@
 - commits:
+    - subject: remove non-sb test runs for iot-gate-imx8plus-sb
+      hash: 40a3da8aabbc8cbbc6176a5ee7b522bd362d9226
+      body: >
+        Closed i.MX devices are not able to run non secure-boot opt-in
+        installers.
+      footer:
+        Changelog-entry: remove non-sb test runs for iot-gate-imx8plus-sb
+        changelog-entry: remove non-sb test runs for iot-gate-imx8plus-sb
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 6.5.24+rev7
+  title: ""
+  date: 2025-05-02T10:11:18.843Z
+- commits:
     - subject: Update balena-yocto-scripts to 5611862dfb0798aabb187622f7438e2846d8838b
       hash: e1a47b60dc073f1349e7d6fb249644753c9b3bfb
       body: Update balena-yocto-scripts

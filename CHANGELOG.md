@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.5.24+rev7
+## (2025-05-02)
+
+* remove non-sb test runs for iot-gate-imx8plus-sb [Alex Gonzalez]
+
 # v6.5.24+rev6
 ## (2025-04-30)
 
