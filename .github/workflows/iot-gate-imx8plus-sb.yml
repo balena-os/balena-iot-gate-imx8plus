@@ -65,7 +65,7 @@ jobs:
           "environment": ["balena-cloud.com"],
           "worker_type": ["testbot"],
           "runs_on": [["ubuntu-latest"]],
-          "secure_boot": ["sb",""]
+          "secure_boot": ["sb"]
         }
       # Allow manual workflow runs to force finalize without checking previous test runs
       force-finalize: ${{ inputs.force-finalize || false }}
