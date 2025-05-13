@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.5.29
+## (2025-05-13)
+
+* layers/meta-balena: Update to v6.5.29 [Alexandru Costache]
+* recipes-kernel: Add wireless regdb recipe used with kernel 5.15 [Alexandru Costache]
+
 # v6.5.24+rev7
 ## (2025-05-02)
 

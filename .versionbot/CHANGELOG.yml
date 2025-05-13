@@ -1,4 +1,38 @@
 - commits:
+    - subject: "layers/meta-balena: Update to v6.5.29"
+      hash: 72fb32d20e2fae6e5cbe66c34663cf23ebe720eb
+      body: ""
+      footer:
+        Changelog-entry: "layers/meta-balena: Update to v6.5.29"
+        changelog-entry: "layers/meta-balena: Update to v6.5.29"
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+    - subject: "recipes-kernel: Add wireless regdb recipe used with kernel 5.15"
+      hash: aeecefc81968b22d8c1395cd4dac0ccaca029690
+      body: >2
+            The recipe was taken from the poky version used by NXP
+            for the 5.15.32 kernel:
+            https://github.com/nxp-imx/imx-manifest/blob/imx-linux-kirkstone/imx-5.15.32-2.0.0.xml
+
+            and fixes the following error in dmesg:
+
+            cfg80211: loaded regulatory.db is malformed or signature is missing/invalid
+
+            After the kernel will be updated, this recipe
+            can be dropped.
+      footer:
+        Changelog-entry: "recipes-kernel: Add wireless regdb recipe used with kernel 5.15"
+        changelog-entry: "recipes-kernel: Add wireless regdb recipe used with kernel 5.15"
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 6.5.29
+  title: ""
+  date: 2025-05-13T15:59:03.041Z
+- commits:
     - subject: remove non-sb test runs for iot-gate-imx8plus-sb
       hash: 40a3da8aabbc8cbbc6176a5ee7b522bd362d9226
       body: >
