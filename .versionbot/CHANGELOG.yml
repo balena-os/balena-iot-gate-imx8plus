@@ -1,4 +1,19 @@
 - commits:
+    - subject: Switch meta-compulab-bsp to kirkstone
+      hash: d8a71e5d2e21bb3e51861a7feadfc32c1f6fac62
+      body: |
+        The hw vendor has now created a kirkstone branch so let's use it
+      footer:
+        Changelog-entry: Switch meta-compulab-bsp to kirkstone
+        changelog-entry: Switch meta-compulab-bsp to kirkstone
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 6.5.32+rev5
+  title: ""
+  date: 2025-07-25T13:21:03.609Z
+- commits:
     - subject: Update layers/meta-compulab-bsp to
         c77e4fa9eaef554929e339703468f6457d24c488
       hash: 7090b06cebc9ffa61e3733721703696999c103d2

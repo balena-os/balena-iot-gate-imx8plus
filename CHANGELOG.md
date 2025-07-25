@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.5.32+rev5
+## (2025-07-25)
+
+* Switch meta-compulab-bsp to kirkstone [Florin Sarbu]
+
 # v6.5.32+rev4
 ## (2025-07-17)
 
