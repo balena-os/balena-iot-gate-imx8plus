@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update layers/meta-openembedded to
+        06fc0278f10d630838d703dde707bbf0e2999873
+      hash: 431aab4b0513d4fbb7724de69abe3ab199e63a39
+      body: Update layers/meta-openembedded
+      footer:
+        Changelog-entry: Update layers/meta-openembedded to
+          06fc0278f10d630838d703dde707bbf0e2999873
+        changelog-entry: Update layers/meta-openembedded to
+          06fc0278f10d630838d703dde707bbf0e2999873
+      author: balena-renovate[bot]
+      nested: []
+  version: 6.5.32+rev6
+  title: ""
+  date: 2025-07-31T13:50:09.028Z
+- commits:
     - subject: Switch meta-compulab-bsp to kirkstone
       hash: d8a71e5d2e21bb3e51861a7feadfc32c1f6fac62
       body: |

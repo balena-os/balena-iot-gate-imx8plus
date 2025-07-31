@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.5.32+rev6
+## (2025-07-31)
+
+* Update layers/meta-openembedded to 06fc0278f10d630838d703dde707bbf0e2999873 [balena-renovate[bot]]
+
 # v6.5.32+rev5
 ## (2025-07-25)
 
