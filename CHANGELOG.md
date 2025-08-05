@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.5.32+rev8
+## (2025-08-05)
+
+* Generate SBOM and VEX (cycloneDX) [Edwin Joassart]
+
 # v6.5.32+rev7
 ## (2025-08-02)
 
