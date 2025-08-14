@@ -2,6 +2,86 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.5.32+rev9
+## (2025-08-14)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 52e5d372d55e8515f171f7b4902ba26cbe684c12 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.37.18
+> ### (2025-08-14)
+> 
+> * Update balena-io-examples/setup-balena-action action to v0.0.30 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.37.17
+> ### (2025-08-14)
+> 
+> * Update actions/checkout action to v4.3.0 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.37.16
+> ### (2025-08-13)
+> 
+> * Update aws/aws-cli to v2.28.9 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.37.15
+> ### (2025-08-11)
+> 
+> * Update actions/create-github-app-token action to v2.1.1 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.37.14
+> ### (2025-08-08)
+> 
+> * Update balena-io-examples/setup-balena-action action to v0.0.29 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.37.13
+> ### (2025-08-07)
+> 
+> * Update balena-io-examples/setup-balena-action action to v0.0.27 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.37.12
+> ### (2025-08-06)
+> 
+> * Update balena-io/balena-cli to v22.2.2 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.37.11
+> ### (2025-08-06)
+> 
+> * Update balena-io/balena-cli to v22.2.0 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.37.10
+> ### (2025-08-06)
+> 
+> * Update aws/aws-cli to v2.28.3 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.37.9
+> ### (2025-08-06)
+> 
+> * Update balena-io-examples/setup-balena-action action to v0.0.25 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.37.8
+> ### (2025-08-05)
+> 
+> * Update aws/aws-cli to v2.28.2 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.37.7
+> ### (2025-08-05)
+> 
+> * Update aws-actions/configure-aws-credentials action to v4.3.1 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.37.6
+> ### (2025-08-04)
+> 
+> * Update docker/login-action action to v3.5.0 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.37.5
+> ### (2025-08-02)
+> 
+> * Update balena-io-examples/setup-balena-action action to v0.0.24 [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.5.32+rev8
 ## (2025-08-05)
 
