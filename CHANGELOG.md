@@ -2,6 +2,32 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.5.32+rev15
+## (2025-11-22)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 6a399312257153d5bc3577e9e7120acdf68a4f1a [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.38.95
+> ### (2025-11-22)
+> 
+> * Update actions/create-github-app-token action to v2.2.0 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.94
+> ### (2025-11-22)
+> 
+> * Update actions/checkout action to v6 [balena-renovate[bot]]
+> * Update balena-io/balena-cli to v23.2.0 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.93
+> ### (2025-11-22)
+> 
+> * Update aws/aws-cli to v2.32.3 [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.5.32+rev14
 ## (2025-11-21)
 
