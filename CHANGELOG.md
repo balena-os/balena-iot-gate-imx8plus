@@ -2,6 +2,37 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.5.32+rev19
+## (2025-12-03)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 2c9a51d7ad90ba4625e859aefd503dff0ff6b678 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.39.0
+> ### (2025-12-03)
+> 
+> * verify that keys from SIGN_KMOD_KEY_APPEND ends up properly in kernel [Yann CARDAILLAC]
+> 
+> ## balena-yocto-scripts-1.38.99
+> ### (2025-12-03)
+> 
+> * Update aws/aws-cli to v2.32.8 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.98
+> ### (2025-12-02)
+> 
+> * Update balena-io/balena-cli to v23.2.2 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.97
+> ### (2025-11-29)
+> 
+> * Update GitHub Actions [balena-renovate[bot]]
+> * Update aws/aws-cli to v2.32.4 [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.5.32+rev18
 ## (2025-11-25)
 
