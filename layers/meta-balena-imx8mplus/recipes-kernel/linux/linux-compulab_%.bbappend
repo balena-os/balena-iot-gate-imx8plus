@@ -9,6 +9,7 @@ SRC_URI:append = " \
     file://soc-imx8m-Fix-incorrect-check-for-of_clk_get_by_name.patch \
     file://soc-imx8m-Enable-OCOTP-clock-for-imx8mm-before-readi.patch \
     file://0055-compulab-iot-gate-imx8plus-add-support-for-TPM.patch  \
+    file://0100-compulab-iot-gate-imx8plus-fec-update-drive-strength.patch \
 "
 
 # Fixes issue where cryptodev module is installed
