@@ -98,3 +98,13 @@ INITRAMFS_IMAGE = "balena-image-bootloader-initramfs"
 KERNEL_PACKAGE_NAME = "balena-bootloader"
 
 PROVIDES = "virtual/balena-bootloader"
+
+# shrink size by removing unneeded functionality in balena-bootloader so we have enough space in the boot partition
+BALENA_CONFIGS:append = "shrink_size"
+BALENA_CONFIGS[shrink_size] = " \
+	CONFIG_CHROME_PLATFORMS=n \
+	CONFIG_MFD_CORE=n \
+	CONFIG_NEW_LEDS=n \
+	CONFIG_PPS=n \
+	CONFIG_VFIO=n \
+"
