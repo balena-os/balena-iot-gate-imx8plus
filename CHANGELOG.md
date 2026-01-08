@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.5.32+rev22
+## (2026-01-08)
+
+* adapt to latest meta-balena-hab additions [Alex Gonzalez]
+
 # v6.5.32+rev21
 ## (2025-12-12)
 

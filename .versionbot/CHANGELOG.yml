@@ -1,4 +1,18 @@
 - commits:
+    - subject: adapt to latest meta-balena-hab additions
+      hash: 464799e91c5eebda21449818a86e1ff195266345
+      body: ""
+      footer:
+        Changelog-entry: adapt to latest meta-balena-hab additions
+        changelog-entry: adapt to latest meta-balena-hab additions
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 6.5.32+rev22
+  title: ""
+  date: 2026-01-08T10:16:54.053Z
+- commits:
     - subject: Update layers/meta-openembedded to
         97d4be2839754dadfc326c21948472c2fc2985ce
       hash: c8a7d8c43000b67f255df80cc5275124f876cd2d
