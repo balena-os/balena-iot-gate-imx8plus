@@ -11,6 +11,12 @@ SRC_URI:append = " \
     file://0055-compulab-iot-gate-imx8plus-add-support-for-TPM.patch  \
 "
 
+SRC_URI:append = " \
+    file://0101-net-phy-realtek-RTL8211F-add-LED-mode-configuration-.patch \
+    file://0102-compulab-iot-gate-imx8plus-add-LED-pins-configuratio.patch \
+    file://0103-compulab-iot-gate-imx8plus-fec-update-drive-strength.patch \
+"
+
 # Fixes issue where cryptodev module is installed
 # along with the kernel image in the initramfs
 KERNEL_PACKAGE_NAME="kernel"
