@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.5.32+rev23
+## (2026-01-20)
+
+* Do not hardcode order for abroot script [Michal Toman]
+
 # v6.5.32+rev22
 ## (2026-01-08)
 

@@ -1,4 +1,26 @@
 - commits:
+    - subject: Do not hardcode order for abroot script
+      hash: 9da6b30ebdf8400722f38c550f23a1ad6101d032
+      body: |
+        This device type uses sed to inject machine type into the abroot
+        initrd script. It does it after the script is installed, so the name is
+        already prefixed with a number for ordering. At this moment
+        the bbappend hardcodes number 73, but this got changed in meta-balena
+        during a recent refactoring.
+
+        This patch replaces the hardcoded number with a wildcard so that
+        the order doesn't matter.
+      footer:
+        Changelog-entry: Do not hardcode order for abroot script
+        changelog-entry: Do not hardcode order for abroot script
+        Signed-off-by: Michal Toman <michalt@balena.io>
+        signed-off-by: Michal Toman <michalt@balena.io>
+      author: Michal Toman
+      nested: []
+  version: 6.5.32+rev23
+  title: ""
+  date: 2026-01-20T11:46:30.482Z
+- commits:
     - subject: adapt to latest meta-balena-hab additions
       hash: 464799e91c5eebda21449818a86e1ff195266345
       body: ""
