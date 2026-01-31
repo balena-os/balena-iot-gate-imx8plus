@@ -1,0 +1,54 @@
+From 2395d31127d083ba5b6425dd82ef3db14db67243 Mon Sep 17 00:00:00 2001
+From: Valentin Raevsky <valentin@compulab.co.il>
+Date: Thu, 8 Jan 2026 12:48:13 +0200
+Subject: [PATCH] compulab: iot-gate-imx8plus: add LED pins configuration for
+ both Ethernet interfaces
+
+Add LED pins configuration for both FEC and EQOS Ethernet interfaces.
+Currently, the LED pins configuration is used by RTL8211F PHYs
+
+Signed-off-by: Ilya Ledvich <ilya@compulab.co.il>
+Signed-off-by: Valentin Raevsky <valentin@compulab.co.il>
+---
+ arch/arm64/boot/dts/compulab/sb-iotgimx8plus.dtsi | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+
+diff --git a/arch/arm64/boot/dts/compulab/sb-iotgimx8plus.dtsi b/arch/arm64/boot/dts/compulab/sb-iotgimx8plus.dtsi
+index 626bec53227d..1f034f7c0e50 100644
+--- a/arch/arm64/boot/dts/compulab/sb-iotgimx8plus.dtsi
++++ b/arch/arm64/boot/dts/compulab/sb-iotgimx8plus.dtsi
+@@ -4,6 +4,7 @@
+  */
+ 
+ #include <dt-bindings/leds/common.h>
++#include <dt-bindings/net/realtek-rtl8211x.h>
+ 
+ / {
+ 
+@@ -112,10 +113,23 @@ fecphy: fec-phy@0 {
+ 			reset-deassert-us = <80000>;
+ 			eee-broken-1000t;
+ 			realtek,clkout-disable;
++			realtek,led-modes = <
++				PHY_LED_LINK_ACTIVITY
++				PHY_LED_OFF
++				PHY_LED_LINK
++			>;
+ 		};
+ 	};
+ };
+ 
++&eqosphy {
++	realtek,led-modes = <
++		PHY_LED_LINK_ACTIVITY
++		PHY_LED_LINK
++		PHY_LED_OFF
++	>;
++};
++
+ &i2c3 {
+ 	status = "okay";
+ 
+-- 
+2.34.1
+
