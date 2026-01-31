@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.5.32+rev25
+## (2026-01-31)
+
+* Line up the Kirkstone branch with the Scarthgap changes. [Valentin Raevsky]
+
 # v6.5.32+rev24
 ## (2026-01-22)
 

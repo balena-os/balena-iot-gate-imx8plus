@@ -1,4 +1,43 @@
 - commits:
+    - subject: Line up the Kirkstone branch with the Scarthgap changes.
+      hash: b25de3f41c6ee7713c2b52f8d102275ae003641b
+      body: >
+        1) Add support for the Device Tree property realtek,led-modes, which
+
+        defines per-LED mode configuration.
+
+        The property is a vector of zero to three 32-bit cells (u32), each
+
+        in the range 0x0–0xf, where each cell sets the mode for one LED.
+
+        Each cell’s value is a bitmap composed of the following bit flags:
+         - 0b0001 - activity
+         - 0b0010 - link10
+         - 0b0100 - link100
+         - 0b1000 - link1000
+        Unset LEDs are omitted and will use their default configuration.
+
+
+        2) Add LED pins configuration for both FEC and EQOS Ethernet interfaces.
+
+        Currently, the LED pins configuration is used by RTL8211F PHYs
+
+
+        3) Update the drive strength value from X6 to X2 for all TX signals of
+        the FEC
+
+        interface to optimize signal integrity and meet design constraints
+      footer:
+        Changelog-entry: Line up the Kirkstone branch with the Scarthgap changes.
+        changelog-entry: Line up the Kirkstone branch with the Scarthgap changes.
+        Signed-off-by: Valentin Raevsky <valentin@compulab.co.il>
+        signed-off-by: Valentin Raevsky <valentin@compulab.co.il>
+      author: Valentin Raevsky
+      nested: []
+  version: 6.5.32+rev25
+  title: ""
+  date: 2026-01-31T13:31:37.219Z
+- commits:
     - subject: Update balena-yocto-scripts to a64a7325c164749c5fcdd46468d29b43f232c733
       hash: 1883b6fc3b8255f555f17727d83300bfa85a64a5
       body: Update balena-yocto-scripts
