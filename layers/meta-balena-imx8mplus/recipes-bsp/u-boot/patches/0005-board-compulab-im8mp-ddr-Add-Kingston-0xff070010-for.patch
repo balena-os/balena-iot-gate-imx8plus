@@ -1,0 +1,35 @@
+From 0df6b67559a56105b1fb18a9b5d8df34649ef946 Mon Sep 17 00:00:00 2001
+From: Valentin Raevsky <valentin@compulab.co.il>
+Date: Sun, 22 Feb 2026 22:54:38 +0200
+Subject: [PATCH] board: compulab: im8mp: ddr: Add Kingston 0xff070010 for 2G
+ and 4G
+
+Signed-off-by: Valentin Raevsky <valentin@compulab.co.il>
+---
+ board/compulab/plat/imx8mp/ddr/ddr.h | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+
+diff --git a/board/compulab/plat/imx8mp/ddr/ddr.h b/board/compulab/plat/imx8mp/ddr/ddr.h
+index 9831b1e4c76..a22b6a2bf2a 100644
+--- a/board/compulab/plat/imx8mp/ddr/ddr.h
++++ b/board/compulab/plat/imx8mp/ddr/ddr.h
+@@ -85,6 +85,16 @@ static const struct lpddr4_desc lpddr4_array[] = {
+ 	{ .name = "Samsung",	.id = 0x01080010, .subind = 0x2, .size = 2048, .count = 1,
+ #ifdef CONFIG_SPL_BUILD
+ 		.timing = &ucm_dram_timing_01061010_2G
++#endif
++	},
++	{ .name = "Kingston",	.id = 0xff070010, .subind = 0x4, .size = 4096, .count = 1,
++#ifdef CONFIG_SPL_BUILD
++		.timing = &ucm_dram_timing_01061010_4G
++#endif
++	},
++	{ .name = "Kingston",	.id = 0xff070010, .subind = 0x2, .size = 2048, .count = 1,
++#ifdef CONFIG_SPL_BUILD
++		.timing = &ucm_dram_timing_01061010_2G
+ #endif
+ 	},
+ #else
+-- 
+2.34.1
+
