@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.11.2+rev2
+## (2026-02-23)
+
+* u-boot: Expand the supported dram list [Valentin Raevsky]
+
 # v6.11.2+rev1
 ## (2026-02-19)
 

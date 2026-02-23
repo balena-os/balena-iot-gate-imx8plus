@@ -1,4 +1,23 @@
 - commits:
+    - subject: "u-boot: Expand the supported dram list"
+      hash: e02cd32f57ea39cae4ce668e7b55eba3e135b47a
+      body: |
+        Add:
+        d2) Kingston;
+        d4) Kingston, Samsung
+        Synchronize with the latest CompuLab DRAM support
+        with out applying additional dram timings.
+      footer:
+        Changelog-entry: "u-boot: Expand the supported dram list"
+        changelog-entry: "u-boot: Expand the supported dram list"
+        Signed-off-by: Valentin Raevsky <valentin@compulab.co.il>
+        signed-off-by: Valentin Raevsky <valentin@compulab.co.il>
+      author: Valentin Raevsky
+      nested: []
+  version: 6.11.2+rev2
+  title: ""
+  date: 2026-02-23T12:30:42.006Z
+- commits:
     - subject: Update balena-yocto-scripts to 2649a8d9024a2986d092dff178da9bd14c39f189
       hash: bdc13925a8f847fb0604e7546b846cc5ba242245
       body: Update balena-yocto-scripts
