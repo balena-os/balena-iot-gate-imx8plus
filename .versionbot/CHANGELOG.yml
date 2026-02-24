@@ -1,4 +1,87 @@
 - commits:
+    - subject: Update layers/meta-balena to a8ba7eef5da57d5e740ca2c4d7e58132ca9076e5
+      hash: d44d5e7cecd8a094bdf803ae2c13e97cb39d2790
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to a8ba7eef5da57d5e740ca2c4d7e58132ca9076e5
+        changelog-entry: Update layers/meta-balena to a8ba7eef5da57d5e740ca2c4d7e58132ca9076e5
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "tests/modem: Skip modem test on unsupported Orin device-type"
+              hash: e72616cea3600a8781bf094c6f10316ebe8f3325
+              body: |
+                This particular device-type has an e-SIM and cannot be tested
+                in our autokit, because a custom setup is required.
+
+                Connectivity will thus be tested by the vendor.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru
+              nested: []
+          version: meta-balena-6.11.4
+          title: ""
+          date: 2026-02-23T14:31:12.414Z
+        - commits:
+            - subject: "balena-bootloader.bbclass: disable more unnecessary drivers"
+              hash: 1f51bdc9c52ea9ea9207d90f00db581b797409ad
+              body: >
+                Some device types are tight on storage and the balena bootloader
+                is one
+
+                of the cheaper places to save space.
+
+
+                This patch is just another round of disabling unnecessary
+                drivers,
+
+                depending on the device type this one should shrink the
+                resulting
+
+                kernel binary by 300-500kB.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+            - subject: "balena-bootloader.bbclass: add spaces to BALENA_CONFIGS appends"
+              hash: e807ca5c1f055234bb8750e9f21bb5c2ea3eef26
+              body: >
+                At this moment `secureboot` and `shrink_size` sections are
+                appended
+
+                to BALENA_CONFIGS without spaces, so if both are enabled at the
+                same
+
+                time, they merge into `securebootshrink_size`, effectively
+                disabling
+
+                both.
+
+
+                This patch adds a space before each append so that both are
+                treated
+
+                as standalone sections.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-6.11.3
+          title: ""
+          date: 2026-02-20T06:15:21.216Z
+  version: 6.11.4
+  title: ""
+  date: 2026-02-24T15:36:54.521Z
+- commits:
     - subject: "u-boot: Expand the supported dram list"
       hash: e02cd32f57ea39cae4ce668e7b55eba3e135b47a
       body: |
