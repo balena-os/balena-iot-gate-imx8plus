@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update layers/meta-balena-hab to cf1811d6e3b9a74acf1229d222a0a19303b65b26
+      hash: 7fdeeac79c55938a575a5e33ed0b138591f3d0fb
+      body: Update layers/meta-balena-hab
+      footer:
+        Changelog-entry: Update layers/meta-balena-hab to
+          cf1811d6e3b9a74acf1229d222a0a19303b65b26
+        changelog-entry: Update layers/meta-balena-hab to
+          cf1811d6e3b9a74acf1229d222a0a19303b65b26
+      author: balena-renovate[bot]
+      nested: []
+  version: 6.11.4+rev2
+  title: ""
+  date: 2026-02-25T09:40:37.967Z
+- commits:
     - subject: Update layers/meta-openembedded to
         8a598a2bc9199a4fbb9008a32ab143fb509a0933
       hash: d3e45ffab04ef92a8a75f8e3674bd602e0d8cacf
