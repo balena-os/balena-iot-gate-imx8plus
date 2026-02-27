@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.11.5
+## (2026-02-27)
+
+
+<details>
+<summary> Update layers/meta-balena to a1d617fd820c2d90a97f49e9fc14364204740c6e [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.11.5
+> ### (2026-02-25)
+> 
+> * kernel-balena.bbclass: Enable support for traditional iptables backends for newer kernels [Florin Sarbu]
+> 
+
+</details>
+
 # v6.11.4+rev2
 ## (2026-02-25)
 
