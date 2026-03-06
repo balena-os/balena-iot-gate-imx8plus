@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.11.5+rev1
+## (2026-03-06)
+
+* workflows: move testing to balena cloud from BM [Ryan Cooke]
+
 # v6.11.5
 ## (2026-02-27)
 

@@ -1,4 +1,18 @@
 - commits:
+    - subject: "workflows: move testing to balena cloud from BM"
+      hash: 8e214a4218ff274bde37be47a18f2e9dd46a2eea
+      body: ""
+      footer:
+        Changelog-entry: "workflows: move testing to balena cloud from BM"
+        changelog-entry: "workflows: move testing to balena cloud from BM"
+        Signed-off-by: Ryan Cooke <ryan@balena.io>
+        signed-off-by: Ryan Cooke <ryan@balena.io>
+      author: Ryan Cooke
+      nested: []
+  version: 6.11.5+rev1
+  title: ""
+  date: 2026-03-06T11:59:00.956Z
+- commits:
     - subject: Update layers/meta-balena to a1d617fd820c2d90a97f49e9fc14364204740c6e
       hash: 274364d8f0dc743885a9c131e34993883f7e0bbd
       body: Update layers/meta-balena
