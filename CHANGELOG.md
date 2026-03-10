@@ -2,6 +2,32 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.11.11
+## (2026-03-10)
+
+
+<details>
+<summary> Update layers/meta-balena to db20cbc5a2111924ec896c183539400d81d29e4c [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.11.11
+> ### (2026-03-10)
+> 
+> 
+> <details>
+> <summary> Update balena-supervisor to v17.6.3 [balena-renovate[bot]] </summary>
+> 
+>> ### balena-supervisor-17.6.3
+>> #### (2026-03-10)
+>> 
+>> * Only report download progress if service status is `Downloading` [Felipe Lalanne]
+>> 
+> 
+> </details>
+> 
+> 
+
+</details>
+
 # v6.11.10+rev1
 ## (2026-03-09)
 
