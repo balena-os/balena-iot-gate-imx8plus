@@ -1,0 +1,31 @@
+--------------------------------------------------------------------------
+
+Driver: brcmfmac - Broadcom/Cypress FullMAC WLAN driver
+
+File: brcm/brcmfmac4339-sdio.txt
+File: brcm/brcmfmac43430-sdio.txt
+File: brcm/brcmfmac43455-sdio.txt
+File: brcm/brcmfmac4356-pcie.txt
+File: brcm/brcmfmac4359-pcie.txt
+
+--------------------------------------------------------------------------
+
+Driver: nxp89xx - Nxp 89xx firmwares
+
+File: nxp/ed_mac_ctrl_V1_8801.conf
+File: nxp/sdiouart8987_combo_v0.bin
+File: nxp/ed_mac_ctrl_V3_8987.conf
+File: nxp/sdiouart8997_combo_v4.bin
+File: nxp/ed_mac_ctrl_V3_8997.conf
+File: nxp/sdiouart9098_combo_v1.bin
+File: nxp/sdiouartiw416_combo_v0.bin
+File: nxp/ed_mac_ctrl_V3_909x.conf
+File: nxp/pcieuart8997_combo_v4.bin
+File: nxp/txpwrlimit_cfg_8987.conf
+File: nxp/wifi_mod_para.conf
+File: nxp/pcieuart9098_combo_v1.bin
+File: nxp/txpwrlimit_cfg_8997.conf
+File: nxp/txpwrlimit_cfg_9098.conf
+File: nxp/sd8801_uapsta.bin
+
+--------------------------------------------------------------------------
