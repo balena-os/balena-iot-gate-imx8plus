@@ -1,4 +1,18 @@
 - commits:
+    - subject: Allow custom meta-balena ref on workflow dispatch
+      hash: 92c255e218d40a4280844fa185ac2dcde17bd7c7
+      body: ""
+      footer:
+        Changelog-entry: Allow custom meta-balena ref on workflow dispatch
+        changelog-entry: Allow custom meta-balena ref on workflow dispatch
+        Signed-off-by: Yann CARDAILLAC <yann.cardaillac@balena.io>
+        signed-off-by: Yann CARDAILLAC <yann.cardaillac@balena.io>
+      author: Yann CARDAILLAC
+      nested: []
+  version: 6.11.11+rev2
+  title: ""
+  date: 2026-03-19T19:51:28.163Z
+- commits:
     - subject: Update contracts to ab2042b50e075fa27e16e23bb413adac7700c132
       hash: f049a873e3b03c12d04e98441a1db7649d11bcf6
       body: Update contracts
