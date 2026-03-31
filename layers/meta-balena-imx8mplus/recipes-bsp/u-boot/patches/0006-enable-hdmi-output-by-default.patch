@@ -1,0 +1,33 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Shaun Mulligan <shaun@balena.io>
+Date: Sun, 30 Mar 2026 00:00:00 +0000
+Subject: [PATCH] Enable HDMI output by default
+
+The i.MX8MP's HDMI Hot Plug Detect (HPD) does not reliably detect
+connected displays on the IOT-GATE-IMX8PLUS, resulting in the DRM
+subsystem never activating the HDMI output. Add video=HDMI-A-1:D to
+the default kernel command line to force the HDMI connector on,
+allowing EDID to be read and a display mode to be set automatically.
+
+Upstream-status: inappropriate [configuration]
+Signed-off-by: Shaun Mulligan <shaun@balena.io>
+---
+ include/configs/compulab-imx8m-plus.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/include/configs/compulab-imx8m-plus.h b/include/configs/compulab-imx8m-plus.h
+index 61529bde1900..a1b2c3d4e5f6 100644
+--- a/include/configs/compulab-imx8m-plus.h
++++ b/include/configs/compulab-imx8m-plus.h
+@@ -95,7 +95,7 @@
+ 	"mmcpart=" __stringify(CONFIG_SYS_MMC_IMG_LOAD_PART) "\0" \
+ 	"mmcroot=" CONFIG_MMCROOT " rootwait rw\0" \
+ 	"mmcautodetect=yes\0" \
+-	"mmcargs=setenv bootargs ${jh_clk} ${resin_kernel_root} ${root_opt} ${os_cmdline} "__stringify(BALENA_STAGE2)" \0 " \
++	"mmcargs=setenv bootargs ${jh_clk} ${resin_kernel_root} ${root_opt} ${os_cmdline} video=HDMI-A-1:D "__stringify(BALENA_STAGE2)" \0 " \
+ 	"loadbootscript=load mmc ${mmcdev}:${mmcpart} ${loadaddr} ${bsp_script};\0" \
+ 	"bootscript=echo Running bootscript from mmc ...; " \
+ 		"source\0" \
+--
+2.39.0
+
