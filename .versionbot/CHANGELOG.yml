@@ -1,4 +1,25 @@
 - commits:
+    - subject: Enable HDMI output by default on IOT-GATE-IMX8PLUS
+      hash: 1bf1d1e462e5ae61170147125d8b2f3cece17d00
+      body: |
+        The i.MX8MP HDMI Hot Plug Detect (HPD) does not reliably detect
+        connected displays on the IOT-GATE-IMX8PLUS, causing the DRM
+        subsystem to never activate the HDMI output. Add video=HDMI-A-1:D
+        to the default kernel boot args to force the HDMI connector on,
+        allowing EDID to be read and a display mode to be set automatically.
+      footer:
+        Change-type: minor
+        change-type: minor
+        Changelog-entry: Enable HDMI output by default on IOT-GATE-IMX8PLUS
+        changelog-entry: Enable HDMI output by default on IOT-GATE-IMX8PLUS
+        Signed-off-by: Shaun Mulligan <shaun@balena.io>
+        signed-off-by: Shaun Mulligan <shaun@balena.io>
+      author: Shaun Mulligan
+      nested: []
+  version: 6.11.11+rev4
+  title: ""
+  date: 2026-03-31T12:26:54.930Z
+- commits:
     - subject: Update balena-yocto-scripts to 22b8b77a848df921c3b96a1bf689f91ee453ccb4
       hash: 4b95e97f37745587ff629993038cf5e765c232a7
       body: Update balena-yocto-scripts

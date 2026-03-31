@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.11.11+rev4
+## (2026-03-31)
+
+* Enable HDMI output by default on IOT-GATE-IMX8PLUS [Shaun Mulligan]
+
 # v6.11.11+rev3
 ## (2026-03-27)
 
