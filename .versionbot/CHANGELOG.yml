@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update balena-os/github-workflows to
+      hash: 0909c58ea3dbf8c0ee46416d69d97050d1f76ea0
+      body: Update balena-os/github-workflows
+      footer:
+        Changelog-entry: Update balena-os/github-workflows to
+        changelog-entry: Update balena-os/github-workflows to
+      author: balena-renovate[bot]
+      nested: []
+  version: 6.11.11+rev5
+  title: ""
+  date: 2026-04-03T09:18:11.977Z
+- commits:
     - subject: Enable HDMI output by default on IOT-GATE-IMX8PLUS
       hash: 1bf1d1e462e5ae61170147125d8b2f3cece17d00
       body: |
