@@ -1,4 +1,4 @@
-From 7b1b4c421896e6d2ead52d8ac38a185594e5be40 Mon Sep 17 00:00:00 2001
+From 79492a6a2a179a35d854232065fab2cbcaf7abd9 Mon Sep 17 00:00:00 2001
 From: Alexandru Costache <alexandru@balena.io>
 Date: Fri, 17 Nov 2023 10:24:27 +0100
 Subject: [PATCH] integrate with balenaOS
@@ -7,11 +7,11 @@ Upstream-status: inaproppriate [configuration]
 Signed-off-by: Alexandru Costache <alexandru@balena.io>
 ---
  configs/iot-gate-imx8plus_defconfig   |  8 +++++
- include/configs/compulab-imx8m-plus.h | 44 +++++++++++++--------------
- 2 files changed, 30 insertions(+), 22 deletions(-)
+ include/configs/compulab-imx8m-plus.h | 45 ++++++++++++++-------------
+ 2 files changed, 31 insertions(+), 22 deletions(-)
 
 diff --git a/configs/iot-gate-imx8plus_defconfig b/configs/iot-gate-imx8plus_defconfig
-index ce4561486f4d..d848df2e85ab 100644
+index ce4561486f4..d848df2e85a 100644
 --- a/configs/iot-gate-imx8plus_defconfig
 +++ b/configs/iot-gate-imx8plus_defconfig
 @@ -156,3 +156,11 @@ CONFIG_EFI_RUNTIME_UPDATE_CAPSULE=y
@@ -27,7 +27,7 @@ index ce4561486f4d..d848df2e85ab 100644
 +CONFIG_CMD_FS_UUID=y
 +CONFIG_CMD_USB_MASS_STORAGE
 diff --git a/include/configs/compulab-imx8m-plus.h b/include/configs/compulab-imx8m-plus.h
-index ba8e706f8d1c..61529bde1900 100644
+index ba8e706f8d1..ae357a9af7b 100644
 --- a/include/configs/compulab-imx8m-plus.h
 +++ b/include/configs/compulab-imx8m-plus.h
 @@ -79,11 +79,13 @@
@@ -66,7 +66,7 @@ index ba8e706f8d1c..61529bde1900 100644
  		"root=/dev/nfs " \
  		"ip=dhcp nfsroot=${serverip}:${nfsroot},v3,tcp\0" \
  	"netboot=echo Booting from net ...; " \
-@@ -136,26 +138,25 @@
+@@ -136,26 +138,26 @@
  		"usb_dev=0\0" \
  		"boot_part=1\0" \
  		"root_opt=rootwait rw\0" \
@@ -85,7 +85,8 @@ index ba8e706f8d1c..61529bde1900 100644
 -		"ulfdt=if test ${boot_fdt} = yes || test ${boot_fdt} = try; then " \
 -			"load ${iface} ${dev}:${part} ${fdt_addr_r} ${fdtfile}; fi;\0" \
 +		"ulimage=if load ${iface} ${dev}:${resin_boot_part} ${zip_addr} ${image}; then unzip ${zip_addr} ${loadaddr}; run balena_kernel_load_crc_save; else if load ${iface} ${dev}:${resin_root_part} ${zip_addr} boot/${image}; then unzip ${zip_addr} ${loadaddr}; run balena_kernel_load_crc_save; else false; fi; fi; \0" \
-+		"ulfdt=if load ${iface} ${dev}:${resin_boot_part} ${fdt_addr_r} ${fdtfile}; then run balena_fdt_load_crc_save; else if load ${iface} ${dev}:${resin_root_part} boot/${fdt_addr_r} ${fdtfile}; then run balena_fdt_load_crc_save; else false; fi; fi; \0" \
++		"test_load_custom_fdt=if test -n ${custom_fdt_file}; then if load ${iface} ${dev}:${resin_boot_part} ${fdt_addr_r} ${custom_fdt_file}; then true; else if load ${iface} ${dev}:${resin_root_part} ${fdt_addr_r} boot/${custom_fdt_file}; then true; else false; fi; fi; else false; fi; \0" \
++		"ulfdt=if run test_load_custom_fdt; then setenv fdtfile ${custom_fdt_file}; fi; if load ${iface} ${dev}:${resin_boot_part} ${fdt_addr_r} ${fdtfile}; then run balena_fdt_load_crc_save; else if load ${iface} ${dev}:${resin_root_part} ${fdt_addr_r} boot/${fdtfile}; then run balena_fdt_load_crc_save; else false; fi; fi; \0" \
  		"bootlist=sd_ul usb_ul emmc_ul\0" \
 -	"bsp_bootcmd=echo Running BSP bootcmd ...; " \
 -		"for src in ${bootlist}; do " \
@@ -106,7 +107,7 @@ index ba8e706f8d1c..61529bde1900 100644
  						"booti ${loadaddr} - ${fdt_addr_r}; " \
  					"else " \
  						"if test ${boot_fdt} != yes; then " \
-@@ -163,8 +164,7 @@
+@@ -163,8 +165,7 @@
  						"fi; " \
  					"fi; " \
  				"fi; " \
@@ -116,3 +117,6 @@ index ba8e706f8d1c..61529bde1900 100644
  #endif
  
  /* Link Definitions */
+-- 
+2.34.1
+

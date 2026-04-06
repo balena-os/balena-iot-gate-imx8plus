@@ -15,7 +15,7 @@ SRC_URI:append = " \
 	file://0001-board-compulab-imx8mp-Update-the-supported-dram-list.patch \
 	file://0001-Revert-remove-include-config_defaults.h.patch \
 	file://0001-iot-gate-imx8plus-Increase-default-ENV-size.patch \
-  file://0003-integrate-with-balenaOS.patch \
+	file://0003-integrate-with-balenaOS.patch \
 	file://0004-board-compulab-im8mp-ddr-Expand-Samsung-support-with.patch \
 	file://0005-board-compulab-im8mp-ddr-Add-Kingston-0xff070010-for.patch \
 	file://0006-enable-hdmi-output-by-default.patch \
