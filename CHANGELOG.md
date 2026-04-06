@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.11.11+rev6
+## (2026-04-06)
+
+* recipes-bsp/u-boot: Allow loading custom kernel device-trees [Alexandru Costache]
+
 # v6.11.11+rev5
 ## (2026-04-03)
 

@@ -1,4 +1,23 @@
 - commits:
+    - subject: "recipes-bsp/u-boot: Allow loading custom kernel device-trees"
+      hash: c88ccea521c6823d8bac83ac04c7466bf2c74ac5
+      body: |
+        In order to be loaded, a custom device-tree needs to exist
+        in the resin-boot partition and the SV needs to configure
+        it appropriately in extra_uEnv.txt. If an incorrect dtb is
+        configured - i.e the file does not exist - the default dtb
+        will continue to be loaded.
+      footer:
+        Changelog-entry: "recipes-bsp/u-boot: Allow loading custom kernel device-trees"
+        changelog-entry: "recipes-bsp/u-boot: Allow loading custom kernel device-trees"
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 6.11.11+rev6
+  title: ""
+  date: 2026-04-06T12:40:46.871Z
+- commits:
     - subject: Update balena-os/github-workflows to
       hash: 0909c58ea3dbf8c0ee46416d69d97050d1f76ea0
       body: Update balena-os/github-workflows
