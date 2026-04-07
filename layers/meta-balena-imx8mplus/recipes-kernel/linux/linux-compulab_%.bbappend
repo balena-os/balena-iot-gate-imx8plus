@@ -17,6 +17,12 @@ SRC_URI:append = " \
     file://0103-compulab-iot-gate-imx8plus-fec-update-drive-strength.patch \
 "
 
+# M7 remoteproc device tree (kernel 5.15.71 already has imx_rproc fixes)
+SRC_URI:append = " \
+    file://0204-add-iot-gate-imx8plus-m7-device-tree.patch \
+    file://imx-rpmsg-tty.cfg \
+"
+
 # Fixes issue where cryptodev module is installed
 # along with the kernel image in the initramfs
 KERNEL_PACKAGE_NAME="kernel"
@@ -65,3 +71,7 @@ addtask do_merge_config_before_resin_inject after do_configure before kernel_res
 
 # meta-bsp-imx8mp explicitly packages for /lib so let's also append the path set by nonarch_base_libdir for future use of usrmerge
 FILES:${KERNEL_PACKAGE_NAME}-modules += "${nonarch_base_libdir}/modules/"
+
+# Auto-load imx_rpmsg_tty at boot. Must be built as a module (CONFIG_IMX_RPMSG_TTY=m)
+# because NXP Kconfig has "depends on HAVE_IMX_RPMSG && m" forcing module-only.
+# Use modules-load.d instead.
