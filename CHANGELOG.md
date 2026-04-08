@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.11.11+rev8
+## (2026-04-08)
+
+
+<details>
+<summary> Update contracts to 7225779853a3904517285bd19f7e2be44026c108 [balena-renovate[bot]] </summary>
+
+> ## contracts-2.0.141
+> ### (2026-03-16)
+> 
+> * iot-gate-imx8plus: replace dram size range with explicit dram sizes [Alex Gonzalez]
+> 
+
+</details>
+
 # v6.11.11+rev7
 ## (2026-04-08)
 
