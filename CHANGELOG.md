@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.11.11+rev9
+## (2026-04-09)
+
+
+<details>
+<summary> Update contracts to 9f5b551e773cd8143cf5d4e86407238c2a1a20e9 [balena-renovate[bot]] </summary>
+
+> ## contracts-2.0.142
+> ### (2026-04-09)
+> 
+> * Update iot-gate-imx8plus-d1d8 to remove Wifi and BT [Alexandru Costache]
+> 
+
+</details>
+
 # v6.11.11+rev8
 ## (2026-04-08)
 

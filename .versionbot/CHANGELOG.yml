@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update contracts to 9f5b551e773cd8143cf5d4e86407238c2a1a20e9
+      hash: 7df3841ff2200fac30904a72f50130586269376c
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 9f5b551e773cd8143cf5d4e86407238c2a1a20e9
+        changelog-entry: Update contracts to 9f5b551e773cd8143cf5d4e86407238c2a1a20e9
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update iot-gate-imx8plus-d1d8 to remove Wifi and BT
+              hash: caa877e50405ec4dd3c399ae12753c4a4027f372
+              body: |
+                This board does not have a wireless module
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.142
+          title: ""
+          date: 2026-04-09T12:32:15.819Z
+  version: 6.11.11+rev9
+  title: ""
+  date: 2026-04-09T20:31:36.570Z
+- commits:
     - subject: Update contracts to 7225779853a3904517285bd19f7e2be44026c108
       hash: d46b0becf8c2237a8acac666037c0fd9fba5c234
       body: Update contracts
