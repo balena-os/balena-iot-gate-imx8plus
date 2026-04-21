@@ -16,6 +16,7 @@ SRC_URI:append = " \
     file://0102-compulab-iot-gate-imx8plus-add-LED-pins-configuratio.patch \
     file://0103-compulab-iot-gate-imx8plus-fec-update-drive-strength.patch \
     file://0104-add-71MHz-pixel-clock-to-samsung-hdmi-phy.patch \
+    file://0105-add-mdpcb-m2tpm-device-tree.patch \
 "
 
 # M7 remoteproc device tree (kernel 5.15.71 already has imx_rproc fixes)
