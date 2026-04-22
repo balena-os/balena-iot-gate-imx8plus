@@ -35,3 +35,8 @@ IMAGE_INSTALL:remove = "jailhouse"
 
 CORE_IMAGE_EXTRA_INSTALL:remove = " gpsd gps-utils connman wvdial ppp modemmanager "
 IMAGE_ROOTFS_SIZE = "487424"
+
+TEMPORARILY_ALLOWED_PACKAGES = "linux-firmware-ibt-20 linux-firmware-ibt-41-41"
+BALENA_ALLOWED_FIRMWARE_PACKAGES:append = "${TEMPORARILY_ALLOWED_PACKAGES}"
+
+IMAGE_INSTALL:append += " ${TEMPORARILY_ALLOWED_PACKAGES}"
