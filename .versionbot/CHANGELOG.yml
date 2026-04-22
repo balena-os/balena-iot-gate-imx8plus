@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update contracts to 7c3bf64c92a839dcbf02cfd69367392e7728fcde
+      hash: d41dbfa09df9702fc4954f1d77ef5538d1443ccc
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 7c3bf64c92a839dcbf02cfd69367392e7728fcde
+        changelog-entry: Update contracts to 7c3bf64c92a839dcbf02cfd69367392e7728fcde
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "hw.device-type: Add new device-type Compulab IOT-LINK Gateway"
+              hash: 9f8168327bc4393d5fe00aca5cb263003d76de7b
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+          version: contracts-2.0.143
+          title: ""
+          date: 2026-04-22T07:37:35.352Z
+  version: 6.11.11+rev11
+  title: ""
+  date: 2026-04-22T12:52:13.428Z
+- commits:
     - subject: Update product-os/flowzone to 3b69c8f20fbd2f43b5fcedb31373d7c45e86948e
       hash: 1f0685bd0ebca81b50fe56e48d20880eca68e7d0
       body: Update product-os/flowzone
