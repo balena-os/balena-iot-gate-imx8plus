@@ -53,7 +53,7 @@ index ba8e706f8d1..ae357a9af7b 100644
  	"mmcroot=" CONFIG_MMCROOT " rootwait rw\0" \
  	"mmcautodetect=yes\0" \
 -	"mmcargs=setenv bootargs ${jh_clk} console=${console} root=${mmcroot}\0 " \
-+	"mmcargs=setenv bootargs ${jh_clk} clk_ignore_unused ${resin_kernel_root} ${root_opt} ${os_cmdline} "__stringify(BALENA_STAGE2)" \0 " \
++	"mmcargs=setenv bootargs ${jh_clk} ${resin_kernel_root} ${root_opt} ${os_cmdline} "__stringify(BALENA_STAGE2)" \0 " \
  	"loadbootscript=load mmc ${mmcdev}:${mmcpart} ${loadaddr} ${bsp_script};\0" \
  	"bootscript=echo Running bootscript from mmc ...; " \
  		"source\0" \
