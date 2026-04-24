@@ -1,4 +1,35 @@
 - commits:
+    - subject: Add Cortex-M7 remoteproc device tree for iot-gate-imx8plus
+      hash: 2edb1a5cf25ffdcb07665fecee20545fd79f35da
+      body: >
+        - New iot-gate-imx8plus-m7.dts variant with reserved memory, MU
+          mailboxes, and RPMsg vring buffers for the Cortex-M7 co-processor
+        - Add clk_ignore_unused to u-boot mmcargs to prevent Linux from
+          gating M7 clocks while the co-processor is running
+        - New imx-rpmsg-tty-autoload recipe to auto-load the imx_rpmsg_tty
+          kernel module at boot via modules-load.d (NXP Kconfig forces
+          module-only build); kernel config fragment ensures CONFIG_IMX_RPMSG_TTY=m
+        - Add M7 DTB to KERNEL_DEVICETREE and include autoload recipe in
+          IMAGE_INSTALL via layer.conf
+        - Override pinctrl_ie_di4o4 to release 4 GPIO4 DIO pads (DI2, DI3,
+          DO0, DO3) for exclusive M7 use while Linux retains the remaining
+          4 DIO pads on GPIO5/GPIO1
+        - Add gpio-reserved-ranges on gpio4 to prevent Linux gpiolib from
+          accessing M7-owned pins; USB2, Ethernet PHY reset, and LED on
+          GPIO4 are unaffected
+      footer:
+        Changelog-entry: Add Cortex-M7 remoteproc device tree for iot-gate-imx8plus
+        changelog-entry: Add Cortex-M7 remoteproc device tree for iot-gate-imx8plus
+        Signed-off-by: Shaun Mulligan <shaun@balena.io>
+        signed-off-by: Shaun Mulligan <shaun@balena.io>
+        Co-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>
+        co-authored-by: Claude Opus 4.6 (1M context) <noreply@anthropic.com>
+      author: Shaun Mulligan
+      nested: []
+  version: 6.12.11+rev2
+  title: ""
+  date: 2026-04-24T12:49:31.014Z
+- commits:
     - subject: Update balena-os/github-workflows to
         6fdae9ec102bb2deaa0bd767155687fafd538436
       hash: 09f97547b1aed3df5b44448eeb213e8e342aef80

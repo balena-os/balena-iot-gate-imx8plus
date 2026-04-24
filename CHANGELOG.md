@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v6.12.11+rev2
+## (2026-04-24)
+
+* Add Cortex-M7 remoteproc device tree for iot-gate-imx8plus [Shaun Mulligan]
+
 # v6.12.11+rev1
 ## (2026-04-23)
 
