@@ -7,6 +7,7 @@ BALENA_DEFCONFIG_NAME = "iot-gate-imx8plus_defconfig"
 SRC_URI:append = " \
     file://arm64-kexec_file-use-more-system-keyrings-to-verify-.patch \
     file://kexec-KEYS-make-the-code-in-bzImage64_verify_sig-gen.patch \
+    file://0204-add-iot-gate-imx8plus-m7-device-tree.patch \
 "
 
 PACKAGESPLITFUNCS:remove = "split_kernel_module_packages"

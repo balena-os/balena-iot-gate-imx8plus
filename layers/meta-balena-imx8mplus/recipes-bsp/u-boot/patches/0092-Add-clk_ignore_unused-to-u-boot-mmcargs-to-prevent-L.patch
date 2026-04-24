@@ -1,0 +1,32 @@
+From 05bb1954228a5da32ece68e201749eea68fab412 Mon Sep 17 00:00:00 2001
+From: Alexandru Costache <alexandru@balena.io>
+Date: Fri, 24 Apr 2026 09:26:33 +0000
+Subject: [PATCH] Add clk_ignore_unused to u-boot mmcargs to prevent Linux from
+ gating M7 clocks while the co-processor is running
+
+This is part of the Cortex-M7 support for the iot-gate-imx8plus,
+and is added in a separate patch so that the change is not accidentally
+missed when migrating u-boot changes to balena-bootloader.
+
+Upstream-Status: Inappropriate [configuration]
+Signed-off-by: Alexandru Costache <alexandru@balena.io>
+---
+ include/configs/compulab-imx8m-plus.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/include/configs/compulab-imx8m-plus.h b/include/configs/compulab-imx8m-plus.h
+index 83c23ff33e2..7a595e371d5 100644
+--- a/include/configs/compulab-imx8m-plus.h
++++ b/include/configs/compulab-imx8m-plus.h
+@@ -95,7 +95,7 @@
+ 	"mmcpart=" __stringify(CONFIG_SYS_MMC_IMG_LOAD_PART) "\0" \
+ 	"mmcroot=" CONFIG_MMCROOT " rootwait rw\0" \
+ 	"mmcautodetect=yes\0" \
+-	"mmcargs=setenv bootargs ${jh_clk} ${resin_kernel_root} ${root_opt} ${os_cmdline} video=HDMI-A-1:D "__stringify(BALENA_STAGE2)" \0 " \
++	"mmcargs=setenv bootargs ${jh_clk} ${resin_kernel_root} ${root_opt} ${os_cmdline} video=HDMI-A-1:D clk_ignore_unused "__stringify(BALENA_STAGE2)" \0 " \
+ 	"loadbootscript=load mmc ${mmcdev}:${mmcpart} ${loadaddr} ${bsp_script};\0" \
+ 	"bootscript=echo Running bootscript from mmc ...; " \
+ 		"source\0" \
+-- 
+2.34.1
+
