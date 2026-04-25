@@ -10,7 +10,7 @@ postProvisioningInstructions = [
 module.exports =
         version: 1
         slug: 'iot-gate-imx8plus-sb'
-        name: 'Compulab IOT-GATE-iMX8PLUS 2G-4G DRAM secure boot variant'
+        name: 'Compulab IOT-GATE-iMX8PLUS 2GB or 4GB DRAM secure boot variant'
         arch: 'aarch64'
         state: 'released'
  
