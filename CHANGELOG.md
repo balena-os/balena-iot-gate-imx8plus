@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file
 
+# v7.0.0+rev1
+## (2026-05-02)
+
+* Add iot-gate-imx8plus-mdpcb-m2tpm device tree for MDPCB-M2TPM expansion board [Shaun Mulligan]
+* Add 71MHz pixel clock support for 1280x800 HDMI displays [Shaun Mulligan]
+
 # v7.0.0
 ## (2026-04-25)
 

@@ -1,4 +1,56 @@
 - commits:
+    - subject: Add iot-gate-imx8plus-mdpcb-m2tpm device tree for MDPCB-M2TPM expansion
+        board
+      hash: 36d6b9c0138e218a3323e6222908e0e412c52068
+      body: >
+        Add the MDPCB-M2TPM expansion board device tree as an optional DTB
+
+        available on the boot partition. This variant of the IOT-GATE-IMX8PLUS
+
+        DTS configures the Infineon SLB9670 TPM on SPI, custom GPIO and PWM
+
+        pin muxing, and an M.2 EEPROM on I2C5.
+
+
+        The DTB is included in both the linux-compulab and
+        linux-balena-bootloader
+
+        kernel builds, and deployed to the boot partition. Customers can enable
+
+        it by setting custom_fdt_file=iot-gate-imx8plus-mdpcb-m2tpm.dtb in the
+
+        boot environment.
+      footer:
+        Change-type: minor
+        change-type: minor
+        Changelog-entry: Add iot-gate-imx8plus-mdpcb-m2tpm device tree for MDPCB-M2TPM
+          expansion board
+        changelog-entry: Add iot-gate-imx8plus-mdpcb-m2tpm device tree for MDPCB-M2TPM
+          expansion board
+        Signed-off-by: Shaun Mulligan <shaun@balena.io>
+        signed-off-by: Shaun Mulligan <shaun@balena.io>
+      author: Shaun Mulligan
+      nested: []
+    - subject: Add 71MHz pixel clock support for 1280x800 HDMI displays
+      hash: af5c41b86bb618655d3e6485b2d72c31c74258a6
+      body: |
+        Add a kernel patch that inserts a 71MHz pixel clock frequency entry
+        into the samsung_phy_pll_cfg[] table in phy-fsl-samsung-hdmi.c.
+        This supports 1280x800 displays via HDMI on the IOT-GATE-IMX8PLUS.
+        The PLL register values have been tested and validated by the customer.
+      footer:
+        Change-type: minor
+        change-type: minor
+        Changelog-entry: Add 71MHz pixel clock support for 1280x800 HDMI displays
+        changelog-entry: Add 71MHz pixel clock support for 1280x800 HDMI displays
+        Signed-off-by: Shaun Mulligan <shaun@balena.io>
+        signed-off-by: Shaun Mulligan <shaun@balena.io>
+      author: Shaun Mulligan
+      nested: []
+  version: 7.0.0+rev1
+  title: ""
+  date: 2026-05-02T22:38:04.636Z
+- commits:
     - subject: Update layers/meta-balena to 40263171117a11d10fcf1469214588e65a77b8d0
       hash: 9a7845e643a88e00bf72e8866c2bc6a17f6af2d3
       body: Update layers/meta-balena
