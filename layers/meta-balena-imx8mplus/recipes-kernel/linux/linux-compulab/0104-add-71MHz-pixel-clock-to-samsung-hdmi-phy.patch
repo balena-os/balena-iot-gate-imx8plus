@@ -1,0 +1,41 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Shaun Mulligan <shaun@balena.io>
+Date: Wed, 16 Apr 2026 12:00:00 +0000
+Subject: [PATCH] phy: freescale: samsung-hdmi: add 71MHz pixel clock entry
+
+Add a 71MHz pixel clock frequency entry to the samsung_phy_pll_cfg[]
+table to support 1280x800 displays via HDMI on the IOT-GATE-IMX8PLUS.
+
+The PLL register values were provided by NXP and produce exactly
+71.000000 MHz using fractional-N PLL parameters:
+Customer-tested and validated register values
+for 71MHz output on 1280x800 HDMI displays.
+
+Upstream-status: Pending
+Signed-off-by: Shaun Mulligan <shaun@balena.io>
+---
+ drivers/phy/freescale/phy-fsl-samsung-hdmi.c | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+
+diff --git a/drivers/phy/freescale/phy-fsl-samsung-hdmi.c b/drivers/phy/freescale/phy-fsl-samsung-hdmi.c
+index 1111111..2222222 100644
+--- a/drivers/phy/freescale/phy-fsl-samsung-hdmi.c
++++ b/drivers/phy/freescale/phy-fsl-samsung-hdmi.c
+@@ -344,6 +344,15 @@
+ 			0x00, 0xE0, 0x83, 0x0F, 0x3E, 0xF8, 0x00, 0x00,
+ 		},
+ 	}, {
++		71000000, {
++			0x00, 0xD1, 0x3B, 0x30, 0xBB, 0x08, 0x81, 0x41,
++			0x4F, 0x30, 0x33, 0x65, 0x10, 0xAE, 0x24, 0x80,
++			0x6C, 0xF2, 0x67, 0x00, 0x10, 0x85, 0x30, 0x32,
++			0x60, 0x8F, 0x00, 0x00, 0x08, 0x00, 0x00, 0x00,
++			0x00, 0x80, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
++			0x00, 0xE0, 0x83, 0x0F, 0x3E, 0xF8, 0x00, 0x00,
++		},
++	}, {
+ 		72000000, {
+ 			0x00, 0xD1, 0x5A, 0x50, 0x00, 0x00, 0x80, 0x00,
+ 			0x4F, 0x30, 0x33, 0x65, 0x10, 0xAB, 0x24, 0x80,
+-- 
+2.37.2

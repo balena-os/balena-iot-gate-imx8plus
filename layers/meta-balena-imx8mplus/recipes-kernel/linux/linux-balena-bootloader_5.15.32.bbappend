@@ -8,6 +8,7 @@ SRC_URI:append = " \
     file://arm64-kexec_file-use-more-system-keyrings-to-verify-.patch \
     file://kexec-KEYS-make-the-code-in-bzImage64_verify_sig-gen.patch \
     file://0204-add-iot-gate-imx8plus-m7-device-tree.patch \
+    file://0105-add-mdpcb-m2tpm-device-tree.patch \
 "
 
 PACKAGESPLITFUNCS:remove = "split_kernel_module_packages"
