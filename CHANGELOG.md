@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v7.0.0+rev4
+## (2026-05-14)
+
+* Update layers/meta-freescale to bb581c2ab90f37c5f3204f24c79d878f1a7a0976 [balena-renovate[bot]]
+
 # v7.0.0+rev3
 ## (2026-05-06)
 
