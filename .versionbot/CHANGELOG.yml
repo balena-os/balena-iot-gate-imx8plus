@@ -1,4 +1,96 @@
 - commits:
+    - subject: Update layers/meta-balena to 1dddc5142dd7c41755be8f2ee17bc43014fec9c6
+      hash: c5225e8d90cffb7d0a2666fe9f91038f75e296b8
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 1dddc5142dd7c41755be8f2ee17bc43014fec9c6
+        changelog-entry: Update layers/meta-balena to 1dddc5142dd7c41755be8f2ee17bc43014fec9c6
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "plymouth: start after udev settle"
+              hash: 2c223c726e75bc0ecf0aafbf850bde5907e4107b
+              body: >
+                In commit 72706964b8dd308b6c1772fa22c4e89d1680d205 we have
+                reworked
+
+                the plymouth unit files to use drop-in configs and avoid the
+                need
+
+                to patch the sources.
+
+
+                During this process we have lost the plymouth-start's depenency
+
+                on systemd-udev-settle.service which creates a race condition
+                around
+
+                the GPU initialization. Sometimes plymouth starts too early,
+                displays
+
+                the splash screen on the early boot SW framebuffer, which then
+                gets
+
+                lost when the actual GPU driver takes over.
+
+
+                This patch re-adds the dependency on systemd-udev-settle.service
+
+                which should address the issue.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-7.0.3
+          title: ""
+          date: 2026-05-13T11:48:58.719Z
+        - commits:
+            - subject: "kernel-balena: address CVE-2026-43284"
+              hash: f774fd5ea5dff8e1751c19a62825330fce043425
+              body: >
+                This commit removes the esp4/esp6 and rxrpc modules as they are
+                vulnerable.
+
+
+                Devices will not be able to use IPSEC based VPNs (esp4/esp6).
+                The only
+
+                consumer of rxrpc is the in-kernel AFS (Andrew File System)
+                which is
+
+                experimental anyway.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-7.0.2
+          title: ""
+          date: 2026-05-11T13:58:10.857Z
+        - commits:
+            - subject: "kernel-balena: address CVE-2026-31431"
+              hash: d95ef53e5e65cabc0dcbb87db994463367bd2bad
+              body: |
+                Unconditionally remove CONFIG_CRYPTO_USER_API_AEAD.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-7.0.1
+          title: ""
+          date: 2026-05-08T11:09:20.703Z
+  version: 7.0.3
+  title: ""
+  date: 2026-05-14T17:56:39.297Z
+- commits:
     - subject: Update layers/meta-freescale to bb581c2ab90f37c5f3204f24c79d878f1a7a0976
       hash: 4ae3c931252f7e295f7b49e5fa397bf9f2e2eb70
       body: Update layers/meta-freescale
