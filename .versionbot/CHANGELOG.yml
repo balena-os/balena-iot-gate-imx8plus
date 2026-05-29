@@ -1,4 +1,42 @@
 - commits:
+    - subject: Update layers/meta-balena to d9e900a0a9141b112436c1780377579593277ee0
+      hash: 2ae652b039d52ae8d375e5ccb125b68fb306c468
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to d9e900a0a9141b112436c1780377579593277ee0
+        changelog-entry: Update layers/meta-balena to d9e900a0a9141b112436c1780377579593277ee0
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Remove some docs in favor of moving them directly to the product docs
+              hash: 48b0fc4b2fff441067d9601219cef747b431c74d
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Matthew Yarmolinsky
+              nested: []
+          version: meta-balena-7.1.1
+          title: ""
+          date: 2026-05-28T14:15:39.228Z
+        - commits:
+            - subject: remove all bins from nss to save some place
+              hash: e7124736f403316e53f373ef61c7cd06773e06d3
+              body: ""
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Yann CARDAILLAC <yann.cardaillac@balena.io>
+                signed-off-by: Yann CARDAILLAC <yann.cardaillac@balena.io>
+              author: Yann CARDAILLAC
+              nested: []
+          version: meta-balena-7.1.0
+          title: ""
+          date: 2026-05-27T13:55:53.166Z
+  version: 7.1.1
+  title: ""
+  date: 2026-05-29T05:19:10.226Z
+- commits:
     - subject: Update product-os/flowzone to 421788500f11b4eb0dadb49c05f06f8d2e545aef
       hash: b74e34a2faafc4482816ede45b3fece20045a6b1
       body: Update product-os/flowzone

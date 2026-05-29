@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file
 
+# v7.1.1
+## (2026-05-29)
+
+
+<details>
+<summary> Update layers/meta-balena to d9e900a0a9141b112436c1780377579593277ee0 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-7.1.1
+> ### (2026-05-28)
+> 
+> * Remove some docs in favor of moving them directly to the product docs [Matthew Yarmolinsky]
+> 
+> ## meta-balena-7.1.0
+> ### (2026-05-27)
+> 
+> * remove all bins from nss to save some place [Yann CARDAILLAC]
+> 
+
+</details>
+
 # v7.0.7+rev1
 ## (2026-05-28)
 
