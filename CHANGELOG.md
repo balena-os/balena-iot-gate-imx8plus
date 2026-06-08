@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v7.2.1+rev1
+## (2026-06-08)
+
+* Update product-os/flowzone to 0b77c97fba9b158694950ff49e4b67a55c94c145 [balena-renovate[bot]]
+
 # v7.2.1
 ## (2026-06-05)
 
