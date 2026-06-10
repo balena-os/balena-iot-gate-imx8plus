@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v7.2.1+rev2
+## (2026-06-10)
+
+* unpin flowzone, track @master [Kyle Harding]
+
 # v7.2.1+rev1
 ## (2026-06-08)
 
