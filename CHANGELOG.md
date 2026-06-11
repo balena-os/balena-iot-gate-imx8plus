@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v7.2.1+rev3
+## (2026-06-11)
+
+* Use abroot script from meta-balena [Michal Toman]
+
 # v7.2.1+rev2
 ## (2026-06-10)
 

@@ -1,4 +1,30 @@
 - commits:
+    - subject: Use abroot script from meta-balena
+      hash: 24bbe98115081ce3b1699f95bc579a74d370129a
+      body: |
+        At this moment this repo ships a fork of the abroot script with
+        a custom rollback hook. This was fine until now because abroot was
+        the only script in the balena bootloader and could be replaced
+        as a single artifact.
+
+        A recent refactoring in meta-balena has split abroot into two scripts,
+        mountboot and abroot, expecting to add more in the future. This means
+        the trick with `replacing abroot` <=> `replacing the whole bootloader`
+        doesn't work anymore.
+
+        This patch makes the device use upstream abroot and separates
+        the device-specific rollback hook into a separate script.
+      footer:
+        Changelog-entry: Use abroot script from meta-balena
+        changelog-entry: Use abroot script from meta-balena
+        Signed-off-by: Michal Toman <michalt@balena.io>
+        signed-off-by: Michal Toman <michalt@balena.io>
+      author: Michal Toman
+      nested: []
+  version: 7.2.1+rev3
+  title: ""
+  date: 2026-06-11T14:45:35.978Z
+- commits:
     - subject: unpin flowzone, track @master
       hash: d7ced893055943116b5f6eff466a06ccd13b684c
       body: |
