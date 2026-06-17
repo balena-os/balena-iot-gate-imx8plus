@@ -1,4 +1,118 @@
 - commits:
+    - subject: Update layers/meta-balena to 02273a709f119a093c4958cb6d0deed49df893eb
+      hash: 3cf15f83cd07fb32606b327db2af5182f7c9b314
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 02273a709f119a093c4958cb6d0deed49df893eb
+        changelog-entry: Update layers/meta-balena to 02273a709f119a093c4958cb6d0deed49df893eb
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "tests: Define imx8mmebcrs16a1 as flasherConfig type"
+              hash: 16c56bacdccd9e1a58aa32b0169d05302ebbd4e1
+              body: >
+                This allows us to boot the flasher image from microSD even when
+                the
+
+                bootswitch is set to eMMC boot. This is needed for automated
+                testing.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-7.5.1
+          title: ""
+          date: 2026-06-15T18:09:10.587Z
+        - commits:
+            - subject: "conf/layer.conf: Specify Wrynose compatibility"
+              hash: b5779e477068e55f3110cf735db17fdb33eb522b
+              body: |
+                ... and populate UNPACKDIR for the dunfell, kirkstone
+                and scarthgap layers, to ensure backwards compatibility.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Co-authored-by: Florin Sarbu <florin@balena.io>
+                co-authored-by: Florin Sarbu <florin@balena.io>
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+          version: meta-balena-7.5.0
+          title: ""
+          date: 2026-06-12T08:17:26.427Z
+        - commits:
+            - subject: Update tests/leviathan digest to a310841
+              hash: 2cdf1c6d12225dd6aee87db808482744cd3c2b8b
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: "core/lib: Make Protected Management Frames (PMF) support optional /
+                        disabled when creating the wifi connection profile"
+                      hash: 2f56cc2c38b830a81492ddec574b91644953e16e
+                      body: >
+                        We have a case where not setting this to optional will
+                        cause issues
+
+                        when authenticating to an AP created by the worker (a
+                        RPi 4 worker).
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Florin Sarbu <florin@balena.io>
+                        signed-off-by: Florin Sarbu <florin@balena.io>
+                      author: Florin Sarbu
+                      nested: []
+                  version: leviathan-2.36.112
+                  title: ""
+                  date: 2026-06-10T14:29:15.175Z
+          version: meta-balena-7.4.1
+          title: ""
+          date: 2026-06-11T06:12:09.908Z
+        - commits:
+            - subject: "systemd: add configuration to ignore lid switch events"
+              hash: fa80d44b3bc0f4c23d468d23b0006d89af2c6def
+              body: >
+                Add a systemd-logind drop-in that sets HandleLidSwitch=ignore
+                and HandleLidSwitchDocked=ignore so closing the lid does not
+                suspend laptop-class hardware.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Dr Bill Mcilhargey
+                  <19168174+billmcilhargey@users.noreply.github.com>
+                signed-off-by: Dr Bill Mcilhargey
+                  <19168174+billmcilhargey@users.noreply.github.com>
+              author: Dr Bill Mcilhargey
+              nested: []
+          version: meta-balena-7.4.0
+          title: ""
+          date: 2026-06-09T23:56:00.838Z
+        - commits:
+            - subject: "tests: pieeprom test raspberrypi4 and CM4"
+              hash: c4589cf31d1d245a2fc19ad8809c2ae35c88c927
+              body: ""
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Yann CARDAILLAC <yann.cardaillac@balena.io>
+                signed-off-by: Yann CARDAILLAC <yann.cardaillac@balena.io>
+              author: Yann CARDAILLAC
+              nested: []
+          version: meta-balena-7.3.0
+          title: ""
+          date: 2026-06-09T11:50:41.226Z
+  version: 7.5.1
+  title: ""
+  date: 2026-06-17T10:53:00.256Z
+- commits:
     - subject: Use abroot script from meta-balena
       hash: 24bbe98115081ce3b1699f95bc579a74d370129a
       body: |
