@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file
 
+# v7.5.2
+## (2026-06-17)
+
+
+<details>
+<summary> Update layers/meta-balena to 374d8c8f8303362f71338de1cf68f0033335968e [balena-renovate[bot]] </summary>
+
+> ## meta-balena-7.5.2
+> ### (2026-06-17)
+> 
+> * recipes-core/systemd: Fix building with Wrynose [Alexandru]
+> 
+
+</details>
+
 # v7.5.1
 ## (2026-06-17)
 
