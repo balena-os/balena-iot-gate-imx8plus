@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v7.5.2+rev2
+## (2026-06-18)
+
+* machine: Clarify DRAM sizes in device names [Shaun Mulligan]
+
 # v7.5.2+rev1
 ## (2026-06-18)
 

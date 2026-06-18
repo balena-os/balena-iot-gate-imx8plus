@@ -1,4 +1,21 @@
 - commits:
+    - subject: "machine: Clarify DRAM sizes in device names"
+      hash: f3c3d5d46c51a00bb0ffe76cd1f19f4e0fd18051
+      body: |
+        Update the device names in the configuration files to explicitly state
+        the RAM variants (e.g. changing from hyphenated ranges like "1G-8G"
+        to explicit sizes like "1GB or 8GB"). This improves clarity for users.
+      footer:
+        Changelog-entry: "machine: Clarify DRAM sizes in device names"
+        changelog-entry: "machine: Clarify DRAM sizes in device names"
+        Signed-off-by: Shaun Mulligan <switchflip.shaun@gmail.com>
+        signed-off-by: Shaun Mulligan <switchflip.shaun@gmail.com>
+      author: Shaun Mulligan
+      nested: []
+  version: 7.5.2+rev2
+  title: ""
+  date: 2026-06-18T21:26:44.729Z
+- commits:
     - subject: Update balena-yocto-scripts to 28481193eb5a8748685099096e148bb8cf3b54fc
       hash: ebb9efedf6f5589be1ecf25cc51a1ede3e5bea8d
       body: Update balena-yocto-scripts
