@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file
 
+# v7.7.0+rev1
+## (2026-07-16)
+
+
+<details>
+<summary> Update contracts to a4ab96e2b9f6f8c40f80072f7dd1d2369eb7466e [balena-renovate[bot]] </summary>
+
+> ## contracts-2.0.146
+> ### (2026-07-16)
+> 
+> * Modify existing device family and manufacturer metadata [Pranas Ziaukas]
+> 
+
+</details>
+
 # v7.7.0
 ## (2026-07-16)
 
