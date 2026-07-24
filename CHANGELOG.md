@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v7.7.0+rev2
+## (2026-07-24)
+
+* Set explicit partition size overrides for each machine [guille-vega]
+
 # v7.7.0+rev1
 ## (2026-07-16)
 
