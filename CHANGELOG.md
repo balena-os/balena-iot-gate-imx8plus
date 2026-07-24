@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file
 
+# v7.7.0+rev3
+## (2026-07-24)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 4c19733cad4cd1473d196d41ea7d2f4531913172 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.41.8
+> ### (2026-07-15)
+> 
+> * Update GitHub Actions [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.41.7
+> ### (2026-07-14)
+> 
+> * Update product-os/review-commit-action action to v0.3.2 [balena-renovate[bot]]
+> 
+
+</details>
+
 # v7.7.0+rev2
 ## (2026-07-24)
 
