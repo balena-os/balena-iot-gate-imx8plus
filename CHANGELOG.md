@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file
 
+# v7.7.0+rev4
+## (2026-07-25)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 8aa037bbf693fcebce7a7e4e219c6d75d2dead22 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.41.9
+> ### (2026-07-24)
+> 
+> * Update docker/login-action action to v4 [balena-renovate[bot]]
+> 
+
+</details>
+
 # v7.7.0+rev3
 ## (2026-07-24)
 
