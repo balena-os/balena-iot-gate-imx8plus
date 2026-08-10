@@ -45,3 +45,7 @@
 	path = layers/meta-cyclonedx
 	url = https://github.com/balena-os/meta-cyclonedx
 	branch = kirkstone
+[submodule "layers/meta-remoteproc-runtime"]
+	path = layers/meta-remoteproc-runtime
+	url = https://github.com/arm/meta-remoteproc-runtime.git
+	branch = byoc
