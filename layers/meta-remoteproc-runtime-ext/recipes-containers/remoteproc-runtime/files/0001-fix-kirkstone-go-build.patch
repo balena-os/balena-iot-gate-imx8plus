@@ -1,0 +1,65 @@
+diff --git a/recipes-containers/remoteproc-runtime/containerd-shim-remoteproc_git.bb b/recipes-containers/remoteproc-runtime/containerd-shim-remoteproc_git.bb
+index 26aa2fd..847b84a 100644
+--- a/recipes-containers/remoteproc-runtime/containerd-shim-remoteproc_git.bb
++++ b/recipes-containers/remoteproc-runtime/containerd-shim-remoteproc_git.bb
+@@ -5,11 +5,10 @@ io.containerd.remoteproc.v1 for Docker and K3s integration."
+ require remoteproc-runtime.inc
+ 
+ do_compile() {
+-    cd ${S}
++    mkdir -p ${WORKDIR}/build-tmp
+     go build -trimpath -ldflags="${GO_LDFLAGS}" -o ${B}/containerd-shim-remoteproc-v1 ./cmd/containerd-shim-remoteproc-v1
+ }
+-do_compile[dirs] = "${B} ${WORKDIR}/build-tmp"
+-do_compile[cleandirs] = "${B} ${WORKDIR}/build-tmp"
++do_compile[dirs] = "${S}"
+ 
+ do_install() {
+     install -d ${D}${bindir}
+diff --git a/recipes-containers/remoteproc-runtime/remoteproc-runtime.inc b/recipes-containers/remoteproc-runtime/remoteproc-runtime.inc
+index de46557..4566c6d 100644
+--- a/recipes-containers/remoteproc-runtime/remoteproc-runtime.inc
++++ b/recipes-containers/remoteproc-runtime/remoteproc-runtime.inc
+@@ -1,6 +1,6 @@
+ HOMEPAGE = "https://github.com/arm/remoteproc-runtime"
+ LICENSE = "Apache-2.0"
+-LIC_FILES_CHKSUM = "file://LICENSE;md5=e0d54384330ad9d555f164ed84dc5c79"
++LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/Apache-2.0;md5=89aea4e17d99a7cacdbeed46a0096b10"
+ 
+ GO_IMPORT = "github.com/arm/remoteproc-runtime"
+ 
+@@ -21,6 +21,10 @@ export GOARM = "${TARGET_GOARM}"
+ export CGO_ENABLED = "0"
+ export GOCACHE = "${B}/.cache"
+ export GOMODCACHE = "${B}/.mod"
++#export GOTOOLCHAIN = "local"
++# Go module/toolchain cache defaults to read-only, which prevents BitBake
++# cleandirs from removing ${B} after an auto-downloaded toolchain.
++export GOFLAGS = "-modcacherw"
+ export GOTMPDIR = "${WORKDIR}/build-tmp"
+ 
+ GO_LDFLAGS = "\
+diff --git a/recipes-containers/remoteproc-runtime/remoteproc-runtime_git.bb b/recipes-containers/remoteproc-runtime/remoteproc-runtime_git.bb
+index d74f69f..73859d3 100644
+--- a/recipes-containers/remoteproc-runtime/remoteproc-runtime_git.bb
++++ b/recipes-containers/remoteproc-runtime/remoteproc-runtime_git.bb
+@@ -1,16 +1,14 @@
+ SUMMARY = "OCI container runtime for deploying firmware via Linux remoteproc"
+ DESCRIPTION = "An OCI-compliant container runtime that deploys firmware to \
+-auxiliary processors using the Linux remoteproc framework. Enables deploying \
+-firmware to embedded co-processors using standard container tools."
++auxiliary processors using the Linux remoteproc framework."
+ 
+ require remoteproc-runtime.inc
+ 
+ do_compile() {
+-    cd ${S}
++    mkdir -p ${WORKDIR}/build-tmp
+     go build -trimpath -ldflags="${GO_LDFLAGS}" -o ${B}/remoteproc-runtime ./cmd/remoteproc-runtime
+ }
+-do_compile[dirs] = "${B} ${WORKDIR}/build-tmp"
+-do_compile[cleandirs] = "${B} ${WORKDIR}/build-tmp"
++do_compile[dirs] = "${S}"
+ 
+ do_install() {
+     install -d ${D}${bindir}
