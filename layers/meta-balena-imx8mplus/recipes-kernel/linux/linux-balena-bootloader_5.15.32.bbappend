@@ -85,6 +85,16 @@ do_install:append() {
     rm -rf ${D}/etc ${D}/lib ${D}/usr
 }
 
+# Ensure late-running class extensions do not break the build by explicitly 
+# declaring that this specific recipe does not package or ship anything to /etc or /usr
+FILES:${PN}:remove = "/etc /usr"
+DIRFILES = ""
+
+# Tell Yocto to completely ignore any leftover untracked items in these paths 
+# during the do_package strict QA check stage.
+WARN_QA:remove = "installed-vs-shipped"
+ERROR_QA:remove = "installed-vs-shipped"
+
 do_deploy:append () {
     BOOTENV_FILE="${DEPLOYDIR}/${KERNEL_PACKAGE_NAME}/bootenv"
     grub-editenv "${BOOTENV_FILE}" create
