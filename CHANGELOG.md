@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file
 
+# v7.9.3
+## (2026-08-10)
+
+
+<details>
+<summary> Update layers/meta-balena to c806f4ead5c1fb34ed161266c2ed07a7c3b150d6 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-7.9.3
+> ### (2026-08-08)
+> 
+> * balena-extension-runtime: do not duplicate binary [Alex Gonzalez]
+> * balena-extension-runtime: update to v1.2.1 [Alex Gonzalez]
+> 
+> ## meta-balena-7.9.2
+> ### (2026-08-07)
+> 
+> * extra-udev-rules: Disable power management on mlan* wireless network interfaces [Florin Sarbu]
+> 
+
+</details>
+
 # v7.9.1
 ## (2026-08-07)
 
