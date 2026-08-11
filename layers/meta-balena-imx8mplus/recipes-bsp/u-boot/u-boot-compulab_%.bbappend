@@ -20,6 +20,7 @@ SRC_URI:append = " \
 	file://0090-board-compulab-im8mp-ddr-Add-Kingston-0xff070010-for.patch \
 	file://0091-enable-hdmi-output-by-default.patch \
 	file://0092-Add-clk_ignore_unused-to-u-boot-mmcargs-to-prevent-L.patch \
+	file://0093-imx8mp-plat-Update-the-supported-DRAM-list.patch \
 "
 
 SRC_URI:remove:iot-gate-imx8plus-d1d8 = "file://d2d4.cfg"
