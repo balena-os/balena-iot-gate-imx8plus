@@ -1,4 +1,54 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 4b858287c2b8eb6ffb7bedb66908ddde47525605
+      hash: 0316d8d01f436e0a37e5832fca1fdfcf521e80df
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 4b858287c2b8eb6ffb7bedb66908ddde47525605
+        changelog-entry: Update balena-yocto-scripts to 4b858287c2b8eb6ffb7bedb66908ddde47525605
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Deploy the hostApp with `os-profiles` draft release channel
+              hash: 772f3cc8b5203605857dd148a3cd9c556004c170
+              body: |
+                Bump setup-balena-action to v0.1.0, which adds `cli-channel`.
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Christina Ying Wang
+              nested: []
+          version: balena-yocto-scripts-1.42.4
+          title: ""
+          date: 2026-08-12T18:12:59.907Z
+        - commits:
+            - subject: Update GitHub Actions
+              hash: 72fa14c6875acd783a5251cf7b9deeb7b90979da
+              body: |
+                Update actions/checkout from 6.0.3 to 6.1.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.42.3
+          title: ""
+          date: 2026-08-12T05:19:09.347Z
+        - commits:
+            - subject: Add source-mirror-setup dependency to All Jobs
+              hash: cfd9b04da5abda6e8495ded8796b27b22eed9626
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.42.2
+          title: ""
+          date: 2026-08-12T00:49:58.776Z
+  version: 7.9.3+rev2
+  title: ""
+  date: 2026-08-13T21:40:34.706Z
+- commits:
     - subject: Update balena-yocto-scripts to 41fe121711c72f671c4b756f3e19f89f0d9561cc
       hash: 79d5144a41abe423c48c278fb84855454a28ee9b
       body: Update balena-yocto-scripts
