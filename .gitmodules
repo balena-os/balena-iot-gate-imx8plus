@@ -45,3 +45,6 @@
 	path = layers/meta-cyclonedx
 	url = https://github.com/balena-os/meta-cyclonedx
 	branch = kirkstone
+[submodule "layers/meta-remoteproc-hostapp-extension"]
+	path = layers/meta-remoteproc-hostapp-extension
+	url = git@github.com:balena-os/meta-remoteproc-hostapp-extension.git
