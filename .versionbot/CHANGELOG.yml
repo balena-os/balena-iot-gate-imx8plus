@@ -1,4 +1,18 @@
 - commits:
+    - subject: Set branch to master for meta-balena-hab in .gitmodules
+      hash: 566359839805f66d8e3987705a2c61ba635d53ba
+      body: ""
+      footer:
+        Changelog-entry: Set branch to master for meta-balena-hab in .gitmodules
+        changelog-entry: Set branch to master for meta-balena-hab in .gitmodules
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 7.9.3+rev4
+  title: ""
+  date: 2026-08-16T22:24:05.411Z
+- commits:
     - subject: Update balena-os/github-workflows to
         95c18f8b04886c36223acc04a531c6af10086910
       hash: 1b08f4b38b4395248ca52aba5719f23d5d4c75d3

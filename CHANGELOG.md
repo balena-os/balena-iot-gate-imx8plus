@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v7.9.3+rev4
+## (2026-08-16)
+
+* Set branch to master for meta-balena-hab in .gitmodules [Florin Sarbu]
+
 # v7.9.3+rev3
 ## (2026-08-14)
 
