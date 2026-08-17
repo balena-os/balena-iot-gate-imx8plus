@@ -1,4 +1,180 @@
 - commits:
+    - subject: Update layers/meta-balena to 9c83231c087d0ff78b943765551e2f061e0e9f72
+      hash: e2999fca2121bac1b44e277e32df27c67296aea9
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 9c83231c087d0ff78b943765551e2f061e0e9f72
+        changelog-entry: Update layers/meta-balena to 9c83231c087d0ff78b943765551e2f061e0e9f72
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "image_types_balena: force 4K block size for resin-state ext4"
+              hash: f7006438a12450fe579aa2a53b1c926ee1a78409
+              body: >
+                mkfs.ext4 defaults to 1K blocks for small filesystems like
+                resin-state
+
+                (~40 MiB). When the partition is later LUKS2-formatted for
+                secure
+
+                boot, dm-crypt exposes a hard 4096-byte block size with no
+                legacy 512e
+
+                compatibility, and the kernel refuses to mount an ext4
+                filesystem
+
+                whose block size is smaller than the underlying device's. Force
+                4K
+
+                blocks to match.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: guille-vega <guillermo.vega@balena.io>
+                signed-off-by: guille-vega <guillermo.vega@balena.io>
+              author: guille-vega
+              nested: []
+            - subject: Increase default boot, root and state partition sizes
+              hash: 1712a927ff527235c15410c02efb438da1c3b64e
+              body: >
+                Double the default root A/B partition size (320 MiB -> 640 MiB)
+                and
+
+                grow the boot (40 MiB -> 100 MiB) and state (20 MiB -> 80 MiB)
+
+                partitions, keeping the total raw image budget in sync
+
+                (700 MiB -> 1460 MiB) in balena_rootfs_size().
+              footer:
+                Change-type: major
+                change-type: major
+                Changelog-entry: Increase default boot, root and state partition sizes
+                changelog-entry: Increase default boot, root and state partition sizes
+                Signed-off-by: guille-vega <guillermo.vega@balena.io>
+                signed-off-by: guille-vega <guillermo.vega@balena.io>
+              author: guille-vega
+              nested: []
+          version: meta-balena-8.0.0
+          title: ""
+          date: 2026-08-17T20:28:57.966Z
+        - commits:
+            - subject: Update tests/leviathan digest to 4ae6a0e
+              hash: af2f3adea6d73d7ae36d205de78e78f90fc31ff8
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update debian:bullseye-slim Docker digest to f313b4b
+                      hash: 6f3ff3ca4c85254bb08941b74b1e91953f4a9f7e
+                      body: |
+                        Update debian
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.36.124
+                  title: ""
+                  date: 2026-08-15T03:01:13.603Z
+                - commits:
+                    - subject: Update core/contracts digest to 410a252
+                      hash: 8a21458fb5fd4dafdb707807dbf8c280e639abe9
+                      body: |
+                        Update core/contracts
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.36.123
+                  title: ""
+                  date: 2026-08-15T01:41:19.777Z
+                - commits:
+                    - subject: Update alpine Docker tag to v3.24.1
+                      hash: 4f2b145b0cfeede1cc8711015794b6c9cccd390a
+                      body: |
+                        Update alpine from 3.18.12 to 3.24.1
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.36.122
+                  title: ""
+                  date: 2026-08-15T00:05:18.689Z
+                - commits:
+                    - subject: "Core: worker: fix error with custom DT"
+                      hash: 0c91241eb7be4a12fec38d5922d0b872977b143c
+                      body: ""
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Ryan Cooke <ryan@balena.io>
+                        signed-off-by: Ryan Cooke <ryan@balena.io>
+                      author: Ryan Cooke
+                      nested: []
+                  version: leviathan-2.36.121
+                  title: ""
+                  date: 2026-08-14T22:12:01.578Z
+          version: meta-balena-7.9.6
+          title: ""
+          date: 2026-08-17T07:43:58.900Z
+        - commits:
+            - subject: "workflows: Pin yocto-scripts submodule to master"
+              hash: 259a2085fd44d313007071cedbf4876ac6672746
+              body: |
+                Release v1.42.0 has a dependency on the yocto-scripts submodule
+                being updated in the device repo to match.
+
+                Fixes "prepare-image.py: No such file or directory"
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-7.9.5
+          title: ""
+          date: 2026-08-16T16:28:57.591Z
+        - commits:
+            - subject: "hostapp: Add deploy assets to hostapp composition"
+              hash: 5b522aebe5d66c0da950d6fd3543c0d1c34333b4
+              body: >
+                These assets must exist relative to the build/tmp/deploy path
+
+                and will be deployed as resources on the release.
+
+
+                For the hostapp only, some of these resources get
+                transformations
+
+                before being uploaded:
+
+                - cyclonedx-export/ is renamed to cyclonedx/
+
+                - licenses/ is tarred
+
+                - secure-boot-lock/ is tarred
+
+                - images/__MACHINE__/ subdirs are flattened
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-7.9.4
+          title: ""
+          date: 2026-08-11T19:07:41.208Z
+  version: 8.0.0
+  title: ""
+  date: 2026-08-17T23:57:47.700Z
+- commits:
     - subject: Set branch to master for meta-balena-hab in .gitmodules
       hash: 566359839805f66d8e3987705a2c61ba635d53ba
       body: ""
