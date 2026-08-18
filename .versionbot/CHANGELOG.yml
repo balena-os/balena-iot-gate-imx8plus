@@ -1,4 +1,20 @@
 - commits:
+    - subject: "u-boot: Update the supported dram list"
+      hash: 097d96c53a4f8062f73e45d149eb9e415991365b
+      body: |
+        Update the supported dram list with the dram:
+        vendor=Etron; id=0xff070018; capacity=4G.
+      footer:
+        Changelog-entry: "u-boot: Update the supported dram list"
+        changelog-entry: "u-boot: Update the supported dram list"
+        Signed-off-by: Valentin Raevsky <valentin@compulab.co.il>
+        signed-off-by: Valentin Raevsky <valentin@compulab.co.il>
+      author: Valentin Raevsky
+      nested: []
+  version: 8.0.0+rev1
+  title: ""
+  date: 2026-08-18T09:57:46.288Z
+- commits:
     - subject: Update layers/meta-balena to 9c83231c087d0ff78b943765551e2f061e0e9f72
       hash: e2999fca2121bac1b44e277e32df27c67296aea9
       body: Update layers/meta-balena

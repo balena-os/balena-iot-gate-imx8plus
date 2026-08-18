@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v8.0.0+rev1
+## (2026-08-18)
+
+* u-boot: Update the supported dram list [Valentin Raevsky]
+
 # v8.0.0
 ## (2026-08-17)
 
