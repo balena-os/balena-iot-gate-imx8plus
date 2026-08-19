@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file
 
+# v8.0.0+rev3
+## (2026-08-19)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 41b2a508561040cf5d36cdc8c4d5a225cfc73b4d [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.42.6
+> ### (2026-08-19)
+> 
+> * Update actions/github-script action to v9 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.42.5
+> ### (2026-08-19)
+> 
+> * yocto-build-deploy: Drop container-path license symlinks before upload [Kyle Harding]
+> 
+
+</details>
+
 # v8.0.0+rev2
 ## (2026-08-19)
 
