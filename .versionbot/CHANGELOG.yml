@@ -1,4 +1,42 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 6ea43b88e510d849952538fb77a60544fbfc3b77
+      hash: 6bc05cf81cec0bc3317bb6fc1777ed7716d23e0f
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 6ea43b88e510d849952538fb77a60544fbfc3b77
+        changelog-entry: Update balena-yocto-scripts to 6ea43b88e510d849952538fb77a60544fbfc3b77
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update balena-io/upload-balena-release-asset action to v0.2.0
+              hash: 83044a0832a0266c65e0f8bd75c077743e228aab
+              body: |
+                Update balena-io/upload-balena-release-asset from 0.1.6 to 0.2.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.42.8
+          title: ""
+          date: 2026-08-20T14:34:17.825Z
+        - commits:
+            - subject: Update lodash to v4.18.1 [SECURITY]
+              hash: 0e53b8f952a12c1c928443d57c097c36684eb66e
+              body: |
+                Update lodash from 4.17.21 to 4.18.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.42.7
+          title: ""
+          date: 2026-08-19T21:52:37.501Z
+  version: 8.0.0+rev4
+  title: ""
+  date: 2026-08-20T19:40:02.886Z
+- commits:
     - subject: Update balena-yocto-scripts to 41b2a508561040cf5d36cdc8c4d5a225cfc73b4d
       hash: e434681b9b4cc3206fc3ec2ec6969826f3f416dc
       body: Update balena-yocto-scripts
