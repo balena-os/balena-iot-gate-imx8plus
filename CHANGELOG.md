@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file
 
+# v8.0.0+rev5
+## (2026-08-21)
+
+* Update layers/meta-cyclonedx to 221bf15bf2081d1d025f069429f1b94a14d520af [balena-renovate[bot]]
+
 # v8.0.0+rev4
 ## (2026-08-20)
 
