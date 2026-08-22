@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file
 
+# v8.0.2
+## (2026-08-22)
+
+
+<details>
+<summary> Update layers/meta-balena to f3ee62082eb6ff27aeb4638456209cb13518a82e [balena-renovate[bot]] </summary>
+
+> ## meta-balena-8.0.2
+> ### (2026-08-21)
+> 
+> * distro:balena-os.inc: Remove gobject-introspection-data from DISTRO_FEATURES [Florin Sarbu]
+> 
+> ## meta-balena-8.0.1
+> ### (2026-08-20)
+> 
+> * balena: use AtomicWriteFile to save volume options [Kyle Harding]
+> 
+
+</details>
+
 # v8.0.0+rev6
 ## (2026-08-21)
 
