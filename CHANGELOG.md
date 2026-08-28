@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file
 
+# v8.0.4+rev2
+## (2026-08-28)
+
+
+<details>
+<summary> Update contracts to 7314bbfc3bf44b0499093f04bdab21d22e46cc5e [balena-renovate[bot]] </summary>
+
+> ## contracts-2.0.148
+> ### (2026-08-24)
+> 
+> * hw.device-type: Update Orin boards L4T version to 39.2.0 [Alexandru Costache]
+> 
+
+</details>
+
 # v8.0.4+rev1
 ## (2026-08-27)
 

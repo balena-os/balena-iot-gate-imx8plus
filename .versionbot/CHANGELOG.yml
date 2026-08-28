@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update contracts to 7314bbfc3bf44b0499093f04bdab21d22e46cc5e
+      hash: 42293e48a17810ecbb7e0fd47cfb382a0c3c2cb0
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 7314bbfc3bf44b0499093f04bdab21d22e46cc5e
+        changelog-entry: Update contracts to 7314bbfc3bf44b0499093f04bdab21d22e46cc5e
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "hw.device-type: Update Orin boards L4T version to 39.2.0"
+              hash: ebae4da834d1e4efe16b41718189ae26005af527
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.148
+          title: ""
+          date: 2026-08-24T18:52:54.835Z
+  version: 8.0.4+rev2
+  title: ""
+  date: 2026-08-28T02:51:32.714Z
+- commits:
     - subject: Update flowzonify to 0.4.2
       hash: 43cc857200e14751c7b4d3739f78d9d25264f3e8
       body: Update flowzonify
