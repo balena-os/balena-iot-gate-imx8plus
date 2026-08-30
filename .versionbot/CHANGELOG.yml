@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 8010de2389711c1358480d87ca5b5540b6e60501
+      hash: c8455e7c5eede796e94fe317bbec01c0f132c96e
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 8010de2389711c1358480d87ca5b5540b6e60501
+        changelog-entry: Update balena-yocto-scripts to 8010de2389711c1358480d87ca5b5540b6e60501
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update GitHub Actions
+              hash: c8b1539cc32bc97e88c6827d0f90d70965987fec
+              body: |
+                Update aws-actions/configure-aws-credentials from 6.2.2 to 6.2.3
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.42.11
+          title: ""
+          date: 2026-08-30T15:29:48.255Z
+  version: 8.0.4+rev5
+  title: ""
+  date: 2026-08-30T20:37:58.146Z
+- commits:
     - subject: Update balena-os/github-workflows to
         08a88ee3ca2a070d59140fa334be2784f17918e0
       hash: 4b9b8306f9830528ced18831729bb5ffb261c641
