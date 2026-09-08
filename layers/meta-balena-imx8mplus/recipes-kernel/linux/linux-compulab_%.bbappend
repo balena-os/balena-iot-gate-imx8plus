@@ -25,6 +25,10 @@ SRC_URI:append = " \
     file://imx-rpmsg-tty.cfg \
 "
 
+SRC_URI:append = " \
+    file://0205-compulab-iot-gate-imx8plus-fine-tune-FEC-RGMII-timin.patch \
+"
+
 # Fixes issue where cryptodev module is installed
 # along with the kernel image in the initramfs
 KERNEL_PACKAGE_NAME="kernel"
