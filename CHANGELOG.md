@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file
 
+# v8.0.10+rev2
+## (2026-09-15)
+
+
+<details>
+<summary> Update balena-yocto-scripts to eb75d8880e97fc8e847fa27f329d70a87d182187 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.42.15
+> ### (2026-09-15)
+> 
+> * Update actions/download-artifact action to v8 [balena-renovate[bot]]
+> 
+
+</details>
+
 # v8.0.10+rev1
 ## (2026-09-15)
 
